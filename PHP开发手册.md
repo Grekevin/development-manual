@@ -414,3 +414,7 @@ echo 和 print语句的区别
 $a = 9;
 ```
 
+`print $a` 和 `print "$a"` 效果相同，`echo` 同理。
+
+`print "text$a text"` 和 `print "text $a text"` 和 `print "text{$a}text"` 都可以正常显示 $a 的值，不使用 {} 则 `$a` 之后必须有一个空格，不然就无法识别变量（`"text$atext"` 会识别为变量 `$atext`）`echo` 同理。
+
