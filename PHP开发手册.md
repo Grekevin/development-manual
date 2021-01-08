@@ -361,9 +361,22 @@ echo 是一个语言结构，使用的时候可以不用加括号，也可以加
 
 ``` php
 <?php
-echo "<p>Hello World</p>";
-echo "我要学 PHP!<br>";
-echo "这是一个", "字符串，", "使用了", "多个", "参数。";
+echo "<p>Hello World</p>";	//包含HTML语句
+echo "<br>";
+echo("我要学 PHP!<br>");	//可以带括号
+echo "<br>";
+echo "这是一个", "字符串，", "使用了", "多个", "参数。";	//输出多个字符串
+echo "<br>";
+
+$txt1="学习 PHP";
+$txt2="RUNOOB.COM";
+$cars=array("Volvo","BMW","Toyota");
+ 
+echo $txt1;	//输出变量
+echo "<br>";
+echo "在 $txt2 学习 PHP ";	//输出字符串
+echo "<br>";
+echo "我车的品牌是 {$cars[0]}";	//输出数组元素
 ?>
 ```
 
