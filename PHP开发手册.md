@@ -118,12 +118,11 @@ PHP 脚本以 `<?php 开始，以 ?>` 结束：
 ``` php
 <!DOCTYPE html>
 <html>
-	<body>
-		<h1>My first PHP page</h1>
-
-		<?php
-		echo "Hello World!";
-		?>  
-	</body>
+<body>
+<h1>My first PHP page</h1>
+<? php
+echo "Hello World!";
+?>  
+</body>
 </html>
 ```
