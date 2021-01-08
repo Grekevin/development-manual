@@ -223,3 +223,4 @@ PHP 有四种不同的变量作用域：
  - global
  - static
  - parameter
+
