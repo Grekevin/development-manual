@@ -1,5 +1,7 @@
 # PHP开发手册
 ## PHP基础知识
+[参考资料](https://www.runoob.com/php/php-tutorial.html)
+
 ### 介绍
 PHP 是是免费的，一种创建动态交互性站点的强有力的服务器端脚本语言。
 
