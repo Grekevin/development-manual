@@ -410,3 +410,7 @@ echo 和 print语句的区别
  3. echo 输出的速度比 print 快；
  4. echo 没有返回值，print 有返回值 1；
 
+``` php
+$a = 9;
+```
+
