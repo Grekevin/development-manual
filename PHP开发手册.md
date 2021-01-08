@@ -55,6 +55,7 @@ PHP 是是免费的，一种创建动态交互性站点的强有力的服务器�
  - 安装 Web 服务器
  - 安装 PHP
  - 安装数据库，比如 MySQL
+ - 
 官方 PHP 网站（PHP.net）有 PHP 的安装说明： http://php.net/manual/en/install.php
 
 **PHP 服务器组件**
