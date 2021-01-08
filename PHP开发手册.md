@@ -283,6 +283,14 @@ add();	//输出 z = 11
 
 ``` php
 <?php
+$x = 5;
+$y = 6;
 
+function updata_y(){
+	// 通过$GLOBALS数组访问全局变量$x, $y, 最后通过赋值更新$y的值
+	$GLOBALS['y']=$GLOBALS['x']+$GLOBALS['y'];
+}
+updata_y();
+echo "y = $y";	//通过函数updata_y()更新了变量$y的值：y = 11
 ?>
 ```
