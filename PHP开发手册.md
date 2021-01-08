@@ -95,3 +95,22 @@ PhpStorm 非常适合于PHP开发人员及前端工程师。提供诸于：智�
 支持 Windows、Linux 和 Mac OS 平台。
 
 PhpStorm 官方下载地址：http://www.jetbrains.com/phpstorm/download/
+
+### PHP 语法
+PHP 脚本在服务器上执行，然后将纯 HTML 结果发送回浏览器。
+
+**基本的 PHP 语法**
+PHP 脚本可以放在文档中的任何位置。
+
+PHP 脚本以 <?php 开始，以 ?> 结束：
+
+``` php
+<?php
+// PHP 代码
+?>
+```
+
+ - PHP 文件的默认文件扩展名是 ".php"。
+ - PHP 文件通常包含 HTML 标签和一些 PHP 脚本代码。
+
+下面，我们提供了一个简单的 PHP 文件实例，它可以向浏览器输出文本 "Hello World!"：
