@@ -176,10 +176,10 @@ echo "Hello World!";
 
 ``` php
 <?php
-	$a = 2;
-	$b = 3;
-	$c = $a + $b;
-	echo $c;
+$a = 2;
+$b = 3;
+$c = $a + $b;
+echo $c;
 ?>
 ```
 **PHP 变量规则：**
