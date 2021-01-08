@@ -388,6 +388,17 @@ print 同样是一个语言结构，可以使用括号，也可以不使用括�
 下面的实例演示了如何使用 print 命令输出字符串（字符串可以包含 HTML 标签）：
 
 ``` php
-
+<?php
+$txt1="学习 PHP";
+$txt2="RUNOOB.COM";
+$cars=array("Volvo","BMW","Toyota");
+ 
+print $txt1;	//输出变量
+print "<br>";
+print("在 $txt2 学习 PHP ");	//输出字符串
+print "<br>";
+print "我车的品牌是 {$cars[0]}";	//输出数组元素
+?>
 ```
+
 
