@@ -304,6 +304,19 @@ echo "y = $y";	//通过函数updata_y()更新了变量$y的值：y = 11
 
 ``` php
 <?php
-
+function myTest()
+{
+    static $x=0;	//每次调用该函数时，该变量将会保留着函数前一次被调用时的值
+    echo $x;
+    $x++;
+    echo PHP_EOL;    // 换行符
+}
+ 
+myTest();	//0
+myTest();	//1
+myTest();	//2	
 ?>
 ```
+
+> 注释：static修饰的变量仍然是函数的局部变量
+
