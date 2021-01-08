@@ -420,3 +420,21 @@ $a = 9;
 
 **拓展**
 
+`echo` 是语法结构，也就是关键字，不是函数。使用的时候不用加括号，加上也可以。显示多个值的时候可以用逗号隔开。只支持基本类型，布尔型除外，`echo true`的时候显示1，`echo false`的时候啥都没有。
+
+`print` 和 `echo` 基本一致。但是`print` 不支持逗号分隔多个显示变量的语法。
+
+`print_r` 是函数，**不仅可以打印变量的的值，还能显示变量类型，而且也可以显示数组和对象这样复杂的变量类型**。`print_r()` 将把数组的指针移到最后边。使用 `reset()` 可让指针回到开始处。
+
+**两者相同点：**
+
+ -  `echo` 和 `print` 都是语言结构(官方文档解释为language construct)；
+ - `echo` 和 `print` 都是用来输出字符串的；
+ - 当同时只有一个参数的时候，`echo` 和 `print` 后面的括号(parenthesis)都是可选的，即：`echo ($argument1)` 等价于 `echo $argument1`，`print(argument)`等价于`print argument`；
+ - `echo` 和 `print` 在输出之前，都会将参数的进行转换，尝试转换为字符串类型。
+
+**两者的区别：**
+
+ - `echo`能接受N个字符串类型的参数(注意:有多个参数的时候，不能使用括号，即`echo` `$arg1`,`$arg2`是正确的，`echo($arg1,$arg2)`会导致解析错误)； `print`只能接收1个字符串类型的参数；
+ - `echo`没有返回值； `print`有返回值，其值永远为int类型的1。
+ - 在这里引用PHP官方原文档的说明 : "The major differences to echo are that print only accepts a single argument and always returns 1."
