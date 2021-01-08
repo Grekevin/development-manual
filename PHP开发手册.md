@@ -1,3 +1,8 @@
+* [PHP开发手册](#php开发手册)
+	* [PHP基础知识](#php基础知识)
+		* [介绍](#介绍)
+		* [PHP 安装](#php-安装)
+
 # PHP开发手册
 ## PHP基础知识
 [参考资料](https://www.runoob.com/php/php-tutorial.html)
