@@ -435,6 +435,6 @@ $a = 9;
 
 **两者的区别：**
 
- - `echo`能接受N个字符串类型的参数(注意:有多个参数的时候，不能使用括号，即`echo` `$arg1`,`$arg2`是正确的，`echo($arg1,$arg2)`会导致解析错误)； `print`只能接收1个字符串类型的参数；
+ - `echo`能接受N个字符串类型的参数(**注意:有多个参数的时候，不能使用括号**，即`echo $arg1,$arg2`是正确的，`echo($arg1,$arg2)`会导致解析错误)； `print`只能接收1个字符串类型的参数；
  - `echo`没有返回值； `print`有返回值，其值永远为int类型的1。
  - 在这里引用PHP官方原文档的说明 : "The major differences to echo are that print only accepts a single argument and always returns 1."
