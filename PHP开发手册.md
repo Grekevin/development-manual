@@ -101,6 +101,7 @@ PhpStorm 官方下载地址：http://www.jetbrains.com/phpstorm/download/
 PHP 脚本在服务器上执行，然后将纯 HTML 结果发送回浏览器。
 
 **基本的 PHP 语法**
+
 PHP 脚本可以放在文档中的任何位置。
 PHP 脚本以 `<?php 开始，以 ?>` 结束：
 ``` php
