@@ -3,6 +3,9 @@
 		* [介绍](#介绍)
 		* [PHP 安装](#php-安装)
 		* [PHP 语法](#php-语法)
+		* [PHP变量](#php变量)
+		* [PHP echo 和 print 语句](#php-echo-和-print-语句)
+		* [PHP EOF(heredoc) 使用说明](#php-eofheredoc-使用说明)
 
 # PHP开发手册
 ## PHP基础知识
