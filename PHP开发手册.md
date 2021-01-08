@@ -29,3 +29,11 @@ PHP 是是免费的，一种创建动态交互性站点的强有力的服务器�
  - PHP 可以加密数据
 
 通过 PHP，您不再限于输出 HTML。您可以输出图像、PDF 文件，甚至 Flash 电影。您还可以输出任意的文本，比如 XHTML 和 XML。
+
+**为什么使用 PHP？**
+
+ - PHP 可在不同的平台上运行（Windows、Linux、Unix、Mac OS X 等）
+ - PHP 与目前几乎所有的正在被使用的服务器相兼容（Apache、IIS 等）
+ - PHP 提供了广泛的数据库支持
+ - PHP 是免费的，可从官方的 PHP 资源下载它： www.php.net
+ - PHP 易于学习，并可高效地运行在服务器端
