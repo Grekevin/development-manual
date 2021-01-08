@@ -59,13 +59,16 @@ PHP 是是免费的，一种创建动态交互性站点的强有力的服务器�
 官方 PHP 网站（PHP.net）有 PHP 的安装说明： http://php.net/manual/en/install.php
 
 **PHP 服务器组件**
+
 对于初学者建议使用集成的服务器组件，它已经包含了 PHP、Apache、Mysql 等服务,免去了开发人员将时间花费在繁琐的配置环境过程。
 
 **WampServer**
+
 Windows 系统可以使用 WampServer，下载地址：http://www.wampserver.com/，支持32位和64位系统，根据自己的系统选择版本。
 WampServer 安装也简单，你只需要一直点击 "Next" 就可以完成安装了。
 
 **XAMPP**
+
 XAMPP 支持 Mac OS 和 Windows 系统，下载地址：https://www.apachefriends.org/zh_cn/index.html。
 
 **IDE (Integrated Development Environment,集成开发环境)**
