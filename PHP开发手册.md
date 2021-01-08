@@ -114,3 +114,18 @@ PHP 脚本以 `<?php 开始，以 ?>` 结束：
  - PHP 文件通常包含 HTML 标签和一些 PHP 脚本代码。
 
 下面，我们提供了一个简单的 PHP 文件实例，它可以向浏览器输出文本 "Hello World!"：
+
+``` php
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h1>My first PHP page</h1>
+
+		<?php
+		echo "Hello World!";
+		?>  
+
+	</body>
+</html>
+```
