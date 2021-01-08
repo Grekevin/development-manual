@@ -60,23 +60,22 @@ PHP 是是免费的，一种创建动态交互性站点的强有力的服务器�
 **PHP 服务器组件**
 对于初学者建议使用集成的服务器组件，它已经包含了 PHP、Apache、Mysql 等服务,免去了开发人员将时间花费在繁琐的配置环境过程。
 
-WampServer
+**WampServer**
 Windows 系统可以使用 WampServer，下载地址：http://www.wampserver.com/，支持32位和64位系统，根据自己的系统选择版本。
-
 WampServer 安装也简单，你只需要一直点击 "Next" 就可以完成安装了。
 
-XAMPP
+**XAMPP**
 XAMPP 支持 Mac OS 和 Windows 系统，下载地址：https://www.apachefriends.org/zh_cn/index.html。
 
-IDE (Integrated Development Environment,集成开发环境)
-Eclipse for PHP（免费）
+**IDE (Integrated Development Environment,集成开发环境)**
+**Eclipse for PHP（免费）**
 Eclipse 是一个开放源代码的、基于Java的可扩展开发平台(如果未安装JDK，则需要先 下载 JDK 安装)。就其本身而言，它只是一个框架和一组服务，用于通过插件组件构建开发环境。幸运的是，Eclipse 附带了一个标准的插件集，包括Java开发工具（Java Development Kit，JDK）。
 
 支持 Windows、Linux 和 Mac OS 平台。
 
 Eclipse for PHP 官方下载地址：http://www.eclipse.org/downloads/packages/eclipse-php-developers/heliosr
 
-PhpStorm（收费）
+**PhpStorm（收费）**
 PhpStorm是一个轻量级且便捷的PHP IDE，其旨在提供用户效率，可深刻理解用户的编码，提供智能代码补全，快速导航以及即时错误检查。
 
 PhpStorm 非常适合于PHP开发人员及前端工程师。提供诸于：智能HTML/CSS/JavaScript/PHP编辑、代码质量分析、版本控制集成（SVN、GIT）、调试和测试等功能。
