@@ -988,3 +988,5 @@ test();
 
 [菜鸟PHP教程](https://www.runoob.com/php/php-operators.html)
 
+[PHP官方手册](https://www.php.net/manual/zh/language.operators.php)
+
