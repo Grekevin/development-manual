@@ -990,3 +990,8 @@ test();
 
 [PHP官方手册](https://www.php.net/manual/zh/language.operators.php)
 
+PHP7+ 版本新增整除运算符 intdiv()，该函数返回值为第一个参数除于第二个参数的值并取整（向下取整），使用实例：
+
+``` php
+
+```
