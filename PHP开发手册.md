@@ -633,7 +633,8 @@ strpos() 函数用于*在字符串内查找一个字符或一段指定的文本*
 
 > strpos() 返回的不是第一匹配的字符会的下标，是按照字节来算。
 
-strpos() 只能用于判断字符在字符串中是否存在， 因为strpos函数是按照字节
+strpos() 只能用于判断字符在字符串中是否存在， 因为strpos函数是按照字节计算
+mb_strpos()按照字符来处理
 
 示例代码：
 
@@ -647,6 +648,8 @@ echo "<br>";
 
 //一个中文字符在 UTF-8 下是 3 个字节长度，在 gbk 下是2个字节长度。
 echo strpos("hello和grekevin", "grekvin");		//8
+echo "<br>";
+echo mb_strpos("hello和grekevin", "grekvin")		//6	
 ?>
 ```
 
