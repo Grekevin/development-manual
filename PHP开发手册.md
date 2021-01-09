@@ -1011,5 +1011,20 @@ var_dump(intdiv(10, 3));	//int(3)
 以下实例中通过判断 $\_GET 请求中含有 user 值，如果有返回 $\_GET['user']，否则返回 nobody：
 
 ``` php
+<?php
+$test = '菜鸟教程';
+// 普通写法
+$username = isset($test) ? $test : 'nobody';
+echo $username, PHP_EOL;
+ 
+// PHP 5.3+ 版本写法
+$username = $test ?: 'nobody';
+echo $username, PHP_EOL;
+?>
 
+/*
+输出：
+菜鸟教程
+菜鸟教程
+*/
 ```
