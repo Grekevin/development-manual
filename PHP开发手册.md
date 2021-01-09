@@ -862,4 +862,10 @@ define('LOG','OPEN');//定义常量，常量使用不能添加$
 echo $LOG;	//Notice: Undefined variable: LOG in C:\wamp64\www\test.php on line 3
 ?>
 ```
+**常量是全局的**
 
+常量在定义后，默认是全局变量，可以在整个运行的脚本的任何地方使用。
+
+``` php
+
+```
