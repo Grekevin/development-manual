@@ -625,13 +625,15 @@ echo mb_strlen("grekeivn", "utf-8")		//8
 echo mb_strlen("最棒","utf-8");  	    // 输出 2
 ?>
 ```
-**strpos() 函数**
+**strpos()和mb_strpos() 函数**
 
 strpos() 函数用于*在字符串内查找一个字符或一段指定的文本*。
 
 如果在字符串中找到匹配，该函数会返回第一个匹配的字符位置。如果未找到匹配，则返回 FALSE。
 
-> strpos() 返回的不是第一匹配的字符会的下标，是按照字符数量来算。
+> strpos() 返回的不是第一匹配的字符会的下标，是按照字节来算。
+
+strpos() 只能用于判断字符在字符串中是否存在， 因为strpos函数是按照字节
 
 示例代码：
 
@@ -643,7 +645,7 @@ echo "<br>";
 echo strpos($text, "grekevin"); //6
 echo "<br>";
 
-//一个中文字符在 UTF-8 下是 3 个字符长度，在 gbk 下是2个字符长度。
+//一个中文字符在 UTF-8 下是 3 个字节长度，在 gbk 下是2个字节长度。
 echo strpos("hello和grekevin", "grekvin");		//8
 ?>
 ```
