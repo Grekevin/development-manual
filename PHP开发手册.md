@@ -627,8 +627,15 @@ strpos() 函数用于*在字符串内查找一个字符或一段指定的文本*
 示例代码：
 
 ``` php
-
+<?php
+$text = "hello grekevin";
+echo strpos($text, "e"); 	//1 返回e在查找字符串中第一个出现的位置
+echo "<br>";
+echo strpos($text, "grekevin"); //6
+?>
 ```
+
+
 
 
 #### Integer 整型
