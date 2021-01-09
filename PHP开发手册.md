@@ -656,9 +656,6 @@ echo mb_strpos("hello和grekevin", "grekvin")		//6
 > 注意： 字符串中第一个字符的位置是 0，而不是 1
 
 
-
-
-
 #### Integer 整型
 
 integer 是集合 ℤ = {..., -2, -1, 0, 1, 2, ...} 中的某个数，是一个没有小数的数字。
