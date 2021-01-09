@@ -614,7 +614,7 @@ float(8.0E-5)
 
 **布尔型**
 
-布尔型可以是 true 或 false， 一般用于条件判断。
+布尔型可以是 TRUE 或 FALSE， 一般用于条件判断。
 
 ``` php
 $x=true;
