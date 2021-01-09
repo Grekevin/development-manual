@@ -565,7 +565,7 @@ H
 ``` php
 <?php 
 $x = 5985;
-var_dump($x);
+var_dump($x);	//var_dump() 函数返回变量的数据类型和值
 echo "<br>"; 
 $x = -345; // 负数 
 var_dump($x);
@@ -576,7 +576,16 @@ echo "<br>";
 $x = 047; // 八进制数
 var_dump($x);
 ?>
+
+/*
+int(5985)
+int(-345)
+int(140)
+int(39)
+*/
 ```
+
+
 
 
 
