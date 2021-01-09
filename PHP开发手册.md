@@ -605,6 +605,13 @@ echo "<br>";
 echo $name . "你" . $text; 		//grekevin你最棒!
 ?>
 ```
+**strlen() 函数**
+
+strlen() 函数返回字符串的长度（字节数）。
+
+``` php
+
+```
 
 
 #### Integer 整型
