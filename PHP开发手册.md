@@ -542,7 +542,9 @@ echo $a;
 
 > String（字符串）, Integer（整型）, Float（浮点型）, Boolean（布尔型）, Array（数组）, Object（对象）, NULL（空值）。
 
-**字符串**
+**String 字符串**
+
+一个字符串 string 就是由一系列的字符组成，其中每个字符等同于一个字节。这意味着 PHP 只能支持 256 的字符集，因此不支持 Unicode 。
 
 一个字符串是一串字符的序列，就像 "Hello world!"。
 
