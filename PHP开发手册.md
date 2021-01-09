@@ -712,5 +712,13 @@ NULL 值指明一个变量是否为空值。 同样可用于数据空值和NULL�
 可以通过设置变量值为 NULL 来清空变量数据：
 
 ``` php
+<?php
+$x="Hello world!";
+$x=null;
+var_dump($x);
+?>
 
+/*
+输出：NULL
+*/
 ```
