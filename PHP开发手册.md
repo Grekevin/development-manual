@@ -623,10 +623,35 @@ $y=false;
 
 **数组**
 
-数组可以在一个变量中存储多个值。
+数组可以在一个变量中存储多个值(同种类型或不同类型)。
 
 代码示例：
 
 ``` php
+<?php 
+$names=array("Jim","Tom","Canot");	//同种类型的数据
+echo "names:";
+echo "<br>";
+var_dump($names);
 
+$ages = array(23, 15, "Tom");	//不同类型的数据
+echo "ages:";
+echo "<br>";
+var_dump($ages);
+?>
+
+/*
+环境：Wampserver64 + php7
+输出:
+names:
+array (size=3)
+  0 => string 'Jim' (length=3)
+  1 => string 'Tom' (length=3)
+  2 => string 'Canot' (length=5)
+ages:
+array (size=3)
+  0 => int 23
+  1 => int 15
+  2 => string 'Tom' (length=3)
+*/
 ```
