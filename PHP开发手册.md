@@ -616,6 +616,10 @@ $text = "最棒";
 echo strlen($name);		//8
 echo "<br>";
 echo strlen($text);		//6 一个汉字3个字节
+echo "<br>";
+
+// 使用 mb_strlen 设置指定编码输出中文字符个数
+echo mb_strlen("中文字符",'utf-8');  // 输出 4
 ?>
 ```
 **strpos() 函数**
