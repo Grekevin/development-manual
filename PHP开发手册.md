@@ -804,7 +804,7 @@ false === null: bool(false)
 "" === null: bool(false)
 ```
 
-![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/mutil-type-compare.png)
+[多类型比较规则](https://www.php.net/manual/zh/language.operators.comparison.php)
 
-![false null 0 比较](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/false-null-0.png)
+[PHP类型比较表](https://www.php.net/manual/zh/types.comparisons.php)
 
