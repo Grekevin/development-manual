@@ -674,7 +674,8 @@ class Car
 {
     var $color;
     function __construct($color="green") {
-      $this->color = $color;
+      //关键字this就是指向当前对象实例的指针，不指向任何其他对象或类。
+	  $this->color = $color;	
     }
     function what_color() {
       return $this->color;
