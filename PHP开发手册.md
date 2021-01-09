@@ -862,10 +862,44 @@ define('LOG','OPEN');//定义常量，常量使用不能添加$
 echo $LOG;	//Notice: Undefined variable: LOG in C:\wamp64\www\test.php on line 3
 ?>
 ```
+使用常量不能使用单引号或双引号：
+
+``` php
+<?php
+define("NAME", "GREKEVIN");
+echo NAME;	//GREKEVIN 
+echo "<br>";
+
+/*
+使用常量不能在常量名上使用双引号或单引号
+因为使用常量不能使用$，加上引号无法区分是字符串还是常量
+*/
+
+echo "NAME"; //NAME 
+echo "<br>";
+echo 'NAME'; //NAME
+echo "<br>";
+?>
+```
+
 **常量是全局的**
 
 常量在定义后，默认是全局变量，可以在整个运行的脚本的任何地方使用。
 
 ``` php
+<?php
+define("NAME", "GREKEVIN");
+echo NAME;	//GREKEVIN 
 
+function test(){
+	define("AGE", 16);
+	echo NAME;	//GREKEVIN 函数内可以访问全局常量NAME
+	echo "<br>";
+	echo AGE;	//16	//访问局部常量AGE
+}
+echo "<br>";
+// echo AGE;	//报错，函数内定义的常量，只能在函数局部作用域内访问到
+
+test();
+?>
 ```
