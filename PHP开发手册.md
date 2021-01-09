@@ -610,8 +610,16 @@ echo $name . "你" . $text; 		//grekevin你最棒!
 strlen() 函数返回字符串的长度（字节数）。
 
 ``` php
-
+<?php
+$name = "grekevin";
+$text = "最棒";
+echo strlen($name);		//8
+echo "<br>";
+echo strlen($text);		//6 一个汉字3个字节
+?>
 ```
+
+
 
 
 #### Integer 整型
