@@ -804,7 +804,7 @@ false === null: bool(false)
 "" === null: bool(false)
 ```
 
-![多类型比较规则](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/mutil-type-compare.png)
+![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/mutil-type-compare.png)
 
 ![false null 0 比较](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/false-null-0.png)
 
