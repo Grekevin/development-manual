@@ -631,6 +631,8 @@ strpos() 函数用于*在字符串内查找一个字符或一段指定的文本*
 
 如果在字符串中找到匹配，该函数会返回第一个匹配的字符位置。如果未找到匹配，则返回 FALSE。
 
+> strpos() 返回的不是第一匹配的字符会的下标，是按照字符数量来算。
+
 示例代码：
 
 ``` php
@@ -639,6 +641,10 @@ $text = "hello grekevin";
 echo strpos($text, "e"); 	//1 返回e在查找字符串中第一个出现的位置
 echo "<br>";
 echo strpos($text, "grekevin"); //6
+echo "<br>";
+
+//一个中文字符在 UTF-8 下是 3 个字符长度，在 gbk 下是2个字符长度。
+echo strpos("hello和grekevin", "grekvin");		//8
 ?>
 ```
 
