@@ -517,5 +517,34 @@ echo $a;
 
 > String（字符串）, Integer（整型）, Float（浮点型）, Boolean（布尔型）, Array（数组）, Object（对象）, NULL（空值）。
 
+**字符串**
 
+一个字符串是一串字符的序列，就像 "Hello world!"。
+
+放在在单引号和双引号中的任何文本内容都叫字符串。
+
+代码示例：
+
+``` php
+<?php
+<?php 
+echo "Hello world!";	//双引号包括
+echo "<br>"; 
+echo 'Hello world!';	//单引号包括
+echo "<br>";
+echo "H";	//单个字符
+echo '<br>';
+echo 'H';
+?>
+
+/*
+输出内容：
+
+Hello world!
+Hello world!
+H
+H
+*/
+?>
+```
 
