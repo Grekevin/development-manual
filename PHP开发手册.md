@@ -705,7 +705,7 @@ herbie: Properties: color = white
 
 **NULL 值**
 
-NULL 值表示变量没有值。NULL 是数据类型为 NULL 的值。
+NULL 值表示变量没有值。NULL 是数据类型为 NULL 的值，也是NULL类型唯一的值。
 
 NULL 值指明一个变量是否为空值。 同样可用于数据空值和NULL值的区别。
 
