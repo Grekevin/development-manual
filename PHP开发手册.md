@@ -6,6 +6,7 @@
 		* [PHP变量](#php变量)
 		* [PHP echo 和 print 语句](#php-echo-和-print-语句)
 		* [PHP EOF(heredoc) 使用说明](#php-eofheredoc-使用说明)
+		* [数据类型](#数据类型)
 
 # PHP开发手册
 ## PHP基础知识
