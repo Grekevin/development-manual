@@ -669,5 +669,35 @@ array (size=3)
 代码示例：
 
 ``` php
+<?php
+class Car
+{
+    var $color;
+    function __construct($color="green") {
+      $this->color = $color;
+    }
+    function what_color() {
+      return $this->color;
+    }
+}
 
+function print_vars($obj) {
+   foreach (get_object_vars($obj) as $prop => $val) {
+     echo "\t$prop = $val\n";
+   }
+}
+
+// 实例一个对象
+$herbie = new Car("white");
+
+// 显示 herbie 属性
+echo "herbie: Properties: ";
+print_vars($herbie);
+?>
+
+/*
+环境：Wampserver64 + php7
+输出:
+herbie: Properties: color = white
+*/
 ```
