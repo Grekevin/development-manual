@@ -1008,3 +1008,8 @@ var_dump(intdiv(10, 3));	//int(3)
 
 自 PHP 5.3 起，可以省略三元运算符中间那部分。表达式 expr1 ?: expr3 在 expr1 求值为 TRUE 时返回 expr1，否则返回 expr3。
 
+以下实例中通过判断 $\_GET 请求中含有 user 值，如果有返回 $\_GET['user']，否则返回 nobody：
+
+``` php
+
+```
