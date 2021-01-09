@@ -854,4 +854,12 @@ define("GREETING", "欢迎访问 Runoob.com", true);
 echo greeting;  // 输出 "欢迎访问 Runoob.com"
 ?>
 ```
+使用常量时，不能在常量名前添加$ 符号，不然会将常量转换成新的未定义变量使用，会导致报错。
+
+``` php
+<?php
+define('LOG','OPEN');//定义常量，常量使用不能添加$
+echo $LOG;	//Notice: Undefined variable: LOG in C:\wamp64\www\test.php on line 3
+?>
+```
 
