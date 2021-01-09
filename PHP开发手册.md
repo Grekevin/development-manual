@@ -823,3 +823,21 @@ false === null: bool(false)
 
 [PHP类型比较表](https://www.php.net/manual/zh/types.comparisons.php)
 
+### PHP 5 常量
+
+常量是一个简单值的标识符，被定义后，在脚本的其他任何地方都不能改变常量的值。
+
+一个常量由英文字母、下划线、和数字组成,但数字不能作为首字母出现。 (常量名不需要加 $ 修饰符)。
+
+> **注意：** 常量在整个脚本中都可以使用。
+
+设置常量，使用 define() 函数，函数语法如下：
+
+> bool define ( string $name , mixed $value [, bool $case_insensitive = false ] )
+
+该函数有三个参数:
+
+ - name：必选参数，常量名称，即标志符。
+ - value：必选参数，常量的值。
+ - case_insensitive ：可选参数，如果设置为 TRUE，该常量则大小写不敏感。默认是大小写敏感的。
+
