@@ -217,7 +217,7 @@ $y;
 echo $y; // Notice: Undefined variable: x in C:\wamp64\www\test.php on line 3
 ?>
 
-//定义变量（定义包括赋值）
+//定义变量（定义包括声明）
 $z = 20;
 echo $z;	//20
 ```
