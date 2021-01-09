@@ -605,9 +605,11 @@ echo "<br>";
 echo $name . "你" . $text; 		//grekevin你最棒!
 ?>
 ```
-**strlen() 函数**
+**strlen()和mb_strlen()函数**
 
 strlen() 函数返回*字符串的长度（字节数）*。
+
+mb_strlen() 函数返回*字符串的长度（字符数）*，与 strlen 不同，它可以通过设置字符编码从而返回对应的字符数，很好的处理了中文字符串的长度问题。
 
 ``` php
 <?php
@@ -615,11 +617,12 @@ $name = "grekevin";
 $text = "最棒";
 echo strlen($name);		//8
 echo "<br>";
-echo strlen($text);		//6 一个汉字3个字节
+echo strlen($text);		//6 php默认编码的一个中文占3个字节
 echo "<br>";
 
-// 使用 mb_strlen 设置指定编码输出中文字符个数
-echo mb_strlen("中文字符",'utf-8');  // 输出 4
+// 使用 mb_strlen 设置指定编码的字符个数
+echo mb_strlen("grekeivn", "utf-8")		//8
+echo mb_strlen("最棒","utf-8");  	    // 输出 2
 ?>
 ```
 **strpos() 函数**
