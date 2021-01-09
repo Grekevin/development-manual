@@ -781,3 +781,26 @@ if(42 === "42") {
 
 **PHP中 比较 0、false、null**
 
+``` php
+0 == false: bool(true)
+0 === false: bool(false)
+
+0 == null: bool(true)
+0 === null: bool(false)
+
+false == null: bool(true)
+false === null: bool(false)
+
+"0" == false: bool(true)
+"0" === false: bool(false)
+
+"0" == null: bool(false)
+"0" === null: bool(false)
+
+"" == false: bool(true)
+"" === false: bool(false)
+
+"" == null: bool(true)
+"" === null: bool(false)
+```
+
