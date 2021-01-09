@@ -607,7 +607,7 @@ echo $name . "你" . $text; 		//grekevin你最棒!
 ```
 **strlen() 函数**
 
-strlen() 函数返回==字符串的长度（字节数） #E91E63==。
+strlen() 函数返回*字符串的长度（字节数）*。
 
 ``` php
 <?php
