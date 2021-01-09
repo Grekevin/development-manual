@@ -644,8 +644,8 @@ float(8.0E-5)
 要指定一个布尔值，使用常量 true 或 false。两个都不区分大小写。
 
 ``` php
-$x=true;
-$y=false;
+$x = true;	//设置 $x 的值为 TRUE
+$y = false;	//设置 $y 的值为 FALSE
 ```
 
 **数组**
