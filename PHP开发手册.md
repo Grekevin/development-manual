@@ -1076,9 +1076,39 @@ echo "a" <=> "b"; // -1
 echo "b" <=> "a"; // 1
 ?>
 ```
+**数组联合**
 
 如果两个数组他们的 key 值相同它的返回值会使用第一个数组的 value 值，如果其 key 值不同将会将他们拼接:
 
 ``` php
+<?php 
+$ly = array("idl" => '1',"usernamel" => 'ly');
+$ngcx = array("idn" => '2',"usernamen" => 'ngcx');
+var_dump($ly+$ngcx);
+echo PHP_EOL;
+$ly = array("id" => '1',"username" => 'ly');
+$ngcx = array("id" => '2',"username" => 'ngcx');
+var_dump($ly+$ngcx);
+?>
 
+/*
+输出:
+array(4) {
+    ["idl"]=>
+    string(1) "1"
+    ["usernamel"]=>
+    string(2) "ly"
+    ["idn"]=>
+    string(1) "2"
+    ["usernamen"]=>
+    string(4) "ngcx"
+  }
+  
+  array(2) {
+    ["id"]=>
+    string(1) "1"
+    ["username"]=>
+    string(2) "ly"
+  } 
+*/
 ```
