@@ -597,7 +597,13 @@ H
 代码示例：
 
 ``` php
-
+<?php
+$name = "grekevin";
+$text = "最棒!";
+echo $name . $text; 	//grekevin最棒!
+echo "<br>";
+echo $name . "你" . $text; 		//grekevin你最棒!
+?>
 ```
 
 
