@@ -30,3 +30,5 @@ background-position 属性设置背景图像（由 background-image 定义）的
 
 > 提示：您需要把 background-attachment 属性设置为 "fixed"，才能保证该属性在 Firefox 和 Opera 中正常工作。
 
+#### background-color 属性
+
