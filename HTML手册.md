@@ -78,5 +78,12 @@ background-color 属性为元素设置一种纯色。这种颜色会填充元素
 
 ### CSS 伪类
 
-#### 
+#### :link :visited : hover : active
+
+``` css
+a:link {color: #FF0000}     /* 未访问的链接 */
+a:visited {color: #00FF00}  /* 已访问的链接 */
+a:hover {color: #FF00FF}    /* 当有鼠标悬停在链接上 */
+a:active {color: #0000FF}   /* 被选择的链接 */
+```
 
