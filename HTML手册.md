@@ -27,6 +27,13 @@
 name='Bill "HelloWorld" Gates'
 ```
 
+**不要忘记结束标签**
+
+即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来。
+
+
+
+
 ### background 属性
 
 #### background-image 属性
