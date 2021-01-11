@@ -24,3 +24,5 @@
 > 
 > background-repeat 属性设置是否及如何重复背景图像。默认地，背景图像在水平和垂直方向上重复。
 
+#### background-position 属性
+
