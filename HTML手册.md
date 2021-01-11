@@ -73,6 +73,14 @@ background-position 属性设置背景图像（由 background-image 定义）的
 
 > 提示：您需要把 background-attachment 属性设置为 "fixed"，才能保证该属性在 Firefox 和 Opera 中正常工作。
 
+为 background-position 属性提供值有很多方法。首先，可以使用一些关键字：top、bottom、left、right 和 center。通常，这些关键字会成对出现，不过也不总是这样。还可以使用长度值，如 100px 或 5cm，最后也可以使用百分数值。不同类型的值对于背景图像的放置稍有差异。
+
+图像放置关键字最容易理解，其作用如其名称所表明的。例如，top right 使图像放置在元素内边距区的右上角。
+
+根据规范，位置关键字可以按任何顺序出现，只要保证不超过两个关键字 - 一个对应水平方向，另一个对应垂直方向。
+
+如果只出现一个关键字，则认为另一个关键字是 center。
+
 #### background-color 属性
 
 **定义和用法**
@@ -88,6 +96,10 @@ background-color 属性为元素设置一种纯色。这种颜色会填充元素
 尽管在大多数情况下，没有必要使用 transparent。不过如果您不希望某元素拥有背景色，同时又不希望用户对浏览器的颜色设置影响到您的设计，那么设置 transparent 值还是有必要的。
 
 > background-color 不能继承，其默认值是 transparent。transparent 有“透明”之意。也就是说，如果一个元素没有指定背景色，那么背景就是透明的，这样其祖先元素的背景才能可见。
+
+#### background-image 属性
+
+background-image 也不能继承。事实上，所有背景属性都不能继承。
 
 ### color 属性
 
