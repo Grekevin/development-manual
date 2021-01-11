@@ -6,7 +6,9 @@
 
 ## 属性
 
-### background-image 属性
+#### background 属性
+
+#### background-image 属性
 
 **定义和用法**
 
