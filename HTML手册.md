@@ -32,3 +32,14 @@ background-position 属性设置背景图像（由 background-image 定义）的
 
 #### background-color 属性
 
+**定义和用法**
+
+background-color 属性设置元素的背景颜色。
+
+**元素背景的范围**
+
+background-color 属性为元素设置一种纯色。这种颜色会填充元素的内容、内边距和边框区域，扩展到元素边框的外边界（但不包括外边距）。如果边框有透明部分（如虚线边框），会透过这些透明部分显示出背景色。
+
+**transparent 值**
+
+尽管在大多数情况下，没有必要使用 transparent。不过如果您不希望某元素拥有背景色，同时又不希望用户对浏览器的颜色设置影响到您的设计，那么设置 transparent 值还是有必要的。
