@@ -138,7 +138,6 @@ form elements
 ```
 下面是 <form> 属性的列表：
 
-![form 属性](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610349843904.png)
 
 
 
