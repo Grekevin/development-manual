@@ -109,6 +109,19 @@ background-color 属性为元素设置一种纯色。这种颜色会填充元素
 
 #### font 属性
 
+font-family、color 以及 font-size 属性分别定义元素中文本的字体系列、颜色和字体尺寸：
+
+``` html
+<html>
+
+<body>
+<h1 style="font-family:verdana">A heading</h1>
+<p style="font-family:arial;color:red;font-size:20px;">A paragraph.</p>
+</body>
+
+</html>
+```
+
 
 
 
