@@ -75,6 +75,17 @@ background-position 的默认值是 0% 0%，在功能上相当于 top left。这
 
 > 提示：您需要把 background-attachment 属性设置为 "fixed"，才能保证该属性在 Firefox 和 Opera 中正常工作。
 
+**关键字**
+
+``` css
+p
+  { 
+    background-image:url('bgimg.gif');
+    background-repeat:no-repeat;
+    background-position:top;
+  }
+```
+
 为 background-position 属性提供值有很多方法。首先，可以使用一些关键字：top、bottom、left、right 和 center。通常，这些关键字会成对出现，不过也不总是这样。还可以使用长度值，如 100px 或 5cm，最后也可以使用百分数值。不同类型的值对于背景图像的放置稍有差异。
 
 图像放置关键字最容易理解，其作用如其名称所表明的。例如，top right 使图像放置在元素内边距区的右上角。
@@ -82,6 +93,8 @@ background-position 的默认值是 0% 0%，在功能上相当于 top left。这
 根据规范，位置关键字可以按任何顺序出现，只要保证不超过两个关键字 - 一个对应水平方向，另一个对应垂直方向。
 
 如果只出现一个关键字，则认为另一个关键字是 center。
+
+
 
 #### background-color 属性
 
