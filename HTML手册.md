@@ -435,3 +435,4 @@ h1 {border-width: 20px;}
 由于 border-style 的默认值是 none，如果没有声明样式，就相当于 border-style: none。
 
 > 因此，如果您希望边框出现，就必须声明一个边框样式。
+
