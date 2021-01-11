@@ -31,6 +31,12 @@ name='Bill "HelloWorld" Gates'
 
 即使忘了使用结束标签，大多数浏览器也会正确地将 HTML 显示出来。
 
+通过结束标签来关闭 HTML 是一种经得起未来考验的 HTML 编写方法。清楚地标记某个元素在何处开始，并在何处结束，不论对您还是对浏览器来说，都会使代码更容易理解。
+
+``` html
+<p>This is a paragraph
+<p>This is another paragraph
+```
 
 
 
