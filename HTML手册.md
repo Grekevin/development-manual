@@ -310,6 +310,11 @@ a:active {color: #0000FF}   /* 被选择的链接 */
 
 > 注释：Pseudo-class（伪类）的名称对大小写不敏感。
 
+当为链接的不同状态设置样式时，请按照以下次序规则：
+
+ - a:hover 必须位于 a:link 和 a:visited 之后
+ - a:active 必须位于 a:hover 之后
+
 **伪类可与 CSS 类配合使用：**
 
 ``` html
