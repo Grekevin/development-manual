@@ -398,4 +398,4 @@ a.red:visited {color: #FF0000;}
 *   border : 边框。
 *   margin : 外边距，也有资料将其翻译为空白或空白边。
 
-在 w3school，我们把 padding 和 margin 统一地称为内边距和外边距。边框内的空白是内边距，边框外的空白是外边距，很容易记吧：）
+在 w3school，我们把 padding 和 margin 统一地称为内边距和外边距。边框内的空白是内边距，边框外的空白是外边距。
