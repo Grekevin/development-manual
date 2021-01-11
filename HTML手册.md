@@ -37,6 +37,9 @@ name='Bill "HelloWorld" Gates'
 <p>This is a paragraph
 <p>This is another paragraph
 ```
+上面的例子在大多数浏览器中都没问题，但不要依赖这种做法。忘记使用结束标签会产生意想不到的结果和错误。
+
+> 注释：在未来的 HTML 版本中，不允许省略结束标签。
 
 
 
