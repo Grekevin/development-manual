@@ -282,6 +282,13 @@ p {font-size:0.875em;} /* 14px/16=0.875em */
 
 在所有浏览器中均有效的方案是为 body 元素（父元素）以百分比设置默认的 font-size 值：
 
+``` css
+body {font-size:100%;}
+h1 {font-size:3.75em;}
+h2 {font-size:2.5em;}
+p {font-size:0.875em;}
+```
+
 
 
 
