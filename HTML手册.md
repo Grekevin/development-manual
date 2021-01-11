@@ -98,6 +98,15 @@ p
 
 百分数值的表现方式更为复杂。假设你希望用百分数值将图像在其元素中居中，这很容易：
 
+``` css
+body
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+  }
+```
+
 
 
 #### background-color 属性
