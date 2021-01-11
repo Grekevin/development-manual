@@ -248,6 +248,12 @@ font-size 值可以是绝对或相对值。
 
 通过像素设置文本大小，可以对文本大小进行完全控制：
 
+``` css
+h1 {font-size:60px;}
+h2 {font-size:40px;}
+p {font-size:14px;}
+```
+
 
 
 
