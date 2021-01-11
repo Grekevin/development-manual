@@ -122,6 +122,20 @@ font-family、color 以及 font-size 属性分别定义元素中文本的字体�
 </html>
 ```
 
+#### Form 属性
+
+HTML <form> 元素，已设置所有可能的属性，是这样的：
+
+实例：
+
+``` html
+<form action="action_page.php" method="GET" target="_blank" accept-charset="UTF-8"
+ectype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+.
+form elements
+ .
+</form> 
+```
 
 
 
