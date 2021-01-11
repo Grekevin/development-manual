@@ -1,7 +1,20 @@
 * [HTML手册](#html手册)
 	* [属性](#属性)
+		* [规范](#规范)
 		* [background 属性](#background-属性)
 			* [background-image 属性](#background-image-属性)
+			* [background-position 属性](#background-position-属性)
+			* [background-color 属性](#background-color-属性)
+			* [background-image 属性](#background-image-属性)
+		* [color 属性](#color-属性)
+			* [style 属性](#style-属性)
+			* [font 属性](#font-属性)
+			* [Form 属性](#form-属性)
+		* [CSS](#css)
+			* [:link :visited : hover : active](#link-visited-hover-active)
+		* [HTML 元素](#html-元素)
+			* [折行](#折行)
+			* [URL 编码](#url-编码)
 
 # HTML手册
 
@@ -211,6 +224,11 @@ form elements
 下面是 `<form>` 属性的列表：
 
 ![form 属性](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610349843904.png)
+
+#### font-size 属性
+
+
+
 
 
 ### CSS
