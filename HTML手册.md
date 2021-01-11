@@ -121,3 +121,9 @@ a.red:visited {color: #FF0000;}
 
 #### 折行
 
+如果您希望在不产生一个新段落的情况下进行换行（新行），请使用 <br /> 标签：
+
+``` html
+<p>This is<br />a para<br />graph with line breaks</p>
+```
+
