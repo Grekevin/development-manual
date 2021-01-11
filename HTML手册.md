@@ -124,7 +124,7 @@ font-family、color 以及 font-size 属性分别定义元素中文本的字体�
 
 #### Form 属性
 
-HTML <form> 元素，已设置所有可能的属性，是这样的：
+HTML `<form>` 元素，已设置所有可能的属性，是这样的：
 
 实例：
 
@@ -136,9 +136,9 @@ form elements
  .
 </form> 
 ```
-下面是 <form> 属性的列表：
+下面是 `<form>` 属性的列表：
 
-
+![form 属性](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610349843904.png)
 
 
 ### CSS
