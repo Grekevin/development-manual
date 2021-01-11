@@ -93,3 +93,11 @@ a:active {color: #0000FF}   /* 被选择的链接 */
 
 > 注释：Pseudo-class（伪类）的名称对大小写不敏感。
 
+**伪类可与 CSS 类配合使用：**
+
+``` html
+a.red:visited {color: #FF0000;}
+
+<a class="red" href="css_syntax.asp">CSS Syntax</a>
+```
+
