@@ -227,6 +227,8 @@ form elements
 
 #### font-size 属性
 
+font-size 属性设置文本的大小。
+
 
 
 
