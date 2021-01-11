@@ -440,3 +440,30 @@ h1 {border-width: 20px;}
 
 默认的边框颜色是元素本身的前景色。如果没有为边框声明颜色，它将与元素的文本颜色相同。另一方面，如果元素没有任何文本，假设它是一个表格，其中只包含图像，那么该表的边框颜色就是其父元素的文本颜色（因为 color 可以继承）。这个父元素很可能是 body、div 或另一个 table。
 
+**透明边框**
+
+如果边框没有样式，就没有宽度。不过有些情况下您可能希望创建一个不可见的边框。
+
+CSS2 引入了边框颜色值 transparent。这个值用于创建有宽度的不可见边框。请看下面的例子：
+
+``` html
+<a href="#">AAA</a>
+<a href="#">BBB</a>
+<a href="#">CCC</a>
+```
+
+我们为上面的链接定义了如下样式：
+
+``` css
+a:link, a:visited {
+  border-style: solid;
+  border-width: 5px;
+  `border-color: transparent;`
+  }
+a:hover {border-color: gray;}
+```
+
+从某种意义上说，利用 transparent，使用边框就像是额外的内边距一样；此外还有一个好处，就是能在你需要的时候使其可见。这种透明边框相当于内边距，因为元素的背景会延伸到边框区域（如果有可见背景的话）。
+
+> 重要事项：在 IE7 之前，IE/WIN 没有提供对 transparent 的支持。在以前的版本，IE 会根据元素的 color 值来设置边框颜色。
+
