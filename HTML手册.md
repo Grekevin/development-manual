@@ -112,6 +112,15 @@ body
 
 因此，如果你想把一个图像放在水平方向 2/3、垂直方向 1/3 处，可以这样声明：
 
+``` css
+body
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:66% 33%;
+  }
+```
+
 
 
 #### background-color 属性
