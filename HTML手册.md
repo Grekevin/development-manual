@@ -122,6 +122,21 @@ body
 ```
 如果只提供一个百分数值，所提供的这个值将用作水平值，垂直值将假设为 50%。这一点与关键字类似。
 
+**长度值**
+
+长度值解释的是元素内边距区左上角的偏移。偏移点是图像的左上角。
+
+比如，如果设置值为 50px 100px，图像的左上角将在元素内边距区左上角向右 50 像素、向下 100 像素的位置上：
+
+``` css
+body
+  { 
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:50px 100px;
+  }
+```
+
 
 
 #### background-color 属性
