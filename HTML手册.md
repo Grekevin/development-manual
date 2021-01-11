@@ -297,6 +297,15 @@ p {font-size:0.875em;}
 
 #### :link :visited : hover : active
 
+链接的特殊性在于能够根据它们所处的状态来设置它们的样式。
+
+链接的四种状态：
+
+ - a:link - 普通的、未被访问的链接
+ - a:visited - 用户已访问的链接
+ - a:hover - 鼠标指针位于链接的上方
+ - a:active - 链接被点击的时刻
+
 ``` css
 a:link {color: #FF0000}     /* 未访问的链接 */
 a:visited {color: #00FF00}  /* 已访问的链接 */
