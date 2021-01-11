@@ -268,6 +268,12 @@ p {font-size:14px;}
 
 > （注：16 等于父元素的默认字体大小，假设父元素的 font-size 为 20px，那么公式需改为：pixels/20=em）
 
+``` css
+h1 {font-size:3.75em;} /* 60px/16=3.75em */
+h2 {font-size:2.5em;}  /* 40px/16=2.5em */
+p {font-size:0.875em;} /* 14px/16=0.875em */
+```
+
 
 
 
