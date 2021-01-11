@@ -87,3 +87,9 @@ a:hover {color: #FF00FF}    /* 当有鼠标悬停在链接上 */
 a:active {color: #0000FF}   /* 被选择的链接 */
 ```
 
+> 注释：为了产生预期的效果，在 CSS 定义中，a:hover 必须位于 a:link 和 a:visited 之后！！
+
+> 注释：为了产生预期的效果，在 CSS 定义中，a:active 必须位于 a:hover 之后！！
+
+> 注释：Pseudo-class（伪类）的名称对大小写不敏感。
+
