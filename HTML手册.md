@@ -182,3 +182,4 @@ a.red:visited {color: #FF0000;}
  - 由于 URL 常常会包含 ASCII 集合之外的字符，URL 必须转换为有效的 ASCII 格式。
  - URL 编码使用 "%" 其后跟随两位的十六进制数来替换非 ASCII 字符。
  - URL 不能包含空格。URL 编码通常使用 + 来替换空格。
+
