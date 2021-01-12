@@ -723,3 +723,5 @@ CSS 定位属性允许你对元素进行定位。
 
 如何让包围元素在视觉上包围浮动元素呢？需要在这个元素中的某个地方应用 clear：
 
+![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610437571503.png)
+
