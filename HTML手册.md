@@ -328,7 +328,7 @@ position 属性规定元素的定位类型。
 
 **可能的值**
 
-
+![position取值](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610423714372.png)
 
 
 
