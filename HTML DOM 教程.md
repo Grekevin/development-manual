@@ -214,6 +214,9 @@ onload 事件可用于检查访客的浏览器类型和版本，以便基于这�
 
 onchange 事件常用于输入字段的验证。
 
+**onmouseover 和 onmouseout 事件**
+
+onmouseover 和 onmouseout 事件可用于在鼠标指针移动到或离开元素时触发函数。
 
 
 
