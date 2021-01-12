@@ -600,3 +600,5 @@ CSS 定位属性允许你对元素进行定位。
 | [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp) | 设置元素的垂直对齐方式。 |
 | [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp) | 设置元素的堆叠顺序。 |
 
+**相对定位**
+
