@@ -621,3 +621,5 @@ CSS 定位属性允许你对元素进行定位。
 
 ![relative](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610424916242.png)
 
+> 注意，在使用相对定位时，无论是否进行移动，元素仍然占据原来的空间。因此，移动元素会导致它覆盖其它框。
+
