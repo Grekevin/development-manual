@@ -600,7 +600,7 @@ CSS 定位属性允许你对元素进行定位。
 | [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp) | 设置元素的垂直对齐方式。 |
 | [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp) | 设置元素的堆叠顺序。 |
 
-**相对定位**
+#### 相对定位
 
 > 设置为相对定位的元素框会偏移某个距离。元素仍然保持其未定位前的形状，它原本所占的空间仍保留。
 
@@ -622,4 +622,6 @@ CSS 定位属性允许你对元素进行定位。
 ![relative](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610424916242.png)
 
 > 注意，在使用相对定位时，无论是否进行移动，元素仍然占据原来的空间。因此，移动元素会导致它覆盖其它框。
+
+#### 绝对定位
 
