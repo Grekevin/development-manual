@@ -57,6 +57,13 @@ HTML DOM 定义了所有 HTML 元素的对象和属性，以及访问它们的�
 
 ![节点关系](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610461581182.png)
 
+**DOM 根节点**
+
+这里有两个特殊的属性，可以访问全部文档：
+
+ - document.documentElement - 全部文档
+ - document.body - 文档的主体
+
 ### HTML DOM 方法
 
 方法是我们可以在节点（HTML 元素）上执行的动作。
