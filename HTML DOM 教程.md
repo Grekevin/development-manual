@@ -113,3 +113,9 @@ nodeValue 属性规定节点的值。
  - 文本节点的 nodeValue 是文本本身
  - 属性节点的 nodeValue 是属性值
 
+**nodeType 属性**
+
+nodeType 属性返回节点的类型。nodeType 是只读的。
+
+比较重要的节点类型有：
+
