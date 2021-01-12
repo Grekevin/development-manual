@@ -693,3 +693,5 @@ CSS 定位属性允许你对元素进行定位。
 
 为了实现这种效果，在被清理的元素的_上外边距_上添加足够的空间，使元素的顶边缘垂直下降到浮动框下面：
 
+![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610425924904.png)
+
