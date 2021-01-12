@@ -725,3 +725,58 @@ CSS 定位属性允许你对元素进行定位。
 
 ![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610437571503.png)
 
+不幸的是出现了一个新的问题，由于没有现有的元素可以应用清理，所以我们只能添加一个空元素并且清理它。
+
+``` stylus
+.news {
+  background-color: gray;
+  border: solid 1px black;
+  }
+
+.news img {
+  float: left;
+  }
+
+.news p {
+  float: right;
+  }
+
+.clear {
+  clear: both;
+  }
+
+<div class="news">
+<img src="news-pic.jpg" />
+<p>some text</p>
+`<div class="clear"></div>`
+</div>
+```
+
+这样可以实现我们希望的效果，但是需要添加多余的代码。常常有元素可以应用 clear，但是有时候不得不为了进行布局而添加无意义的标记。
+
+不过我们还有另一种办法，那就是对容器 div 进行浮动：
+
+``` css
+.news {
+  background-color: gray;
+  border: solid 1px black;
+  `float: left;`
+  }
+
+.news img {
+  float: left;
+  }
+
+.news p {
+  float: right;
+  }
+
+<div class="news">
+<img src="news-pic.jpg" />
+<p>some text</p>
+</div>
+```
+
+这样会得到我们希望的效果。不幸的是，下一个元素会受到这个浮动元素的影响。为了解决这个问题，有些人选择对布局中的所有东西进行浮动，然后使用适当的有意义的元素（常常是站点的页脚）对这些浮动进行清理。这有助于减少或消除不必要的标记。
+
+事实上，W3School 站点上的所有页面都采用了这种技术，如果您打开我们使用 CSS 文件，您会看到我们对页脚的 div 进行了清理，而页脚上面的三个 div 都向左浮动。
