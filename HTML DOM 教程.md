@@ -86,3 +86,5 @@ HTML DOM 定义了所有 HTML 元素的对象和属性，以及访问它们的�
  - childNodes - 节点（元素）的子节点
  - attributes - 节点（元素）的属性节点
 
+**一些 DOM 对象方法**
+
