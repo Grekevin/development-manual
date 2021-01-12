@@ -584,3 +584,19 @@ CSS 有三种基本的定位机制：普通流、浮动和绝对定位。
 
 行内框在一行中水平布置。可以使用水平内边距、边框和外边距调整它们的间距。但是，垂直内边距、边框和外边距不影响行内框的高度。由一行形成的水平框称为行框（Line Box），行框的高度总是足以容纳它包含的所有行内框。不过，设置行高可以增加这个框的高度。
 
+## CSS 定位属性
+
+CSS 定位属性允许你对元素进行定位。
+
+| 属性 | 描述 |
+| --- | --- |
+| [position](https://www.w3school.com.cn/cssref/pr_class_position.asp) | 把元素放置到一个静态的、相对的、绝对的、或固定的位置中。 |
+| [top](https://www.w3school.com.cn/cssref/pr_pos_top.asp) | 定义了一个定位元素的上外边距边界与其包含块上边界之间的偏移。 |
+| [right](https://www.w3school.com.cn/cssref/pr_pos_right.asp) | 定义了定位元素右外边距边界与其包含块右边界之间的偏移。 |
+| [bottom](https://www.w3school.com.cn/cssref/pr_pos_bottom.asp) | 定义了定位元素下外边距边界与其包含块下边界之间的偏移。 |
+| [left](https://www.w3school.com.cn/cssref/pr_pos_left.asp) | 定义了定位元素左外边距边界与其包含块左边界之间的偏移。 |
+| [overflow](https://www.w3school.com.cn/cssref/pr_pos_overflow.asp) | 设置当元素的内容溢出其区域时发生的事情。 |
+| [clip](https://www.w3school.com.cn/cssref/pr_pos_clip.asp) | 设置元素的形状。元素被剪入这个形状之中，然后显示出来。 |
+| [vertical-align](https://www.w3school.com.cn/cssref/pr_pos_vertical-align.asp) | 设置元素的垂直对齐方式。 |
+| [z-index](https://www.w3school.com.cn/cssref/pr_pos_z-index.asp) | 设置元素的堆叠顺序。 |
+
