@@ -55,3 +55,5 @@ HTML DOM 定义了所有 HTML 元素的对象和属性，以及访问它们的�
 
 下面的图片展示了节点树的一部分，以及节点之间的关系：
 
+![节点关系](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1610461581183]]]" )
+
