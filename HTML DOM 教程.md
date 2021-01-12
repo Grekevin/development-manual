@@ -190,6 +190,20 @@ HTML 事件的例子：
  - 当 HTML 表单被提交时
  - 当用户触发按键时
 
+**HTML 事件属性**
+
+``` html
+<button onclick="displayDate()">试一试</button>
+```
+
+**使用 HTML DOM 来分配事件**
+
+``` javascript
+<script>
+document.getElementById("myBtn").onclick=function(){displayDate()};
+</script>
+```
+
 
 
 
