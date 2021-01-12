@@ -92,3 +92,16 @@ HTML DOM 定义了所有 HTML 元素的对象和属性，以及访问它们的�
 
 ### HTML DOM 属性
 
+属性是节点（HTML 元素）的值，您能够获取或设置。
+
+**nodeName 属性**
+
+nodeName 属性规定节点的名称。
+
+ - nodeName 是只读的
+ - 元素节点的 nodeName 与标签名相同
+ - 属性节点的 nodeName 与属性名相同
+ - 文本节点的 nodeName 始终是 #text
+ - 文档节点的 nodeName 始终是 #document
+ - 注释：nodeName 始终包含 HTML 元素的大写字母标签名。
+
