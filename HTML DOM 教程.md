@@ -119,3 +119,5 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 比较重要的节点类型有：
 
+![节点类型](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610462328422.png)
+
