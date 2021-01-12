@@ -20,3 +20,13 @@ W3C DOM 标准被分为 3 个不同的部分：
 
 > 编者注：DOM 是 Document Object Model（文档对象模型）的缩写。
 
+**HTML DOM 是：**
+
+ - HTML 的标准对象模型
+ - HTML 的标准编程接口
+ - W3C 标准
+
+HTML DOM 定义了所有 HTML 元素的对象和属性，以及访问它们的方法。
+
+换言之，HTML DOM 是关于如何获取、修改、添加或删除 HTML 元素的标准。
+
