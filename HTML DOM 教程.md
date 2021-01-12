@@ -204,6 +204,15 @@ document.getElementById("myBtn").onclick=function(){displayDate()};
 </script>
 ```
 
+**onload 和 onunload 事件**
+
+当用户进入或离开页面时，会触发 onload 和 onunload 事件。
+
+onload 事件可用于检查访客的浏览器类型和版本，以便基于这些信息来加载不同版本的网页。
+
+**onchange 事件**
+
+onchange 事件常用于输入字段的验证。
 
 
 
