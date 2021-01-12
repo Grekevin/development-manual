@@ -913,3 +913,16 @@ background-color:#b0e0e6;
 }
 ```
 
+### 使用 float 属性来进行左和右对齐
+
+对齐元素的另一种方法是使用 float 属性：
+
+``` css
+.right
+{
+float:right;
+width:300px;
+background-color:#b0e0e6;
+}
+```
+
