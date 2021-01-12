@@ -632,7 +632,7 @@ CSS 定位属性允许你对元素进行定位。
 普通流中其它元素的布局就像绝对定位的元素不存在一样：
 
 ``` css
-#box_relative {
+#box_absolute {
   position: absolute;
   left: 30px;
   top: 20px;
@@ -641,3 +641,4 @@ CSS 定位属性允许你对元素进行定位。
 
 如下图所示：
 
+![absolute](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610425064921.png)
