@@ -695,3 +695,7 @@ CSS 定位属性允许你对元素进行定位。
 
 ![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610425924904.png)
 
+这是一个有用的工具，它让周围的元素为浮动元素留出空间。
+
+让我们更详细地看看浮动和清理。假设希望让一个图片浮动到文本块的左边，并且希望这幅图片和文本包含在另一个具有背景颜色和边框的元素中。您可能编写下面的代码：
+
