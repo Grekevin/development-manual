@@ -218,6 +218,10 @@ onchange 事件常用于输入字段的验证。
 
 onmouseover 和 onmouseout 事件可用于在鼠标指针移动到或离开元素时触发函数。
 
+**onmousedown、onmouseup 以及 onclick 事件**
+
+onmousedown、onmouseup 以及 onclick 事件是鼠标点击的全部过程。首先当某个鼠标按钮被点击时，触发 onmousedown 事件，然后，当鼠标按钮被松开时，会触发 onmouseup 事件，最后，当鼠标点击完成时，触发 onclick 事件。
+
 
 
 
