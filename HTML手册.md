@@ -689,3 +689,7 @@ CSS 定位属性允许你对元素进行定位。
 
 ![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610425787444.png)
 
+要想阻止行框围绕浮动框，需要对该框应用 [clear 属性](https://www.w3school.com.cn/cssref/pr_class_clear.asp "CSS clear 属性")。clear 属性的值可以是 left、right、both 或 none，它表示框的哪些边不应该挨着浮动框。
+
+为了实现这种效果，在被清理的元素的_上外边距_上添加足够的空间，使元素的顶边缘垂直下降到浮动框下面：
+
