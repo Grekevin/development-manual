@@ -176,3 +176,8 @@ HTML DOM 允许您在事件发生时执行代码。
 
 这里提供一个常用的解决方法：找到您需要删除的子元素，然后使用 parentNode 属性来查找其父元素：
 
+``` javascript
+var child=document.getElementById("p1");
+child.parentNode.removeChild(child);
+```
+
