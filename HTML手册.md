@@ -699,3 +699,23 @@ CSS 定位属性允许你对元素进行定位。
 
 让我们更详细地看看浮动和清理。假设希望让一个图片浮动到文本块的左边，并且希望这幅图片和文本包含在另一个具有背景颜色和边框的元素中。您可能编写下面的代码：
 
+``` css
+.news {
+  background-color: gray;
+  border: solid 1px black;
+  }
+
+.news img {
+  float: left;
+  }
+
+.news p {
+  float: right;
+  }
+
+<div class="news">
+<img src="news-pic.jpg" />
+<p>some text</p>
+</div>
+```
+
