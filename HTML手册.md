@@ -668,6 +668,16 @@ CSS 定位属性允许你对元素进行定位。
 
 如下图所示，如果包含框太窄，无法容纳水平排列的三个浮动元素，那么其它浮动块向下移动，直到有足够的空间。如果浮动元素的高度不同，那么当它们向下移动时可能被其它浮动元素“卡住”：
 
-![enter description here](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1610425672692]]]" )
+![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610425672691.png)
+
+
+**可能的值**
+
+| 值 | 描述 |
+| --- | --- |
+| left | 元素向左浮动。 |
+| right | 元素向右浮动。 |
+| none | 默认值。元素不浮动，并会显示在其在文本中出现的位置。 |
+| inherit | 规定应该从父元素继承 float 属性的值。 |
 
 
