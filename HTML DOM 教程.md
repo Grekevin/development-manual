@@ -139,3 +139,5 @@ document.getElementById("main").getElementsByTagName("p");
 document.getElementsByClassName("intro");
 ```
 
+> 注释：getElementsByClassName() 在 Internet Explorer 5,6,7,8 中无效。
+
