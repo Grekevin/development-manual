@@ -121,3 +121,15 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 
 ![节点类型](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610462328422.png)
 
+下面的例子返回包含文档中所有 <p> 元素的列表：
+
+``` javascript
+document.getElementsByTagName("p");
+```
+
+下面的例子返回包含文档中所有 <p> 元素的列表，并且这些 <p> 元素应该是 id="main" 的元素的后代（子、孙等等）：
+
+``` js
+document.getElementById("main").getElementsByTagName("p");
+```
+
