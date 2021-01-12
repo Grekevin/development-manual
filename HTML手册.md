@@ -807,3 +807,7 @@ clear 属性定义了元素的哪边上不允许出现浮动元素。在 CSS1 �
 
 ### box-sizing 属性
 
+[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 中的 **`box-sizing` **属性定义了 [user agent](https://developer.mozilla.org/zh-CN/docs/Glossary/User_agent) 应该如何计算一个元素的总宽度和总高度。
+
+
+
