@@ -170,6 +170,16 @@ HTML DOM 允许您在事件发生时执行代码。
 
 HTML DOM 允许 JavaScript 对 HTML 事件作出反应。
 
+**对事件作出反应**
+
+当事件发生时，可以执行 JavaScript，比如当用户点击一个 HTML 元素时。
+
+如需在用户点击某个元素时执行代码，请把 JavaScript 代码添加到 HTML 事件属性中：
+
+``` javascript
+onclick=JavaScript
+```
+
 
 
 
