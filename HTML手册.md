@@ -932,3 +932,18 @@ background-color:#b0e0e6;
 
 当使用 float 属性时，IE8 以及更早的版本存在一个问题。如果省略 !DOCTYPE 声明，那么 IE8 以及更早的版本会在右侧增加 17px 的外边距。这似乎是为滚动条预留的空间。当使用 float 属性时，请始终设置 !DOCTYPE 声明：
 
+``` css
+body
+{
+margin:0;
+padding:0;
+}
+
+.right
+{
+float:right;
+width:300px;
+background-color:#b0e0e6;
+}
+```
+
