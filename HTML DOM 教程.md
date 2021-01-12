@@ -156,3 +156,13 @@ document.getElementsByClassName("intro");
  - 删除已有的 HTML 元素
  - 改变事件（处理程序）
 
+**使用事件**
+
+HTML DOM 允许您在事件发生时执行代码。
+
+当 HTML 元素”有事情发生“时，浏览器就会生成事件：
+
+ - 在元素上点击
+ - 加载页面
+ - 改变输入字段
+
