@@ -293,6 +293,10 @@ p {font-size:0.875em;}
 
 #### display 属性
 
+所有主流浏览器都支持 display 属性。
+
+> 注释：如果规定了 !DOCTYPE，则 Internet Explorer 8 （以及更高版本）支持属性值 "inline-table"、"run-in"、"table"、"table-caption"、"table-cell"、"table-column"、"table-column-group"、"table-row"、"table-row-group"、以及 "inherit"。
+
 
 
 
