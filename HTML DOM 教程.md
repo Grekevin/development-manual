@@ -133,3 +133,5 @@ document.getElementsByTagName("p");
 document.getElementById("main").getElementsByTagName("p");
 ```
 
+下面的例子返回包含 class="intro" 的所有元素的一个列表：
+
