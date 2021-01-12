@@ -859,3 +859,13 @@ Note: 对于新的web站点，你可能希望首先将box-sizing设置为border-
 
 把左和右外边距设置为 auto，规定的是均等地分配可用的外边距。结果就是居中的元素。
 
+``` css
+.center
+{
+margin-left:auto;
+margin-right:auto;
+width:70%;
+background-color:#b0e0e6;
+}
+```
+
