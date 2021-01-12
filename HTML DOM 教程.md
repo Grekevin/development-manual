@@ -4,6 +4,8 @@
 
 ![HTML DOM 树](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610461034647.png)
 
+通过 HTML DOM，树中的所有节点均可通过 JavaScript 进行访问。所有 HTML 元素（节点）均可被修改，也可以创建或删除节点。
+
 ### 什么是 DOM？
 
 DOM 是 W3C（万维网联盟）的标准。
