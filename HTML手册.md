@@ -314,9 +314,6 @@ display 属性规定元素应该生成的框的类型。
 ![display可能的值](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610422767727.png)
 
 
-
-
-
 ### CSS
 
 #### :link :visited : hover : active
