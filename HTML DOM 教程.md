@@ -168,6 +168,8 @@ HTML DOM 允许您在事件发生时执行代码。
 
 ### HTML DOM - 事件
 
+HTML DOM 允许 JavaScript 对 HTML 事件作出反应。
+
 
 
 
