@@ -619,3 +619,5 @@ CSS 定位属性允许你对元素进行定位。
 ```
 如下图所示：
 
+![relative](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610424916242.png)
+
