@@ -145,3 +145,14 @@ document.getElementsByClassName("intro");
 
 修改 HTML = 改变元素、属性、样式和事件。
 
+**修改 HTML 元素**
+
+修改 HTML DOM 意味着许多不同的方面：
+
+ - 改变 HTML 内容
+ - 改变 CSS 样式
+ - 改变 HTML 属性
+ - 创建新的 HTML 元素
+ - 删除已有的 HTML 元素
+ - 改变事件（处理程序）
+
