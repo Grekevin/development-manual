@@ -658,4 +658,6 @@ CSS 定位属性允许你对元素进行定位。
 
 请看下图，当把框 1 向右浮动时，它脱离文档流并且向右移动，直到它的右边缘碰到包含框的右边缘：
 
+![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610425573858.png)
+
 
