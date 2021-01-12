@@ -687,3 +687,5 @@ CSS 定位属性允许你对元素进行定位。
 
 因此，创建浮动框可以使文本围绕图像：
 
+![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610425787444.png)
+
