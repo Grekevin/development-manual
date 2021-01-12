@@ -660,4 +660,8 @@ CSS 定位属性允许你对元素进行定位。
 
 ![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610425573858.png)
 
+再请看下图，当框 1 向左浮动时，它脱离文档流并且向左移动，直到它的左边缘碰到包含框的左边缘。因为它不再处于文档流中，所以它不占据空间，实际上覆盖住了框 2，使框 2 从视图中消失。
+
+如果把所有三个框都向左移动，那么框 1 向左浮动直到碰到包含框，另外两个框向左浮动直到碰到前一个浮动框。
+
 
