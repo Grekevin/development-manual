@@ -752,3 +752,15 @@ for (x in person) {
 
 ### JavaScript While 循环
 
+只要条件为 true，循环能够一直执行代码块。
+
+while 循环会一直循环代码块，只要指定的条件为 true。
+
+语法
+
+``` javascript
+while (条件) {
+    要执行的代码块
+}
+```
+
