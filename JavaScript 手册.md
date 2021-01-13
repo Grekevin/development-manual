@@ -368,3 +368,52 @@ var carName = "porsche";
 
 > 提示：在脚本的开头声明所有变量是个好习惯！
 
+**一条语句，多个变量**
+
+可以在一条语句中声明许多变量。
+
+以 var 作为语句的开头，并以逗号分隔变量：
+
+``` js
+var person = "Bill Gates", carName = "porsche", price = 15000;
+```
+
+声明可横跨多行：
+
+``` javascript
+var person = "Bill Gates",
+carName = "porsche",
+price = 15000;
+```
+
+**Value = undefined**
+
+在计算机程序中，被声明的变量经常是不带值的。值可以是需被计算的内容，或是之后被提供的数据，比如数据输入。
+
+不带有值的变量，它的值将是 undefined。
+
+变量 carName 在这条语句执行后的值是 undefined：
+
+``` javascript
+var carName;		//undefined
+```
+
+**重复声明 JavaScript 变量**
+
+如果再次声明某个 JavaScript 变量，将不会丢它的值。
+
+在这两条语句执行后，变量 carName 的值仍然是 "porsche"：
+
+``` javascript
+var carName = "porsche";
+var carName; 
+```
+
+**字符串 +**
+
+``` javascript
+var x = "8" + 3 + 5;	//835
+
+var x = 3 + 5 + "8";	//88
+```
+
