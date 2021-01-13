@@ -78,3 +78,5 @@ JavaScript 文件的文件扩展名是 .js。
 <script src="myScript1.js"></script>
 ```
 
+### JavaScript 输出
+
