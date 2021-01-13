@@ -191,3 +191,7 @@ function myFunction() {
 
 JavaScript 语句常常通过某个关键词来标识需要执行的 JavaScript 动作。
 
+![保留字](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610509470640.png)
+
+> 注释：JavaScript 关键词指的是保留的单词。保留词无法用作变量名。
+
