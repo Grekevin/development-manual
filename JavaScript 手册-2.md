@@ -1423,4 +1423,15 @@ sort() 方法以字母顺序对数组进行排序，修改原数组：
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();   //排序后：Apple,Banana,Mango,Orange
 ```
+**反转数组**
+
+reverse() 方法反转数组中的元素， 修改原数组。
+
+您可以使用它以降序对数组进行排序：
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // 对 fruits 中的元素进行排序  排序后：Apple,Banana,Mango,Orange
+fruits.reverse();         // 反转元素顺序  反转后：Orange,Mango,Banana,Apple
+```
 
