@@ -418,3 +418,6 @@ var x = 3 + 5 + "8";	//88
 ```
 
 ### JavaScript 运算符
+
+[运算符及优先级](https://www.w3school.com.cn/js/js_arithmetic.asp)
+
