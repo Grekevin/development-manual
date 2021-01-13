@@ -349,3 +349,16 @@ var y = new String("Bill");
 // typeof y 将返回 object
 ```
 
+请不要把字符串创建为对象。它会拖慢执行速度。
+
+new 关键字使代码复杂化。也可能产生一些意想不到的结果：
+
+当使用 == 相等运算符时，相等字符串是相等的：
+
+``` javascript
+var x = "Bill";             
+var y = new String("Bill");
+// (x == y) 为 true，因为 x 和 y 的值相等
+```
+
+
