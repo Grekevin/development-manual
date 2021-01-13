@@ -515,7 +515,30 @@ if (条件 1) {
 }
 ```
 
+### JavaScript Switch 语句
 
+switch 语句用于基于不同条件执行不同动作。
 
+请使用 switch 语句来选择多个需被执行的代码块之一。
 
+语法
+
+``` javascript
+switch(表达式) {
+     case n:
+        代码块
+        break;
+     case n:
+        代码块
+        break;
+     default:
+        默认代码块
+} 
+```
+
+代码解释：
+
+ - 计算一次 switch 表达式
+ - 把表达式的值与每个 case 的值进行对比
+ - 如果存在匹配，则执行关联代码
 
