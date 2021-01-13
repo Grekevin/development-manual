@@ -476,3 +476,16 @@ var res = str.slice(-13); //Banana, Mango
 ```
 提示：负值位置不适用 Internet Explorer 8 及其更早版本。
 
+**substring() 方法**
+
+substring() 类似于 slice()。
+
+不同之处在于 substring() 无法接受负的索引。
+
+``` javascript
+var str = "Apple, Banana, Mango";
+var res = str.substring(7,13);	//Banana
+```
+如果省略第二个参数，则该 substring() 将裁剪字符串的剩余部分。
+
+
