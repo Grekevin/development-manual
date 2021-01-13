@@ -474,3 +474,5 @@ var str = "Apple, Banana, Mango";
 var res = str.slice(7);	//Banana, Mango
 var res = str.slice(-13); //Banana, Mango
 ```
+提示：负值位置不适用 Internet Explorer 8 及其更早版本。
+
