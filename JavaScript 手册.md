@@ -929,3 +929,20 @@ JavaScript 变量能够被转换为新变量以及另一种数据类型：
 
  - 通过使用 JavaScript 函数
  - 通过 JavaScript 本身自动转换
+
+**把数值转换为字符串**
+
+全局方法 String() 能够把数字转换为字符串。
+
+它可用于任意类型的数字、文字、变量或表达式：
+
+``` javascript
+<script>
+var x = 123;
+document.getElementById("demo").innerHTML =
+  String(x) + "<br>" +   //123
+  String(123) + "<br>" +  //123
+  String(100 + 23);   //123
+</script>
+```
+
