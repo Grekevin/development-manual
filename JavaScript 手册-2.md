@@ -338,3 +338,14 @@ var firstName = "Bill"
 ``` javascript
 var firstName = new String("Bill")
 ```
+
+示例：
+
+``` javascript
+var x = "Bill";
+var y = new String("Bill");
+
+// typeof x 将返回 string
+// typeof y 将返回 object
+```
+
