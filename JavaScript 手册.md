@@ -479,7 +479,7 @@ if 语句
 
 语法
 
-``` html
+``` javascript
 if (条件) {
     如果条件为 true 时执行的代码
 } 
