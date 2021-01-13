@@ -467,7 +467,11 @@ var x = "911" + "Porsche";
 
 JavaScript 拥有动态类型。这意味着相同变量可用作不同类型：
 
-
+``` javascript
+var x;               // 现在 x 是 undefined
+var x = 7;           // 现在 x 是数值
+var x = "Bill";      // 现在 x 是字符串值
+```
 
 
 
