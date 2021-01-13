@@ -1207,4 +1207,35 @@ undefined
 Lemon
 */
 ```
+**关联数组**
+
+很多编程元素支持命名索引的数组。
+
+具有命名索引的数组被称为关联数组（或散列）。
+
+JavaScript 不支持命名索引的数组。
+
+在 JavaScript 中，数组只能使用数字索引。
+
+``` javascript
+var person = [];
+person[0] = "Bill";
+person[1] = "Gates";
+person[2] = 62;
+var x = person.length;          // person.length 返回 3
+var y = person[0];              // person[0] 返回 "Bill"
+```
+警告！
+假如您使用命名索引，JavaScript 会把数组重定义为标准对象。
+
+之后，所有数组的方法和属性将产生非正确结果。
+
+``` javascript
+var person = [];
+person["firstName"] = "Bill";
+person["lastName"] = "Gates";
+person["age"] = 62;
+var x = person.length;         // person.length 将返回 0
+var y = person[0];              // person[0] 将返回 undefined
+```
 
