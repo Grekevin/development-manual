@@ -930,7 +930,7 @@ JavaScript 变量能够被转换为新变量以及另一种数据类型：
  - 通过使用 JavaScript 函数
  - 通过 JavaScript 本身自动转换
 
-**把数值转换为字符串**
+**数值转换为字符串**
 
 全局方法 String() 能够把数字转换为字符串。
 
@@ -957,7 +957,7 @@ x.toString()
 
 ![数值转字符串](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610520658587.png)
 
-**把布尔转换为字符串**
+**布尔转换为字符串**
 
 全局方法 String() 能够将布尔转换为字符串。
 
@@ -972,7 +972,7 @@ false.toString()     // 返回 "false"
 true.toString()      // 返回 "true"
 ```
 
-**把日期转换为字符串**
+**日期转换为字符串**
 
 全局方法 String() 可将日期转换为字符串。
 
@@ -989,4 +989,21 @@ Date().toString()   // 返回 "Wed Jan 13 2021 14:49:58 GMT+0800 (China Standard
 把日期转换为字符串的方法：
 
 ![日期转字符串](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610520888405.png)
+
+**字符串转换为数值**
+
+全局方法 Number() 可把字符串转换为数字。
+
+包含数字的字符串（比如 "3.14"）转换为数字（比如 3.14）。
+
+空的字符串转换为 0。
+
+其他字符串将转换为 NaN（Not a number，不是数字）。
+
+``` javascript
+Number("3.14")    // 返回 3.14
+Number(" ")       // 返回 0
+Number("")        // 返回 0
+Number("99 88")   // 返回 NaN
+```
 
