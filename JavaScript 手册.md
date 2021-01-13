@@ -290,3 +290,9 @@ JavaScript 不会把 VAR 或 Var 译作关键词 var。
 
 <pre>firstName, lastName, masterCard, interCity</pre>
 
+**JavaScript 字符集**
+
+JavaScript 使用 Unicode 字符集。
+
+Unicode 覆盖世界上几乎所有的字符、标点和符号。
+
