@@ -1011,3 +1011,19 @@ Number("99 88")   // 返回 NaN
 
 ![字符串转数字](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610521195054.png)
 
+**一元 + 运算符**
+
+一元的 + 运算符可用于把变量转换为数字：
+
+``` javascript
+var y = "5";      // y 是字符串
+var x = + y;      // x 是数字
+```
+
+如果无法转换变量，则仍会成为数字，但是值为 NaN（Not a number）：
+
+``` javascript
+var y = "Bill";   // y 是字符串
+var x = + y;      // x 是数字 (NaN)
+```
+
