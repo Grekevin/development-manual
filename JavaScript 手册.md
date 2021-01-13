@@ -560,3 +560,18 @@ default 关键词规定不存在 case 匹配时所运行的代码。
 
 默认的 case 不必是 switch 代码块中最后一个 case：
 
+``` JavaScript
+switch (new Date().getDay()) {
+    default: 
+        text = "期待周末！";
+         break;
+    case 6:
+        text = "今天是周六";
+        break; 
+    case 0:
+        text = "今天是周日";
+} 
+```
+
+如果 default 不是 switch 代码块中最后一个 case，请记得用 break 结束默认 case。
+
