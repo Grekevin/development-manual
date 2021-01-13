@@ -564,3 +564,8 @@ var text1 = "Hello World!";       // 字符串
 var text2 = text1.toLowerCase();  // text2 是被转换为小写的 hello world!
 ```
 
+**concat() 方法**
+
+concat() 连接两个或多个字符串。
+
+concat() 方法可用于代替加运算符。下面两行是等效的：
