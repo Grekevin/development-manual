@@ -218,3 +218,19 @@ JavaScript 语句定义两种类型的值：混合值和变量值。
 'Bill Gates' 
 ```
 
+**JavaScript 变量**
+
+在编程语言中，变量用于存储数据值。
+
+JavaScript 使用 var 关键词来声明变量。
+
+= 号用于为变量赋值。
+
+在本例中，x 被定义为变量。然后，x 被赋的值是 7：
+
+``` javascript
+var x;
+
+x = 7;
+```
+
