@@ -463,7 +463,9 @@ var x = "911" + "Porsche";
 ```
 当数值和字符串相加时，JavaScript 将把数值视作字符串。
 
+**JavaScript 拥有动态类型**
 
+JavaScript 拥有动态类型。这意味着相同变量可用作不同类型：
 
 
 
