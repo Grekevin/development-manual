@@ -643,4 +643,6 @@ switch (x) {
 
 ### JavaScript For 循环
 
+循环可多次执行代码块。
+
 
