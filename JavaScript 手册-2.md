@@ -488,4 +488,28 @@ var res = str.substring(7,13);	//Banana
 ```
 如果省略第二个参数，则该 substring() 将裁剪字符串的剩余部分。
 
+**substr() 方法**
+
+substr() 类似于 slice()。
+
+不同之处在于第二个参数规定被提取部分的长度。
+
+``` javascript
+var str = "Apple, Banana, Mango";
+var res = str.substr(7,6);	//Banana
+```
+如果省略第二个参数，则该 substr() 将裁剪字符串的剩余部分。
+
+``` javascript
+var str = "Apple, Banana, Mango";
+var res = str.substr(7);	//Banana, Mango
+```
+如果首个参数为负，则从字符串的结尾计算位置。
+
+``` javascript
+var str = "Apple, Banana, Mango";
+var res = str.substr(-5);	//Mango
+```
+第二个参数不能为负，因为它定义的是长度。
+
 
