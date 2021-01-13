@@ -256,3 +256,11 @@ JavaScript 字符串用于存储和操作文本。
 
 JavaScript 字符串是引号中的零个或多个字符。
 
+**字符串长度**
+
+内建属性 `length` 可返回字符串的长度：
+
+``` javascript
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+```
