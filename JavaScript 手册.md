@@ -12,3 +12,9 @@
 > 
 > 注释：type 属性不是必需的。JavaScript 是 HTML 中的默认脚本语言。
 
+**`<head>` 或 `<body>` 中的 JavaScript**
+
+能够在 HTML 文档中放置任意数量的脚本。
+
+脚本可被放置与 HTML 页面的 `<body>` 或 `<head>` 部分中，或兼而有之。
+
