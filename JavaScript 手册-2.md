@@ -1450,4 +1450,28 @@ fruits.reverse();         // 反转元素顺序  反转后：Orange,Mango,Banana
 var points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a - b}); 
 ```
+使用相同的技巧对数组进行降序排序：
+
+``` javascript
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b - a}); 
+```
+
+**比值函数**
+
+比较函数的目的是定义另一种排序顺序。
+
+比较函数应该返回一个负，零或正值，这取决于参数：
+
+``` javascript
+function(a, b){return a-b}
+```
+
+当 `sort()` 函数比较两个值时，会将值发送到比较函数，并根据所返回的值（负、零或正值）对这些值进行排序。
+
+当比较 40 和 100 时，`sort()` 方法会调用比较函数 function(40,100)。
+
+该函数计算 40-100，然后返回 -60（负值）。
+
+排序函数将把 40 排序为比 100 更低的值。
 
