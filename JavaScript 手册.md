@@ -575,3 +575,24 @@ switch (new Date().getDay()) {
 
 如果 default 不是 switch 代码块中最后一个 case，请记得用 break 结束默认 case。
 
+**常见的代码块**
+
+有时您会需要不同的 case 来使用相同的代码。
+
+在本例中，case 4 和 5 分享相同的代码块，而 0 和 6 分享另一段代码块：
+
+``` javascript
+switch (new Date().getDay()) {
+    case 4:
+    case 5:
+        text = "周末快到了：）";
+        break; 
+    case 0:
+    case 6:
+        text = "今天是周末~";
+         break;
+    default: 
+        text = "期待周末！";
+} 
+```
+
