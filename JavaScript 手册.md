@@ -862,3 +862,18 @@ JavaScript 中有五种可包含值的数据类型：
 
 使用 typeof 运算符来确定 JavaScript 变量的数据类型。
 
+示例：
+
+``` javascript
+typeof "Bill"                 // 返回 "string"
+typeof 3.14                   // 返回 "number"
+typeof NaN                    // 返回 "number"
+typeof false                  // 返回 "boolean"
+typeof [1,2,3,4]              // 返回 "object"
+typeof {name:'Bill', age:62}  // 返回 "object"
+typeof new Date()             // 返回 "object"
+typeof function () {}         // 返回 "function"
+typeof myCar                  // 返回 "undefined" *
+typeof null                   // 返回 "object"
+```
+
