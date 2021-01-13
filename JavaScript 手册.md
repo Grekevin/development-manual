@@ -425,3 +425,19 @@ var x = 3 + 5 + "8";	//88
 
 ![比较运算符](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610517077926.png)
 
+**条件（三元）运算符**
+
+JavaScript 也包含了可基于某些条件向变量赋值的条件运算符。
+
+语法
+
+``` js
+variablename = (condition) ? value1:value2
+```
+
+实例
+
+``` js
+var voteable = (age < 18) ? "太年轻":"足够成熟";
+```
+
