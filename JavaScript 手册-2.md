@@ -1122,3 +1122,26 @@ var y = x.MAX_VALUE;    // y 成为 undefined
 
 ### JavaScript 数组
 
+**访问完整数组**
+
+通过 JavaScript，可通过引用数组名来访问完整数组：
+
+``` javascript
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars; 
+```
+
+**数组元素可以是对象**
+
+JavaScript 变量可以是对象。数组是特殊类型的对象。
+
+正因如此，您可以在相同数组中存放不同类型的变量。
+
+您可以在数组保存对象。您可以在数组中保存函数。你甚至可以在数组中保存数组：
+
+``` javascript
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+```
+
