@@ -1531,3 +1531,27 @@ points.sort(function(a, b){return b - a});
 
 > 如果仅仅需要找到最高或最低值，对整个数组进行排序是效率极低的方法。
 
+**对数组使用 Math.max()**
+
+使用 Math.max.apply 来查找数组中的最高值：
+
+``` javascript
+function myArrayMax(arr) {
+    return Math.max.apply(null, arr);
+}
+```
+
+Math.max.apply([1, 2, 3]) 等于 Math.max(1, 2, 3)。
+
+**对数组使用 Math.min()**
+
+您可以使用 Math.min.apply 来查找数组中的最低值：
+
+``` javascript
+function myArrayMin(arr) {
+    return Math.min.apply(null, arr);
+}
+```
+
+Math.min.apply([1, 2, 3]) 等于 Math.min(1, 2, 3)。
+
