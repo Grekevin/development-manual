@@ -1309,3 +1309,49 @@ var x = fruits.unshift("Lemon");    // 向 fruits 添加新元素 "Lemon"   x = 
 ```
 
 > 注释：unshift() 方法在 Internet Explorer 8 及更早版本中无法正常工作，会插入值，但返回值将是 undefined。
+
+**删除元素**
+
+既然 JavaScript 数组属于对象，其中的元素就可以使用 JavaScript delete 运算符来删除：
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];           // 把 fruits 中的首个元素改为 undefined
+```
+使用 delete 会在数组留下未定义的空洞。请使用 pop() 或 shift() 取而代之。
+
+**拼接数组**
+
+splice() 方法可用于向数组添加新项：
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");  //新数组 Banana,Orange,Apple,Mango
+```
+
+ - 第一个参数（2）定义了应添加新元素的位置（拼接）。
+ - 第二个参数（0）定义应删除多少元素。
+ - 其余参数（“Lemon”，“Kiwi”）定义要添加的新元素。
+
+splice() 方法返回一个包含已删除项的数组：
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+//new_arr = [Apple,Mango]
+var new_arr = fruits.splice(2, 2, "Lemon", "Kiwi");  //新数组： Banana,Orange,Lemon,Kiwi
+```
+
+**使用 splice() 来删除元素**
+
+通过聪明的参数设定，您能够使用 splice() 在数组中不留“空洞”的情况下移除元素：
+
+实例
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);        // 删除 fruits 中的第一个元素
+亲自试一试
+第一个参数（0）定义新元素应该被添加（接入）的位置。
+
+第二个参数（1）定义应该删除多个元素。
+
+其余参数被省略。没有新元素将被添加。
