@@ -748,3 +748,24 @@ var y = "20";
 var z = x + y;           // z 将是 1020（字符串）
 ```
 
+如果您对一个数和一个字符串相加，结果也是字符串级联：
+
+``` javascript
+var x = 10;
+var y = "20";
+var z = x + y;           // z 将是 1020（一个字符串）
+```
+如果您对一个字符串和一个数字相加，结果也是字符串级联：
+
+``` javascript
+var x = "10";
+var y = 20;
+var z = x + y;           // z 将是 1020（字符串）
+```
+常见的错误是认为结果应该是 30：
+
+``` javascript
+var x = 10;
+var y = 20;
+var z = "The result is: " + x + y; //The result is:1020
+```
