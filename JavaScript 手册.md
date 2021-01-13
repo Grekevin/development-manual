@@ -101,3 +101,21 @@ JavaScript 能够以不同方式“显示”数据：
 
 ### JavaScript 语句
 
+在 HTML 中，JavaScript 语句是由 web 浏览器“执行”的“指令”。
+
+**JavaScript 程序**
+
+计算机程序是由计算机“执行”的一系列“指令”。
+
+在编程语言中，这些编程指令被称为语句。
+
+JavaScript 程序就是一系列的编程语句。
+
+> 注释：在 HTML 中，JavaScript 程序由 web 浏览器执行。
+
+**JavaScript 语句**
+
+JavaScript 语句由以下构成：
+
+值、运算符、表达式、关键词和注释。
+
