@@ -154,4 +154,16 @@ objectName.propertyName
 ``` javascript
 objectName["propertyName"]
 ```
+**访问对象方法**
+
+您能够通过如下语法访问对象方法：
+
+``` javascript
+objectName.methodName()
+```
+如果您不使用 () 访问 fullName 方法，则将返回函数定义：
+
+``` javascript
+name = person.fullName;
+```
 
