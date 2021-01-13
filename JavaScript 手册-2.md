@@ -1297,6 +1297,15 @@ shift() 方法会删除首个数组元素，并把所有其他元素“位移”
 
 ``` javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.shift();            // 从 fruits 删除第一个元素 "Banana"
+var x = fruits.shift();            // 从 fruits 删除第一个元素 "Banana"     x的值是 "Banana"
 ```
 
+unshift() 方法（在开头）向数组添加新元素，返回新数组的长度，并“反向位移”旧元素：
+
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.unshift("Lemon");    // 向 fruits 添加新元素 "Lemon"   x = 5
+```
+
+> 注释：unshift() 方法在 Internet Explorer 8 及更早版本中无法正常工作，会插入值，但返回值将是 undefined。
