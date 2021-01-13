@@ -1085,3 +1085,7 @@ document.getElementById("demo").innerHTML = myVar;
 // 如果 myVar = false           // toString 转换为 "false"
 ```
 
+**JavaScript 类型转换表**
+
+下表中列出了将不同 JavaScript 值转换为数字、字符串和布尔的结果：
+
