@@ -507,7 +507,9 @@ JavaScript 数组用方括号书写。
 
 下面的代码声明（创建）了名为 cars 的数组，包含三个项目（汽车品牌）：
 
-
+``` javascript
+var cars = ["Porsche", "Volvo", "BMW"];
+```
 
 
 
