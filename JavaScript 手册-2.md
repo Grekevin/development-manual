@@ -289,3 +289,39 @@ var y = "中国是瓷器的故乡，因此 china 与"China（中国）"同名。
 
 这六个转义字符最初设计用于控制打字机、电传打字机和传真机。它们在 HTML 中没有任何意义。
 
+**长代码行换行**
+
+为了最佳可读性， 程序员们通常会避免每行代码超过 80 个字符串。
+
+如果某条 JavaScript 语句不适合一整行，那么最佳换行位置是某个运算符之后：
+
+``` javascript
+document.getElementById("demo").innerHTML =
+"Hello Kitty.";
+```
+
+您也可以在字符串中换行，通过一个反斜杠即可：
+
+``` javascript
+document.getElementById("demo").innerHTML = "Hello \
+Kitty!";
+```
+
+\ 方法并不是 ECMAScript (JavaScript) 标准。
+
+某些浏览器也不允许 \ 字符之后的空格。
+
+对长字符串换行的最安全做法（但是有点慢）是使用字符串加法：
+
+``` javascript
+document.getElementById("demo").innerHTML = "Hello" + 
+"Kitty!";
+```
+
+您不能通过反斜杠对代码行进行换行：
+
+``` Javascript
+document.getElementById("demo").innerHTML = \ 
+"Hello Kitty!";
+```
+
