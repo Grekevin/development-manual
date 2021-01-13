@@ -975,3 +975,4 @@ x.toExponential(4);     // 返回 9.6560e+0
 x.toExponential(6);     // 返回 9.656000e+0
 ```
 该参数是可选的。如果您没有设置它，JavaScript 不会对数字进行舍入。
+
