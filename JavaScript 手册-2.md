@@ -264,3 +264,4 @@ JavaScript 字符串是引号中的零个或多个字符。
 var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var sln = txt.length;
 ```
+
