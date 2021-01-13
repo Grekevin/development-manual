@@ -1035,3 +1035,19 @@ Number(false)     // 返回 0
 Number(true)      // 返回 1
 ```
 
+**日期转换为数字**
+
+全局方法 Number() 可用于把日期转换为数字。
+
+``` javascript
+d = new Date();
+Number(d)          // 返回 1610520598192
+```
+
+日期方法 getTime() 同理。
+
+``` javascript
+d = new Date();
+d.getTime()        // 返回 1610520598192
+```
+
