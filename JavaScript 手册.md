@@ -1093,3 +1093,5 @@ document.getElementById("demo").innerHTML = myVar;
 
 ### JavaScript 位运算符
 
+**JavaScript 使用 32 位按位运算数**
+
