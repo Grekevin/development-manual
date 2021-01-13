@@ -199,3 +199,8 @@ JavaScript 语句常常通过某个关键词来标识需要执行的 JavaScript 
 
 JavaScript 语法是一套规则，它定义了 JavaScript 的语言结构。
 
+``` javascript
+var x, y;	// 如何声明变量
+x = 7; y = 8;	// 如何赋值
+z = x + y;	// 如何计算值
+```
