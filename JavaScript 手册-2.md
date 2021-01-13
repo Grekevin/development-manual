@@ -930,3 +930,6 @@ var y = new Number(500);
 
 // (x == y) 为 false，因为对象无法比较
 ```
+
+> JavaScript 对象无法进行比较。
+
