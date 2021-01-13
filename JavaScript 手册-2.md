@@ -382,6 +382,8 @@ JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 fa
 
 ### JavaScript 字符串方法
 
+[字符串方法](https://www.w3school.com.cn/jsref/jsref_obj_string.asp)
+
 字符串方法帮助您处理字符串。
 
 **字符串方法和属性**
