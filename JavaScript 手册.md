@@ -510,6 +510,18 @@ JavaScript 数组用方括号书写。
 ``` javascript
 var cars = ["Porsche", "Volvo", "BMW"];
 ```
+数组索引基于零，这意味着第一个项目是 [0]，第二个项目是 [1]，以此类推。
+
+**JavaScript 对象**
+
+JavaScript 对象用花括号来书写。
+
+对象属性是 name:value 对，由逗号分隔。
+
+``` javascript
+var person = {firstName:"Bill", lastName:"Gates", age:62, eyeColor:"blue"};
+```
+
 
 
 
