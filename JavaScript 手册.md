@@ -736,3 +736,19 @@ for (; i < len; ) {
 }
 ```
 
+**For/In 循环**
+
+JavaScript for/in 语句遍历对象的属性：
+
+``` javascript
+var person = {fname:"Bill", lname:"Gates", age:62}; 
+
+var text = "";
+var x;
+for (x in person) {
+    text += person[x];
+}
+```
+
+### JavaScript While 循环
+
