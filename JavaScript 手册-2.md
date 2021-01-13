@@ -180,5 +180,23 @@ var z = new Boolean();       //	把 z 声明为 Boolean 对象
 
 ### JavaScript 事件
 
+HTML 事件是发生在 HTML 元素上的“事情”。
 
+当在 HTML 页面中使用 JavaScript 时，JavaScript 能够“应对”这些事件。
+
+**HTML 事件**
+
+HTML 事件可以是浏览器或用户做的某些事情。
+
+下面是 HTML 事件的一些例子：
+
+ - HTML 网页完成加载
+ - HTML 输入字段被修改
+ - HTML 按钮被点击
+
+通常，当事件发生时，用户会希望做某件事。
+
+JavaScript 允许您在事件被侦测到时执行代码。
+
+通过 JavaScript 代码，HTML 允许您向 HTML 元素添加事件处理程序。
 
