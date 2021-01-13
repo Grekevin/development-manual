@@ -35,3 +35,8 @@ JavaScript 文件的文件扩展名是 .js。
 <script src="myScript.js"></script>
 ```
 
+可以在 `<head>` 或 `<body>` 中放置外部脚本引用。
+
+该脚本的表现与它被置于 `<script>` 标签中是一样的。
+
+> 注释：外部脚本文件中不能包含 `<script>` 标签。
