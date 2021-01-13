@@ -1065,3 +1065,23 @@ d.getTime()        // 返回 1610520598192
 "5" * "2"   // 返回 10        因为 "5" 和 "2" 被转换为 5 和 2
 ```
 
+**自动字符串转换**
+
+JavaScript 自动调用变量的 toString() 函数，当您试图“输出”对象或变量时：
+
+``` javascript
+document.getElementById("demo").innerHTML = myVar;
+
+// 如果 myVar = {name:"Fjohn"}  // toString 转换为 "[object Object]"
+// 如果 myVar = [1,2,3,4]       // toString 转换为 "1,2,3,4"
+// 如果 myVar = new Date()      // toString 转换为 "Wed Jan 13 2021 14:49:58 GMT+0800 (China Standard Time)"
+```
+
+数字和布尔也会被转换，但并不明显：
+
+``` javascript
+// 如果 myVar = 123             // toString 转换为 "123"
+// 如果 myVar = true            // toString 转换为 "true"
+// 如果 myVar = false           // toString 转换为 "false"
+```
+
