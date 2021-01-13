@@ -945,4 +945,13 @@ document.getElementById("demo").innerHTML =
   String(100 + 23);   //123
 </script>
 ```
+数字方法 toString() 同理。
+
+``` javascript
+x.toString()
+(123).toString()
+(100 + 23).toString()
+```
+
+
 
