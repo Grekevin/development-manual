@@ -377,3 +377,6 @@ var y = new String("Bill");
 // (x == y) 为 false，因为 x 和 y 是不同的对象
 ```
 
+> 请注意 (x==y) 与 (x===y) 的区别。
+JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 false。
+
