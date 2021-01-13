@@ -1346,12 +1346,44 @@ var new_arr = fruits.splice(2, 2, "Lemon", "Kiwi");  //新数组： Banana,Orang
 
 通过聪明的参数设定，您能够使用 splice() 在数组中不留“空洞”的情况下移除元素：
 
-实例
+``` javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(0, 1);        // 删除 fruits 中的第一个元素
-亲自试一试
-第一个参数（0）定义新元素应该被添加（接入）的位置。
+```
 
-第二个参数（1）定义应该删除多个元素。
+ - 第一个参数（0）定义新元素应该被添加（接入）的位置。
+ - 第二个参数（1）定义应该删除多个元素。
 
 其余参数被省略。没有新元素将被添加。
+
+**合并（连接）数组**
+
+concat() 方法通过合并（连接）现有数组来创建一个新数组：
+
+``` javascript
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias", "Linus"];
+var myChildren = myGirls.concat(myBoys);   // 连接 myGirls 和 myBoys
+```
+concat() 方法不会更改现有数组。它总是返回一个新数组。
+
+> concat() 方法可以使用任意数量的数组参数。
+
+concat() 方法也可以将值作为参数：
+
+``` javascript
+var arr1 = ["Cecilie", "Lone"];
+var myChildren = arr1.concat(["Emil", "Tobias", "Linus"]); 
+```
+**裁剪数组**
+
+slice() 方法用数组的某个片段切出新数组。
+
+本例从数组下标1 （"Orange"）开始切出一段数组：
+
+slice() 方法创建新数组。它不会从源数组中删除任何元素。
+
+``` javascript
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1); //citrus = [Orange,Lemon,Apple,Mango] 不改变fruits的值
+```
