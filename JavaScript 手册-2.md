@@ -1179,4 +1179,32 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits[fruits.length] = "Lemon";     // 向 fruits 添加一个新元素 (Lemon)
 ```
 
+警告！
+添加最高索引的元素可在数组中创建未定义的“洞”：
+
+``` javascript
+<script>
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[6] = "Lemon";
+
+fLen = fruits.length;
+text = "";
+for (i = 0; i < fLen; i++) {
+  text += fruits[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+/*
+输出：
+Banana
+Orange
+Apple
+Mango
+undefined
+undefined
+Lemon
+*/
+```
 
