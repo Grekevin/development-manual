@@ -833,3 +833,7 @@ document.getElementById("demo").innerHTML = text;  //BMW  Volvo
 
 > 代码块指的是 { 与 } 直接的代码片段。
 
+### JavaScript 类型转换
+
+> Number() 转换数值，String() 转换字符串，Boolean() 转换布尔值。
+
