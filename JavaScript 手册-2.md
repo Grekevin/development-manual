@@ -458,3 +458,12 @@ slice() 提取字符串的某个部分并在新字符串中返回被提取的部
 var str = "Apple, Banana, Mango";
 var res = str.slice(7,13);	//Banana
 ```
+如果某个参数为负，则从字符串的结尾开始计数。
+
+这个例子裁剪字符串中位置 -12 到位置 -6 的片段：
+
+``` javascript
+var str = "Apple, Banana, Mango";
+var res = str.slice(-13,-7);	//Banana
+```
+
