@@ -467,3 +467,10 @@ var str = "Apple, Banana, Mango";
 var res = str.slice(-13,-7);	//Banana
 ```
 
+如果省略第二个参数，则该方法将裁剪字符串的剩余部分：
+
+``` javascript
+var str = "Apple, Banana, Mango";
+var res = str.slice(7);	//Banana, Mango
+var res = str.slice(-13); //Banana, Mango
+```
