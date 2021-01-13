@@ -1402,3 +1402,17 @@ var citrus = fruits.slice(1, 3);   //citrus = [Orange,Lemon]  不改变fruits的
 var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 var citrus = fruits.slice(2); //Lemon,Apple,Mango   不改变fruits的值
 ```
+
+**自动 toString()**
+
+如果需要原始值，则 JavaScript 会自动把数组转换为字符串。下面两个例子将产生相同的结果：
+
+```javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString(); 
+//上下语句等效
+document.getElementById("demo").innerHTML = fruits; 
+```
+### JavaScript 数组排序
+
+
