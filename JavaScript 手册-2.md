@@ -175,5 +175,6 @@ var x = new String();        // 把 x 声明为 String 对象
 var y = new Number();        // 把 y 声明为 Number 对象
 var z = new Boolean();       //	把 z 声明为 Boolean 对象
 ```
+
 > 请避免字符串、数值或逻辑对象。他们会增加代码的复杂性并降低执行速度。
 
