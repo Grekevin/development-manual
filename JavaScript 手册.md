@@ -907,3 +907,11 @@ false.constructor                  // 返回 "function Boolean() { [native code]
 new Date().constructor             // 返回 "function Date()    { [native code] }"
 function () {}.constructor         // 返回 "function Function(){ [native code] }"
 ```
+可以通过检查 constructor 属性来确定某个对象是否为数组（包含单词 "Array"）：
+
+``` JavaScript
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
+```
+
