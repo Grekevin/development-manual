@@ -1273,3 +1273,18 @@ Popping 和 Pushing 指的是：
 
 pop() 方法从数组中删除最后一个元素并返回删除的值：
 
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+//pop() 方法返回“被弹出”的值
+var x = fruits.pop();    //从 fruits 删除最后一个元素（"Mango"）  x 的值是 "Mango"
+```
+
+**Pushing**
+
+push() 方法（在数组结尾处）向数组添加一个新的元素并返回新数组的长度：
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.push("Kiwi");       //  向 fruits 添加一个新元素
+```
