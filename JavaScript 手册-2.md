@@ -74,3 +74,19 @@ x 的结果将是：
 
 您能够多次向同一函数传递不同的参数，以产生不同的结果。
 
+实例
+
+把华氏度转换为摄氏度：
+
+``` javascript
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+}
+
+document.getElementById("demo").innerHTML = toCelsius(77);
+```
+
+**() 运算符调用函数**
+
+使用上面的例子，toCelsius 引用的是函数对象，而 toCelsius() 引用的是函数结果。
+
