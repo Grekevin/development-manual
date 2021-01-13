@@ -777,3 +777,29 @@ var y = 20;
 var z = "30";
 var result = x + y + z;	//3030
 ```
+JavaScript 从左向右进行编译。
+
+因为 x 和 y 都是数，10 + 20 将被相加。
+
+因为 z 是字符串，30 + "30" 被级联。
+
+**数字字符串**
+
+JavaScript 字符串可以拥有数字内容：
+
+``` javascript
+var x = 100;         // x 是数字
+
+var y = "100";       // y 是字符串
+```
+
+在所有数字运算中，JavaScript 会尝试将字符串转换为数字：
+
+该例如此运行：
+
+``` javascript
+var x = "100";
+var y = "10";
+var z = x / y;       // z 将是 10
+```
+
