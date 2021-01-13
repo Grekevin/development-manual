@@ -622,3 +622,12 @@ var str = "HELLO WORLD";
 str.charAt(0);            // 返回 H
 ```
 
+**charCodeAt() 方法**
+
+charCodeAt() 方法返回字符串中指定索引的字符 unicode 编码：
+
+``` javascript
+var str = "HELLO WORLD";
+str.charCodeAt(0);         // 返回 72
+```
+
