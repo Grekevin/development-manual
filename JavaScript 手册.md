@@ -877,3 +877,14 @@ typeof myCar                  // 返回 "undefined" *
 typeof null                   // 返回 "object"
 ```
 
+请注意：
+
+ - NaN 的数据类型是数值
+ - 数组的数据类型是对象
+ - 日期的数据类型是对象
+ - null 的数据类型是对象
+ - 未定义变量的数据类型是 undefined
+ - 尚未赋值的变量的数据类型也是 undefined
+
+> 您无法使用 typeof 去判断 JavaScript 对象是否是数组（或日期）。
+
