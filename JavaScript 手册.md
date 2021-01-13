@@ -442,7 +442,26 @@ var lastName = "Gates";                      // 字符串
 var cars = ["Porsche", "Volvo", "BMW"];         // 数组
 var x = {firstName:"Bill", lastName:"Gates"};    // 对象 
 ```
+**数据类型的概念**
 
+在编程过程中，数据类型是重要的概念。
+
+为了能够操作变量，了解数据类型是很重要的。
+
+如果没有数据类型，计算机就无法安全地解决这道题：
+
+``` javascript
+var x = 911 + "Porsche";
+```
+
+给 "Volvo" 加上 911 有意义吗？这么做会发生错误还是会产生一个结果？
+
+JavaScript 会这样处理上面的例子：
+
+``` javascript
+var x = "911" + "Porsche";
+```
+当数值和字符串相加时，JavaScript 将把数值视作字符串。
 
 
 
