@@ -1555,3 +1555,71 @@ function myArrayMin(arr) {
 
 Math.min.apply([1, 2, 3]) 等于 Math.min(1, 2, 3)。
 
+**我的 Min / Max JavaScript 方法**
+
+最快的解决方法是使用“自制”方法。
+
+此函数遍历数组，用找到的最高值与每个值进行比较：
+
+实例（查找 Max）
+
+``` javascript
+function myArrayMax(arr) {
+    var len = arr.length
+    var max = -Infinity;
+    while (len--) {
+        if (arr[len] > max) {
+            max = arr[len];
+        }
+    }
+    return max;
+}
+```
+
+此函数遍历数组，用找到的最低值与每个值进行比较：
+
+实例（查找 Min）
+
+``` javascript
+function myArrayMin(arr) {
+    var len = arr.length
+    var min = Infinity;
+    while (len--) {
+        if (arr[len] < min) {
+            min = arr[len];
+        }
+    }
+    return min;
+}
+```
+
+**排序对象数组**
+
+JavaScript 数组经常会包含对象：
+
+``` javascript
+var cars = [
+{type:"Volvo", year:2016},
+{type:"Saab", year:2001},
+{type:"BMW", year:2010}];
+```
+
+即使对象拥有不同数据类型的属性，sort() 方法仍可用于对数组进行排序。
+
+解决方法是通过比较函数来对比属性值：
+
+``` javascript
+cars.sort(function(a, b){return a.year - b.year});
+```
+
+比较字符串属性会稍复杂：
+
+``` javascript
+cars.sort(function(a, b){
+	  var x = a.type.toLowerCase();
+	  var y = b.type.toLowerCase();
+	  if (x < y) {return -1;}
+	  if (x > y) {return 1;}
+	  return 0;
+});
+```
