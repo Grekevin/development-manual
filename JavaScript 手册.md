@@ -296,3 +296,5 @@ JavaScript 使用 Unicode 字符集。
 
 Unicode 覆盖世界上几乎所有的字符、标点和符号。
 
+### JavaScript 注释
+
