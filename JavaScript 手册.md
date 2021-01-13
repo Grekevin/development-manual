@@ -535,6 +535,15 @@ var person;                  // 值是 undefined，类型是 undefined
 person = undefined;          // 值是 undefined，类型是 undefined
 ```
 
+**空值**
+
+空值与 undefined 不是一回事。
+
+空的字符串变量既有值也有类型。
+
+``` javascript
+var car = "";                // 值是 ""，类型是 "string"
+```
 
 
 
