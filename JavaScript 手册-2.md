@@ -1040,4 +1040,60 @@ JavaScript 全局方法可用于所有 JavaScript 数据类型。
 | parseFloat() | 解析其参数并返回浮点数。 |
 | parseInt() | 解析其参数并返回整数。 |
 
+**Number() 方法**
+
+Number() 可用于把 JavaScript 变量转换为数值：
+
+``` javascript
+x = true;
+Number(x);        // 返回 1
+x = false;     
+Number(x);        // 返回 0
+x = new Date();
+Number(x);        // 返回 1404568027739
+x = "10"
+Number(x);        // 返回 10
+x = "10 20"
+Number(x);        // 返回 NaN
+```
+
+如果无法转换数字，则返回 NaN。
+
+**用于日期的 Number() 方法**
+
+Number() 还可以把日期转换为数字：
+
+``` javascript
+Number(new Date("2019-04-15"));    // 返回 1506729600000
+```
+
+上面的 Number() 方法返回 1970 年 1 月 1 日至今的毫秒数。
+
+**parseInt() 方法**
+
+parseInt() 解析一段字符串并返回数值。允许空格。只返回首个数字：
+
+``` javascript
+parseInt("10");         // 返回 10
+parseInt("10.33");      // 返回 10
+parseInt("10 20 30");   // 返回 10
+parseInt("10 years");   // 返回 10
+parseInt("years 10");   // 返回 NaN
+```
+
+如果无法转换为数值，则返回 NaN (Not a Number)。
+
+**parseFloat() 方法**
+
+parseFloat() 解析一段字符串并返回数值。允许空格。只返回首个数字：
+
+``` javascript
+parseFloat("10");        // 返回 10
+parseFloat("10.33");     // 返回 10.33
+parseFloat("10 20 30");  // 返回 10
+parseFloat("10 years");  // 返回 10
+parseFloat("years 10");  // 返回 NaN
+```
+
+如果无法转换为数值，则返回 NaN (Not a Number)。
 
