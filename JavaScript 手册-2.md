@@ -369,3 +369,11 @@ var y = new String("Bill");
 // (x === y) 为 false，因为 x 和 y 的类型不同（字符串与对象）
 ```
 
+甚至更糟。对象无法比较：
+
+``` javascript
+var x = new String("Bill");             
+var y = new String("Bill");
+// (x == y) 为 false，因为 x 和 y 是不同的对象
+```
+
