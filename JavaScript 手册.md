@@ -161,3 +161,29 @@ var person="Bill";
 var x = y + z;
 ```
 
+**JavaScript 行长度和折行**
+
+为了达到最佳的可读性，程序员们常常喜欢把代码行控制在 80 个字符以内。
+
+如果 JavaScript 语句太长，对其进行折行的最佳位置是某个运算符：
+
+``` javascript
+document.getElementById("demo").innerHTML =
+ "Hello Kitty.";
+```
+
+**JavaScript 代码块**
+
+JavaScript 语句可以用花括号（{...}）组合在代码块中。
+
+代码块的作用是定义一同执行的语句。
+
+您会在 JavaScript 中看到成块组合在一起的语句：
+
+``` javascript
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello Kitty.";
+    document.getElementById("myDIV").innerHTML = "How are you?";
+}
+```
+
