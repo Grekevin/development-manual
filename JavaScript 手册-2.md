@@ -1434,4 +1434,20 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();            // 对 fruits 中的元素进行排序  排序后：Apple,Banana,Mango,Orange
 fruits.reverse();         // 反转元素顺序  反转后：Orange,Mango,Banana,Apple
 ```
+**数字排序**
+
+默认地，sort() 函数按照字符串顺序对值进行排序。
+
+该函数很适合字符串（"Apple" 会排在 "Banana" 之前）。
+
+不过，如果数字按照字符串来排序，则 "25" 大于 "100"，因为 "2" 大于 "1"。
+
+正因如此，sort() 方法在对数值排序时会产生不正确的结果。
+
+通过一个比值函数来修正此问题：
+
+``` javascript
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b}); 
+```
 
