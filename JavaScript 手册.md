@@ -894,3 +894,16 @@ typeof 运算符不是变量。它属于运算符。运算符（比如 + - * /�
 
 > typeof 始终会返回字符串（包含运算数的类型）。
 
+**constructor 属性**
+
+constructor 属性返回所有 JavaScript 变量的构造器函数。
+
+``` javascript
+"Bill".constructor                 // 返回 "function String()  { [native code] }"
+(3.14).constructor                 // 返回 "function Number()  { [native code] }"
+false.constructor                  // 返回 "function Boolean() { [native code] }"
+[1,2,3,4].constructor              // 返回 "function Array()   { [native code] }"
+{name:'Bill', age:62}.constructor  // 返回" function Object()  { [native code] }"
+new Date().constructor             // 返回 "function Date()    { [native code] }"
+function () {}.constructor         // 返回 "function Function(){ [native code] }"
+```
