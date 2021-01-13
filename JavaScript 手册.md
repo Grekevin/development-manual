@@ -986,3 +986,7 @@ String(Date())      // 返回 "Wed Jan 13 2021 14:49:58 GMT+0800 (China Standard
 Date().toString()   // 返回 "Wed Jan 13 2021 14:49:58 GMT+0800 (China Standard Time)"
 ```
 
+把日期转换为字符串的方法：
+
+![日期转字符串](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610520888405.png)
+
