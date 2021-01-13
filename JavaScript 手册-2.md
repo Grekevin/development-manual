@@ -1144,4 +1144,39 @@ myArray[0] = Date.now;
 myArray[1] = myFunction;
 myArray[2] = myCars;
 ```
+**遍历数组元素**
+
+使用 Array.foreach() 函数：
+
+``` javascript
+<script>
+var fruits, text;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+text = "<ul>";
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+
+function myFunction(value) {
+  text += "<li>" + value + "</li>";
+} 
+</script>
+```
+**添加数组元素**
+
+向数组添加新元素的最佳方法是使用 push() 方法：
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");                // 向 fruits 添加一个新元素 (Lemon)
+```
+
+也可以使用 length 属性向数组添加新元素：
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon";     // 向 fruits 添加一个新元素 (Lemon)
+```
+
 
