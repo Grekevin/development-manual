@@ -1241,3 +1241,31 @@ var y = person[0];              // person[0] 将返回 undefined
 
 ### JavaScript 数组方法
 
+**数组转换为字符串**
+
+JavaScript 方法 toString() 把数组转换为数组值（逗号分隔）的字符串。
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+//Banana,Orange,Apple,Mango
+document.getElementById("demo").innerHTML = fruits.toString(); 	
+```
+join() 方法也可将所有数组元素结合为一个字符串。
+
+它的行为类似 toString()，但是您还可以规定分隔符：
+
+``` javascript
+var fruits = ["Banana", "Orange","Apple", "Mango"];
+
+//Banana * Orange * Apple * Mango
+document.getElementById("demo").innerHTML = fruits.join(" * "); 
+```
+**Popping 和 Pushing**
+
+在处理数组时，删除元素和添加新元素是很简单的。
+
+Popping 和 Pushing 指的是：
+
+从数组弹出项目，或向数组推入项目。
+
