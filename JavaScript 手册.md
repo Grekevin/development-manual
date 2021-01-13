@@ -696,3 +696,43 @@ for (i = 0, len = cars.length, text = ""; i < len; i++) {
 }
 ```
 
+而且您还可以省略语句 1（比如在循环开始前设置好值）：
+
+``` javascript
+var i = 2;
+var len = cars.length;
+var text = "";
+for (; i < len; i++) { 
+    text += cars[i] + "<br>";
+}
+```
+
+**语句 2**
+
+通常语句 2 用于计算初始变量的条件。
+
+但情况并不总是这样，JavaScript 不会在意。语句 2 也是可选的。
+
+如果语句 2 返回 true，那么循环会重新开始，如果返回 false，则循环将结束。
+
+如果省略语句 2，那么必须在循环中提供一个 break。否则循环永远不会结束。
+
+**语句 3**
+
+通常语句 3 会递增初始变量的值。
+
+但情况并不总是这样，JavaScript 不会在意。语句 3 也是可选的。
+
+语句 3 可做任何事情，比如负递增（i--），正递增（i = i + 15），或者任何其他事情。
+
+语句 3 也可被省略（比如当您在循环内递增值时）：
+
+``` javascript
+var i = 0;
+var len = cars.length;
+for (; i < len; ) { 
+    text += cars[i] + "<br>";
+      i++;
+}
+```
+
