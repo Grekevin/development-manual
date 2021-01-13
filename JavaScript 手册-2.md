@@ -578,3 +578,13 @@ var text = "Hello".concat(" ","World!");
 > 所有字符串方法都会返回新字符串。它们不会修改原始字符串。
 > 正式地说：字符串是不可变的：字符串不能更改，只能替换。
 
+**String.trim()**
+
+trim() 方法删除字符串两端的空白符：
+
+``` javascript
+var str = "       Hello World!        ";
+var new_str = str.trim();	//Hello World!
+```
+警告：Internet Explorer 8 或更低版本不支持 trim() 方法。
+
