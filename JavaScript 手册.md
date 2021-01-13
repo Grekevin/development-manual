@@ -857,3 +857,8 @@ JavaScript 中有五种可包含值的数据类型：
 
  - null
  - undefined
+
+**typeof 运算符**
+
+使用 typeof 运算符来确定 JavaScript 变量的数据类型。
+
