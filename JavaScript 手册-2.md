@@ -415,6 +415,13 @@ var pos = str.lastIndexOf("China"); //51
 
 ``` javascript
 var str = "The full name of China is the People's Republic of China.";
-var pos = str.indexOf("China", 18);
+var pos = str.indexOf("China", 18);	//51
+```
+
+lastIndexOf() 方法向后进行检索（从尾到头），这意味着：假如第二个参数是 50，则从位置 50 开始检索，直到字符串的起点。
+
+``` javascript
+var str = "The full name of China is the People's Republic of China.";
+var pos = str.lastIndexOf("China", 50);	//17
 ```
 
