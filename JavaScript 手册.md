@@ -91,3 +91,13 @@ JavaScript 能够以不同方式“显示”数据：
  - 使用 innerHTML 写入 HTML 元素
  - 使用 console.log() 写入浏览器控制台
 
+更改 HTML 元素的 innerHTML 属性是在 HTML 中显示数据的常用方法。
+
+出于测试目的，使用 document.write() 比较方便。
+
+> 注意：在 HTML 文档完全加载后使用 document.write() 将删除所有已有的 HTML 。
+
+提示：document.write() 方法仅用于测试。
+
+### JavaScript 语句
+
