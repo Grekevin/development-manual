@@ -187,3 +187,7 @@ function myFunction() {
 }
 ```
 
+**JavaScript 关键词**
+
+JavaScript 语句常常通过某个关键词来标识需要执行的 JavaScript 动作。
+
