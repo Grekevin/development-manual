@@ -769,3 +769,11 @@ var x = 10;
 var y = 20;
 var z = "The result is: " + x + y; //The result is:1020
 ```
+常见的错误是认为结果应该是 102030：
+
+``` javascript
+var x = 10;
+var y = 20;
+var z = "30";
+var result = x + y + z;	//3030
+```
