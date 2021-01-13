@@ -141,5 +141,17 @@ var person = {
     eyeColor:"blue"
 };
 ```
+**访问对象属性**
 
+您能够以两种方式访问属性：
+
+``` javascript
+objectName.propertyName
+```
+
+或者
+
+``` javascript
+objectName["propertyName"]
+```
 
