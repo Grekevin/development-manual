@@ -499,6 +499,22 @@ if (条件) {
 }
 ```
 
+**else if 语句**
+
+请使用 else if 来规定当首个条件为 false 时的新条件。
+
+语法
+
+``` javascript
+if (条件 1) {
+    条件 1 为 true 时执行的代码块
+} else if (条件 2) {
+    条件 1 为 false 而条件 2 为 true 时执行的代码块
+ } else {
+    条件 1 和条件 2 同时为 false 时执行的代码块
+}
+```
+
 
 
 
