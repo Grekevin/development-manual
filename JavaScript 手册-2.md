@@ -512,4 +512,20 @@ var res = str.substr(-5);	//Mango
 ```
 第二个参数不能为负，因为它定义的是长度。
 
+**替换字符串内容**
+
+replace() 方法用另一个值替换在字符串中指定的值：
+
+``` javascript
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft", "W3School");	//Please visit W3Schoo!
+```
+replace() 方法不会改变调用它的字符串。它返回的是新字符串。
+
+默认地，replace() 只替换首个匹配：
+
+``` javascript
+str = "Please visit Microsoft and Microsoft!";
+var n = str.replace("Microsoft", "W3School");	//Please visit W3School and Microsoft!
+```
 
