@@ -923,3 +923,9 @@ function isArray(myArray) {
 }
 ```
 
+**JavaScript 类型转换**
+
+JavaScript 变量能够被转换为新变量以及另一种数据类型：
+
+ - 通过使用 JavaScript 函数
+ - 通过 JavaScript 本身自动转换
