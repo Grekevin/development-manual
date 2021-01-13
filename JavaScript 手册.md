@@ -815,3 +815,17 @@ continue 语句（不论有无标签引用）只能用于跳过一个迭代。
 break 语句，如果没有标签引用，只能用于跳出一个循环或一个 switch。
 
 如果有标签引用，则 break 语句可用于跳出任意代码块：
+
+``` javascript
+var  cars = ["BMW", "Volvo", "Saab", "Ford"];
+list: {
+    text += cars[0] + "<br>"; 
+    text += cars[1] + "<br>"; 
+    text += cars[2] + "<br>"; 
+    break list;
+    text += cars[3] + "<br>"; 
+    text += cars[4] + "<br>"; 
+    text += cars[5] + "<br>"; 
+}
+```
+
