@@ -441,3 +441,24 @@ variablename = (condition) ? value1:value2
 var voteable = (age < 18) ? "太年轻":"足够成熟";
 ```
 
+**比较不同的类型**
+
+比较不同类型的数据也许会出现不可预料的结果。
+
+如果将字符串与数字进行比较，那么在做比较时 JavaScript 会把字符串转换为数值。空字符串将被转换为 0。非数值字符串将被转换为始终为 `false` 的 `NaN`。
+
+![案例](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610517389177.png)
+
+当比较两个字符串时，"2" 大于 "12"，因为（按照字母排序）1 小于 2。
+
+为了确保正确的结果，在比较值前应该把变量转换为合适的类型：
+
+``` javascript
+age = Number(age);
+if (isNaN(age)) {
+    voteable = "输入错误";
+} else {
+    voteable = (age < 18) ? "太年轻" : "足够成熟";
+} 
+```
+
