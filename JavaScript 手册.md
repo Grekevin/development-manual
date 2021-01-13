@@ -972,3 +972,17 @@ false.toString()     // 返回 "false"
 true.toString()      // 返回 "true"
 ```
 
+**把日期转换为字符串**
+
+全局方法 String() 可将日期转换为字符串。
+
+``` javascript
+String(Date())      // 返回 "Wed Jan 13 2021 14:49:58 GMT+0800 (China Standard Time)"
+```
+
+日期方法 toString() 同理。
+
+``` javascript
+Date().toString()   // 返回 "Wed Jan 13 2021 14:49:58 GMT+0800 (China Standard Time)"
+```
+
