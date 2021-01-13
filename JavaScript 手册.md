@@ -260,3 +260,33 @@ x = 7;
 
 > 提示：数值不可以作为首字符。这样，JavaScript 就能轻松区分标识符和数值。
 
+**JavaScript 对大小写敏感**
+
+所有 JavaScript 标识符对大小写敏感。
+
+变量 lastName 和 lastname，是两个不同的变量。
+
+JavaScript 不会把 VAR 或 Var 译作关键词 var。
+
+**JavaScript 与驼峰式大小写**
+
+历史上，程序员曾使用三种把多个单词连接为一个变量名的方法：
+
+连字符：
+
+<pre>first-name, last-name, master-card, inter-city.</pre>
+
+注释：JavaScript 中不能使用连字符。它是为减法预留的。
+
+下划线：
+
+<pre>first_name, last_name, master_card, inter_city.</pre>
+
+驼峰式大小写（Camel Case）：
+
+<pre>FirstName, LastName, MasterCard, InterCity.</pre>
+
+**JavaScript 程序员倾向于使用以小写字母开头的驼峰大小写：**
+
+<pre>firstName, lastName, masterCard, interCity</pre>
+
