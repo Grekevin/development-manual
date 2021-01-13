@@ -117,3 +117,6 @@ var text = "The temperature is " + toCelsius(77) + " Celsius";
 由于局部变量只能被其函数识别，因此可以在不同函数中使用相同名称的变量。
 
 局部变量在函数开始时创建，在函数完成时被删除。
+
+### JavaScript 对象
+
