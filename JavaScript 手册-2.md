@@ -1107,3 +1107,16 @@ parseFloat("years 10");  // 返回 NaN
 | NaN | 表示非数字值（"Not-a-Number"）。 |
 | POSITIVE_INFINITY | 表示无穷大（溢出返回）。 |
 
+**数字属性不可用于变量**
+
+数字属性属于名为 number 的 JavaScript 数字对象包装器。
+
+这些属性只能作为 Number.MAX_VALUE 访问。
+
+使用 myNumber.MAX_VALUE，其中 myNumber 是变量、表达式或值，将返回 undefined：
+
+``` javascript
+var x = 6;
+var y = x.MAX_VALUE;    // y 成为 undefined
+```
+
