@@ -390,3 +390,12 @@ JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 fa
 
 但是通过 JavaScript，方法和属性也可用于原始值，因为在执行方法和属性时 JavaScript 将原始值视为对象。
 
+**查找字符串中的字符串**
+
+indexOf() 方法返回字符串中指定文本首次出现的索引（位置）：
+
+``` javascript
+var str = "The full name of China is the People's Republic of China.";
+var pos = str.indexOf("China");
+```
+
