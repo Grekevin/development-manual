@@ -801,5 +801,22 @@ var y = "100";       // y 是字符串
 var x = "100";
 var y = "10";
 var z = x / y;       // z 将是 10
+var z = x * y;       // z 将是 1000
+var z = x - y;       // z 将是 90
 ```
+但是该例不会如上例般运行：
+
+``` javascript
+var x = "100";
+var y = "10";
+var z = x + y;       // z 不会是 110（而是 10010）
+```
+JavaScript 用 + 运算符对字符串进行了级联。
+
+**NaN - 非数值**
+
+NaN 属于 JavaScript 保留词，指示某个数不是合法数。
+
+尝试用一个非数字字符串进行除法会得到 NaN（Not a Number）：
+
 
