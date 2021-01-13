@@ -1009,3 +1009,5 @@ Number("99 88")   // 返回 NaN
 
 字符串转换为数字的方法：
 
+![字符串转数字](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610521195054.png)
+
