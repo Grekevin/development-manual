@@ -1001,3 +1001,20 @@ x.toPrecision(2);       // 返回 9.7
 x.toPrecision(4);       // 返回 9.656
 x.toPrecision(6);       // 返回 9.65600
 ```
+**valueOf() 方法**
+
+valueOf() 以数值返回数值：
+
+``` javascript
+var x = 123;
+x.valueOf();            // 从变量 x 返回 123
+(123).valueOf();        // 从文本 123 返回 123
+(100 + 23).valueOf();   // 从表达式 100 + 23 返回 123
+```
+
+在 JavaScript 中，数字可以是原始值（typeof = number）或对象（typeof = object）。
+
+在 JavaScript 内部使用 valueOf() 方法可将 Number 对象转换为原始值。
+
+> 所有 JavaScript 数据类型都有 valueOf() 和 toString() 方法。
+
