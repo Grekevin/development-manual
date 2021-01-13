@@ -778,3 +778,18 @@ do {
 while (条件);
 ```
 
+### JavaScript Break 和 Continue
+
+> break 语句“跳出”循环。
+> continue 语句“跳过”循环中的一个迭代。
+
+**Break 语句**
+
+break 语句也可用于跳出循环。
+
+break 语句会中断循环，并继续执行循环之后的代码（如果有）。
+
+**Continue 语句**
+
+continue 语句中断（循环中）的一个迭代，如果发生指定的条件。然后继续循环中的下一个迭代。
+
