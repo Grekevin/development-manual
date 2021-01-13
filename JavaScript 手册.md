@@ -30,3 +30,7 @@ JavaScript 文件的文件扩展名是 .js。
 
 如需使用外部脚本，请在 `<script>` 标签的 src (source) 属性中设置脚本的名称：
 
+``` javascript
+// 外部文件：myScript.js
+<script src="myScript.js"></script>
+```
