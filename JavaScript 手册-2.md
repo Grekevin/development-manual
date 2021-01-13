@@ -427,9 +427,9 @@ var pos = str.lastIndexOf("China", 50);	//17
 
 **检索字符串中的字符串**
 
-search() 方法搜索特定值的字符串，并返回匹配的位置：
+search() 方法搜索特定值的字符串，返回字符串中指定文本第一次出现的位置：
 
 ``` javascript
 var str = "The full name of China is the People's Republic of China.";
-var pos = str.search("China");
+var pos = str.search("China"); //17
 ```
