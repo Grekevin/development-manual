@@ -456,5 +456,5 @@ slice() 提取字符串的某个部分并在新字符串中返回被提取的部
 
 ``` javascript
 var str = "Apple, Banana, Mango";
-var res = str.slice(7,13);	//		
+var res = str.slice(7,13);	//
 ```
