@@ -1417,11 +1417,10 @@ document.getElementById("demo").innerHTML = fruits;
 
 **数组排序**
 
-sort() 方法以字母顺序对数组进行排序：
+sort() 方法以字母顺序对数组进行排序，修改原数组：
 
 ``` javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.sort();   
+fruits.sort();   //排序后：Apple,Banana,Mango,Orange
 ```
 
-       
