@@ -34,3 +34,4 @@ JavaScript 文件的文件扩展名是 .js。
 // 外部文件：myScript.js
 <script src="myScript.js"></script>
 ```
+
