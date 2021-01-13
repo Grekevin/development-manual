@@ -122,3 +122,13 @@ var text = "The temperature is " + toCelsius(77) + " Celsius";
 
 [官方参考](https://www.w3school.com.cn/js/js_objects.asp)
 
+**对象定义**
+
+我们定义（创建）了一个 JavaScript 对象：
+
+实例
+
+``` JavaScript
+var person = {firstName:"Bill", lastName:"Gates", age:62, eyeColor:"blue"};
+```
+
