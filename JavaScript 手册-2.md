@@ -1286,5 +1286,5 @@ push() 方法（在数组结尾处）向数组添加一个新的元素并返回�
 
 ``` javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
-var x = fruits.push("Kiwi");       //  向 fruits 添加一个新元素
+var x = fruits.push("Kiwi");       //  向 fruits 添加一个新元素     x 的值是 5
 ```
