@@ -1387,3 +1387,11 @@ slice() 方法创建新数组。它不会从源数组中删除任何元素。
 var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 var citrus = fruits.slice(1); //citrus = [Orange,Lemon,Apple,Mango] 不改变fruits的值
 ```
+slice() 可接受两个参数，比如 (1, 3)。
+
+该方法会从开始参数选取元素，直到结束参数（不包括）为止。
+
+``` javascript
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1, 3);   //citrus = [Orange,Lemon]  不改变fruits的值
+```
