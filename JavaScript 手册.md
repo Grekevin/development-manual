@@ -557,3 +557,6 @@ break 能够节省大量执行时间，因为它会“忽略” switch 代码�
 **default 关键词**
 
 default 关键词规定不存在 case 匹配时所运行的代码。
+
+默认的 case 不必是 switch 代码块中最后一个 case：
+
