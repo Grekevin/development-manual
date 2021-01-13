@@ -1497,3 +1497,10 @@ function myFunction2() {
 }
 </script>
 ```
+**以随机顺序排序数组**
+
+``` javascript
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return 0.5 - Math.random()}); 
+```
+
