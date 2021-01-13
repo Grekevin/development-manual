@@ -380,3 +380,13 @@ var y = new String("Bill");
 > 请注意 (x==y) 与 (x===y) 的区别。
 JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 false。
 
+### JavaScript 字符串方法
+
+字符串方法帮助您处理字符串。
+
+**字符串方法和属性**
+
+原始值，比如“Bill Gates”，无法拥有属性和方法（因为它们不是对象）。
+
+但是通过 JavaScript，方法和属性也可用于原始值，因为在执行方法和属性时 JavaScript 将原始值视为对象。
+
