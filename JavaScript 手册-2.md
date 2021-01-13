@@ -1097,3 +1097,13 @@ parseFloat("years 10");  // 返回 NaN
 
 如果无法转换为数值，则返回 NaN (Not a Number)。
 
+ **数值属性**
+
+| 属性 | 描述 |
+| --- | --- |
+| MAX_VALUE | 返回 JavaScript 中可能的最大数。 |
+| MIN_VALUE | 返回 JavaScript 中可能的最小数。 |
+| NEGATIVE_INFINITY | 表示负的无穷大（溢出返回）。 |
+| NaN | 表示非数字值（"Not-a-Number"）。 |
+| POSITIVE_INFINITY | 表示无穷大（溢出返回）。 |
+
