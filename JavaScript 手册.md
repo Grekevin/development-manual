@@ -1111,3 +1111,25 @@ JavaScript 将数字存储为 64 位浮点数，但所有按位运算都以 32 �
 
 [官方参考](https://www.w3school.com.cn/js/js_bitwise.asp)
 
+**十进制转换为二进制**
+
+``` javascript
+<script>
+document.getElementById("demo").innerHTML = dec2bin(-5);
+function dec2bin(dec){
+  return (dec >>> 0).toString(2);
+}
+</script>
+```
+
+**二进制转换为十进制**
+
+``` javascript
+<script>
+document.getElementById("demo").innerHTML = bin2dec(101);
+function bin2dec(bin){
+  return parseInt(bin, 2).toString(10);
+}
+</script>
+```
+
