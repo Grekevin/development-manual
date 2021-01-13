@@ -965,4 +965,10 @@ x.toString()
 String(false)        // 返回 "false"
 String(true)         // 返回 "true" 
 ```
+布尔方法 toString() 同理。
+
+``` javascript
+false.toString()     // 返回 "false"
+true.toString()      // 返回 "true"
+```
 
