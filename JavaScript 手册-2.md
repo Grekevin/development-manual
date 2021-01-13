@@ -631,3 +631,37 @@ var str = "HELLO WORLD";
 str.charCodeAt(0);         // 返回 72
 ```
 
+**属性访问（Property Access）**
+
+ECMAScript 5 (2009) 允许对字符串的属性访问 [ ]：
+
+``` javascript
+var str = "HELLO WORLD";
+str[0];                   // 返回 H
+```
+
+使用属性访问有点不太靠谱：
+
+ - 不适用 Internet Explorer 7 或更早的版本
+ - 它让字符串看起来像是数组（其实并不是）
+ - 如果找不到字符，[ ] 返回 undefined，而 charAt() 返回空字符串。
+ - 它是只读的。str[0] = "A" 不会产生错误（但也不会工作！）
+
+``` javascript
+var str = "HELLO WORLD";
+str[0] = "A";             // 不产生错误，但不会工作
+str[0];                   // 返回 H
+```
+提示：如果您希望按照数组的方式处理字符串，可以先把它转换为数组。
+
+**把字符串转换为数组**
+
+可以通过 split() 将字符串转换为数组：
+
+``` javascript
+var txt = "a,b,c,d,e";   // 字符串
+txt.split(",");          // 用逗号分隔
+txt.split(" ");          // 用空格分隔
+txt.split("|");          // 用竖线分隔
+```
+
