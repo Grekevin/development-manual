@@ -558,7 +558,9 @@ var car = "";                // 值是 ""，类型是 "string"
 ``` javascript
 var person = null;           // 值是 null，但是类型仍然是对象
 ```
+**Undefined 与 Null 的区别**
 
+Undefined 与 null 的值相等，但类型不相等：
 
 
 
