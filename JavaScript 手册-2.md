@@ -1295,3 +1295,8 @@ var x = fruits.push("Kiwi");       //  向 fruits 添加一个新元素     x �
 
 shift() 方法会删除首个数组元素，并把所有其他元素“位移”到更低的索引。
 
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();            // 从 fruits 删除第一个元素 "Banana"
+```
+
