@@ -888,3 +888,9 @@ typeof null                   // 返回 "object"
 
 > 您无法使用 typeof 去判断 JavaScript 对象是否是数组（或日期）。
 
+**typeof 的数据类型**
+
+typeof 运算符不是变量。它属于运算符。运算符（比如 + - * /）没有数据类型。
+
+> typeof 始终会返回字符串（包含运算数的类型）。
+
