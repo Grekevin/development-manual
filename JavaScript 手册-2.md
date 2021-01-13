@@ -108,3 +108,12 @@ var text = "The temperature is " + x + " Celsius";
 ``` javascript
 var text = "The temperature is " + toCelsius(77) + " Celsius";
 ```
+**局部变量**
+
+在 JavaScript 函数中声明的变量，会成为函数的局部变量。
+
+局部变量只能在函数内访问。
+
+由于局部变量只能被其函数识别，因此可以在不同函数中使用相同名称的变量。
+
+局部变量在函数开始时创建，在函数完成时被删除。
