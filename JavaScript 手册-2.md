@@ -1475,3 +1475,25 @@ function(a, b){return a-b}
 
 排序函数将把 40 排序为比 100 更低的值。
 
+您可以使用下面的代码片段来测试数值和字母排序：
+
+``` html
+<button onclick="myFunction1()">以字母顺序排序</button> 
+<button onclick="myFunction2()">以数字顺序排序</button>
+
+<p id="demo"></p>
+
+<script>
+var points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo").innerHTML = points;
+
+function myFunction1() {
+		points.sort();
+		document.getElementById("demo").innerHTML  = points; //1,10,100,25,40,5
+}
+function myFunction2() {
+		points.sort(function(a, b){return  a - b});
+		document.getElementById("demo").innerHTML = points; //1,5,10,25,40,100
+}
+</script>
+```
