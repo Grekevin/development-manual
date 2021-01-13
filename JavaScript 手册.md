@@ -562,7 +562,12 @@ var person = null;           // 值是 null，但是类型仍然是对象
 
 Undefined 与 null 的值相等，但类型不相等：
 
-
+``` javascript
+typeof undefined              // undefined
+typeof null                   // object
+null === undefined            // false
+null == undefined             // true
+```
 
 
 
