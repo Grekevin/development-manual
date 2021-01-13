@@ -204,3 +204,17 @@ var x, y;	// 如何声明变量
 x = 7; y = 8;	// 如何赋值
 z = x + y;	// 如何计算值
 ```
+**JavaScript 值**
+
+JavaScript 语句定义两种类型的值：混合值和变量值。
+
+混合值被称为字面量（literal）。变量值被称为变量。
+
+字符串是文本，由双引号或单引号包围：
+
+``` javascript
+"Bill Gates"
+
+'Bill Gates' 
+```
+
