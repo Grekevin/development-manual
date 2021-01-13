@@ -218,3 +218,9 @@ JavaScript 允许您在事件被侦测到时执行代码。
 <button onclick='document.getElementById("demo").innerHTML=Date()'>现在的时间是？</button>
 ```
 
+在接下来的例子中，代码（使用 this.innerHTML）改变了其自身元素的内容：
+
+``` javascript
+<button onclick="this.innerHTML=Date()">现在的时间是？</button>
+```
+
