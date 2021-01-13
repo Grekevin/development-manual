@@ -666,10 +666,15 @@ txt.split("|");          // 用竖线分隔
 ```
 如果省略分隔符，被返回的数组将包含 index [0] 中的整个字符串。
 
+``` javascript
+var txt = "Hello";       // 字符串
+txt.split()               // ["Hello"]
+```
+
 如果分隔符是 ""，被返回的数组将是间隔单个字符的数组：
 
 ``` javascript
 var txt = "Hello";       // 字符串
-txt.split("");           // 分隔为字符
+txt.split("");           // ["H", "e", "l", "l", "o"]
 ```
 
