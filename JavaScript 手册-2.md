@@ -1395,3 +1395,10 @@ slice() 可接受两个参数，比如 (1, 3)。
 var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 var citrus = fruits.slice(1, 3);   //citrus = [Orange,Lemon]  不改变fruits的值
 ```
+如果结束参数被省略，比如第一个例子，则 slice() 会切出数组的剩余部分。
+
+``` javascript
+
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(2); //Lemon,Apple,Mango   不改变fruits的值
+```
