@@ -436,7 +436,12 @@ var x = 3 + 5 + "8";	//88
 
 JavaScript 变量能够保存多种数据类型：数值、字符串值、数组、对象等等：
 
-
+``` javascript
+var length = 7;                             // 数字
+var lastName = "Gates";                      // 字符串
+var cars = ["Porsche", "Volvo", "BMW"];         // 数组
+var x = {firstName:"Bill", lastName:"Gates"};    // 对象 
+```
 
 
 
