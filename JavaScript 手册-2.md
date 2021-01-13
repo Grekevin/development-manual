@@ -214,7 +214,7 @@ JavaScript 允许您在事件被侦测到时执行代码。
 <element event="一些 JavaScript">
 ```
 
-在下面的例子中，onclick 属性（以及代码）被添加到 <button> 元素：
+在下面的例子中，onclick 属性（以及代码）被添加到 `<button>` 元素：
 
 ``` javascript
 <button onclick='document.getElementById("demo").innerHTML=Date()'>现在的时间是？</button>
@@ -231,4 +231,22 @@ JavaScript 代码通常有很多行。事件属性调用函数更为常见：
 ``` javascript
 <button onclick="displayDate()">现在的时间是？</button>
 ```
+
+**JavaScript 能够做什么？**
+
+事件处理程序可用于处理、验证用户输入、用户动作和浏览器动作：
+
+ - 每当页面加载时应该做的事情
+ - 当页面被关闭时应该做的事情
+ - 当用户点击按钮时应该被执行的动作
+ - 当用户输入数据时应该被验证的内容
+ - 等等
+
+让 JavaScript 处理事件的不同方法有很多：
+
+ - HTML 事件属性可执行 JavaScript 代码
+ - HTML 事件属性能够调用 JavaScript 函数
+ - 您能够向 HTML 元素分配自己的事件处理函数
+ - 您能够阻止事件被发送或被处理
+ - 等等
 
