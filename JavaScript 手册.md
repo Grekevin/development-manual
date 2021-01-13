@@ -41,3 +41,13 @@ JavaScript 文件的文件扩展名是 .js。
 
 > 注释：外部脚本文件中不能包含 `<script>` 标签。
 
+**外部 JavaScript 的优势**
+
+在外部文件中放置脚本有如下优势：
+
+ - 分离了 HTML 和代码
+ - 使 HTML 和 JavaScript 更易于阅读和维护
+ - 已缓存的 JavaScript 文件可加速页面加载
+
+如需向一张页面添加多个脚本文件 - 请使用多个 script 标签：
+
