@@ -1027,3 +1027,11 @@ var y = "Bill";   // y 是字符串
 var x = + y;      // x 是数字 (NaN)
 ```
 
+**布尔转换数值**
+全局方法 Number() 也可把布尔转换为数字。
+
+``` javascript
+Number(false)     // 返回 0
+Number(true)      // 返回 1
+```
+
