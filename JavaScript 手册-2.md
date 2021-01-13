@@ -1018,3 +1018,26 @@ x.valueOf();            // 从变量 x 返回 123
 
 > 所有 JavaScript 数据类型都有 valueOf() 和 toString() 方法。
 
+**把变量转换为数值**
+
+这三种 JavaScript 方法可用于将变量转换为数字：
+
+ - Number() 方法
+ - parseInt() 方法
+ - parseFloat() 方法
+
+这些方法并非数字方法，而是全局 JavaScript 方法。
+
+**全局方法**
+
+JavaScript 全局方法可用于所有 JavaScript 数据类型。
+
+这些是在处理数字时最相关的方法：
+
+| 方法 | 描述 |
+| --- | --- |
+| Number() | 返回数字，由其参数转换而来。 |
+| parseFloat() | 解析其参数并返回浮点数。 |
+| parseInt() | 解析其参数并返回整数。 |
+
+
