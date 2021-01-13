@@ -473,7 +473,7 @@ if (isNaN(age)) {
  - 使用 else if 来规定要测试的新条件，如果第一个条件为 false
  - 使用 switch 来规定多个被执行的备选代码块
 
-if 语句
+**if 语句**
 
 请使用 if 语句来规定假如条件为 true 时被执行的 JavaScript 代码块。
 
@@ -486,4 +486,20 @@ if (条件) {
 ```
 
 注释：if 使用小写字母。大学字母（IF 或 If）会产生 JavaScript 错误。
+
+**else 语句**
+
+请使用 else 语句来规定假如条件为 false 时的代码块。
+
+``` javascript
+if (条件) {
+    条件为 true 时执行的代码块
+} else { 
+    条件为 false 时执行的代码块
+}
+```
+
+
+
+
 
