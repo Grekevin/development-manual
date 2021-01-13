@@ -680,3 +680,15 @@ var txt = "Hello";       // 字符串
 txt.split("");           // ["H", "e", "l", "l", "o"]
 ```
 
+### JavaScript 数字
+
+JavaScript 只有一种数值类型。
+
+书写数值时带不带小数点均可。
+
+书写 JavaScript 数值既可以带小数点，也可以不带：
+
+``` javascript
+var x = 3.14;    // 带小数点的数值
+var y = 3;       // 不带小数点的数值   也可以写成： var y = 3.00;
+```
