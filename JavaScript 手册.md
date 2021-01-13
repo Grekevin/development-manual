@@ -957,5 +957,8 @@ x.toString()
 
 ![数值转字符串](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610520658587.png)
 
+**把布尔转换为字符串**
+
+全局方法 String() 能够将布尔转换为字符串。
 
 
