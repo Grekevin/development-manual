@@ -56,3 +56,25 @@ JavaScript 文件的文件扩展名是 .js。
 <script src="myScript2.js"></script>
 ```
 
+**外部引用**
+
+可通过完整的 URL 或相对于当前网页的路径引用外部脚本：
+
+本例使用完整的 URL 来链接至脚本：
+
+``` html
+<script src="https://www.w3school.com.cn/js/myScript1.js"></script>
+```
+
+本例使用了位于当前网站上指定文件夹中的脚本：
+
+``` html
+<script src="/js/myScript1.js"></script>
+```
+
+本例链接了与当前页面相同文件夹的脚本：
+
+``` html
+<script src="myScript1.js"></script>
+```
+
