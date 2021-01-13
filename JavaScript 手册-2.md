@@ -90,3 +90,21 @@ document.getElementById("demo").innerHTML = toCelsius(77);
 
 使用上面的例子，toCelsius 引用的是函数对象，而 toCelsius() 引用的是函数结果。
 
+**用作变量值的函数**
+
+函数的使用方法与变量一致，在所有类型的公式、赋值和计算中。
+
+实例
+
+使用变量来存储函数的值：
+
+``` javascript
+var x = toCelsius(77);
+var text = "The temperature is " + x + " Celsius";
+```
+
+您能够把函数当做变量值直接使用：
+
+``` javascript
+var text = "The temperature is " + toCelsius(77) + " Celsius";
+```
