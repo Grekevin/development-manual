@@ -325,3 +325,16 @@ document.getElementById("demo").innerHTML = \
 "Hello Kitty!";
 ```
 
+**字符串可以是对象**
+
+通常，JavaScript 字符串是原始值，通过字面方式创建：
+
+``` javascript
+var firstName = "Bill"
+```
+
+但是字符串也可通过关键词 new 定义为对象：
+
+``` javascript
+var firstName = new String("Bill")
+```
