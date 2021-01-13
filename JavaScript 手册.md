@@ -915,3 +915,11 @@ function isArray(myArray) {
 }
 ```
 
+或者更简单，您可以检查对象是否是数组函数：
+
+``` javascript
+function isArray(myArray) {
+    return myArray.constructor === Array;
+}
+```
+
