@@ -953,5 +953,9 @@ x.toString()
 (100 + 23).toString()
 ```
 
+将数值转换为字符串的方法：
+
+![数值转字符串](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610520658587.png)
+
 
 
