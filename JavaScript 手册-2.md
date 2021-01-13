@@ -1120,3 +1120,5 @@ var x = 6;
 var y = x.MAX_VALUE;    // y 成为 undefined
 ```
 
+### JavaScript 数组
+
