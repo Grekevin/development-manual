@@ -569,6 +569,24 @@ null === undefined            // false
 null == undefined             // true
 ```
 
+**原始数据**
+
+原始数据值是一种没有额外属性和方法的单一简单数据值。
+
+typeof 运算符可返回以下原始类型之一：
+
+ - string
+ - number
+ - boolean
+ - undefined
+
+``` javascript
+typeof "Bill"              // 返回 "string"
+typeof 3.14                // 返回 "number"
+typeof true                // 返回 "boolean"
+typeof false               // 返回 "boolean"
+typeof x                   // 返回 "undefined" (假如 x 没有值)
+```
 
 
 
