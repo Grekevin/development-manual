@@ -265,3 +265,27 @@ var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var sln = txt.length;
 ```
 
+**特殊字符**
+
+由于字符串必须由引号包围，JavaScript 会误解这段字符串：
+
+``` javascript
+var y = "中国是瓷器的故乡，因此 china 与"China（中国）"同名。"
+```
+
+该字符串将被切为 "中国是瓷器的故乡，因此 china 与"。
+
+避免此问题的解决方法是，使用 \ 转义字符。
+
+反斜杠转义字符把特殊字符转换为字符串字符：
+
+![转义字符](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610531094564.png)
+
+转义字符（\）也可用于在字符串中插入其他特殊字符。
+
+其他六个 JavaScript 中有效的转义序列：
+
+![转义序列](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610531163799.png)
+
+这六个转义字符最初设计用于控制打字机、电传打字机和传真机。它们在 HTML 中没有任何意义。
+
