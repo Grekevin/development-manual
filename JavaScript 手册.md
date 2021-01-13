@@ -1089,3 +1089,5 @@ document.getElementById("demo").innerHTML = myVar;
 
 下表中列出了将不同 JavaScript 值转换为数字、字符串和布尔的结果：
 
+[官方参考](https://www.w3school.com.cn/js/js_type_conversion.asp)
+
