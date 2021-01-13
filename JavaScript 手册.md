@@ -545,7 +545,19 @@ person = undefined;          // 值是 undefined，类型是 undefined
 var car = "";                // 值是 ""，类型是 "string"
 ```
 
+**Null**
 
+在 JavaScript 中，null 是 "nothing"。它被看做不存在的事物。
+
+不幸的是，在 JavaScript 中，null 的数据类型是对象。
+
+您可以把 null 在 JavaScript 中是对象理解为一个 bug。它本应是 null。
+
+您可以通过设置值为 null 清空对象：
+
+``` javascript
+var person = null;           // 值是 null，但是类型仍然是对象
+```
 
 
 
