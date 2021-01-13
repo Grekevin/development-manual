@@ -949,3 +949,29 @@ var y = new Number(500);
 
 但是通过 JavaScript，方法和属性也可用于原始值，因为 JavaScript 在执行方法和属性时将原始值视作对象。
 
+**toString() 方法**
+
+toString() 以字符串返回数值。
+
+所有数字方法可用于任意类型的数字（字面量、变量或表达式）：
+
+``` javascript
+var x = 123;
+x.toString();            // 从变量 x 返回 123
+(123).toString();        // 从文本 123 返回 123
+(100 + 23).toString();   // 从表达式 100 + 23 返回 123
+```
+**toExponential() 方法**
+
+toExponential() 返回字符串值，它包含已被四舍五入并使用指数计数法的数字。
+
+参数定义小数点后的字符数：
+
+``` javascript
+var x = 9.656;
+x.toExponential();		 //返回 9.656e+0
+x.toExponential(2);     // 返回 9.66e+0
+x.toExponential(4);     // 返回 9.6560e+0
+x.toExponential(6);     // 返回 9.656000e+0
+```
+该参数是可选的。如果您没有设置它，JavaScript 不会对数字进行舍入。
