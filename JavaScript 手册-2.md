@@ -5,6 +5,10 @@
 		* [JavaScript 字符串](#javascript-字符串)
 		* [JavaScript 字符串方法](#javascript-字符串方法)
 		* [JavaScript 数字](#javascript-数字)
+		* [JavaScript 数值方法](#javascript-数值方法)
+		* [JavaScript 数组](#javascript-数组)
+		* [JavaScript 数组方法](#javascript-数组方法)
+		* [JavaScript 数组排序](#javascript-数组排序)
 
 # JavaScript 手册-2 
 
