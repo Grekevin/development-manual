@@ -411,5 +411,10 @@ var pos = str.lastIndexOf("China"); //51
 
 > 如果未找到文本， indexOf() 和 lastIndexOf() 均返回 -1。
 
+两种方法都接受作为检索起始位置的第二个参数。
 
+``` javascript
+var str = "The full name of China is the People's Republic of China.";
+var pos = str.indexOf("China", 18);
+```
 
