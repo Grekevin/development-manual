@@ -941,3 +941,11 @@ var y = new Number(500);
 
 > JavaScript 对象无法进行比较。
 
+### JavaScript 数值方法
+
+**Number 方法和属性**
+
+原始值（比如 3.14 或 2016），无法拥有属性和方法（因为它们不是对象）。
+
+但是通过 JavaScript，方法和属性也可用于原始值，因为 JavaScript 在执行方法和属性时将原始值视作对象。
+
