@@ -608,37 +608,6 @@ typeof function myFunc(){}   // 返回 "function"
 > typeof 运算符把数组返回为 "object"，因为在 JavaScript 中数组即对象。
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### JavaScript 运算符
 
 [运算符及优先级](https://www.w3school.com.cn/js/js_arithmetic.asp)
