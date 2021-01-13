@@ -1504,3 +1504,27 @@ var points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return 0.5 - Math.random()}); 
 ```
 
+**查找最高（或最低）的数组值**
+
+JavaScript 不提供查找数组中最大或最小数组值的内建函数。
+
+不过，在对数组进行排序之后，您能够使用索引来获得最高或最低值。
+
+升序排序：
+
+``` javascript
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+
+// 现在 points[0] 包含最低值
+// 而 points[points.length-1] 包含最高值
+```
+降序排序：
+
+``` javascript
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b - a});
+
+// 现在 points[0] 包含最高值
+// 而 points[points.length-1] 包含最低值
+```
