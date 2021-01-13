@@ -446,3 +446,15 @@ var pos = str.search("China"); //17
  - substring(start, end)
  - substr(start, length)
 
+**slice() 方法**
+
+slice() 提取字符串的某个部分并在新字符串中返回被提取的部分。
+
+该方法设置两个参数：起始索引（开始位置），终止索引（结束位置）。
+
+这个例子裁剪字符串中位置 7 到位置 13 的片段：
+
+``` javascript
+var str = "Apple, Banana, Mango";
+var res = str.slice(7,13);	//		
+```
