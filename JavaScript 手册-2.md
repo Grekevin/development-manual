@@ -1528,3 +1528,6 @@ points.sort(function(a, b){return b - a});
 // 现在 points[0] 包含最高值
 // 而 points[points.length-1] 包含最低值
 ```
+
+> 如果仅仅需要找到最高或最低值，对整个数组进行排序是效率极低的方法。
+
