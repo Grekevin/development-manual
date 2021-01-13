@@ -438,3 +438,11 @@ var pos = str.search("China"); //17
 >  - search() 方法无法设置第二个开始位置参数。
 >  - indexOf() 方法无法设置更强大的搜索值（正则表达式）。
 
+**提取部分字符串**
+
+有三种提取部分字符串的方法：
+
+ - slice(start, end)
+ - substring(start, end)
+ - substr(start, length)
+
