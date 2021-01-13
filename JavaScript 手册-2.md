@@ -834,4 +834,91 @@ var x = 100 / "10";     // x 将是 10
 var x = 100 / "Apple";
 isNaN(x);               // 返回 true，因为 x 不是数
 ```
+要小心 NaN。假如您在数学运算中使用了 NaN，则结果也将是 NaN：
 
+``` javascript
+var x = NaN;
+var y = 5;
+var z = x + y;         // z 将是 NaN
+```
+结果也许是串连接：
+
+``` javascript
+var x = NaN;
+var y = "5";
+var z = x + y;         // z 将是 NaN5
+```
+NaN 是数，typeof NaN 返回 number：
+
+``` javascript
+typeof NaN;             // 返回 "number"
+```
+**Infinity**
+
+Infinity （或 -Infinity）是 JavaScript 在计算数时超出最大可能数范围时返回的值。
+
+除以 0（零）也会生成 Infinity：
+
+``` javascript
+var x =  2 / 0;          // x 将是 Infinity
+var y = -2 / 0;          // y 将是 -Infinity
+```
+Infinity 是数：typeOf Infinity 返回 number。
+
+``` javascript
+typeof Infinity;        // 返回 "number"
+```
+**十六进制**
+
+JavaScript 会把前缀为 0x 的数值常量解释为十六进制。
+
+``` javascript
+var x = 0xFF;             // x 将是 255
+```
+绝不要用前导零写数字（比如 07）。
+
+一些 JavaScript 版本会把带有前导零的数解释为八进制。
+
+默认地，Javascript 把数显示为十进制小数。
+
+但是您能够使用 toString() 方法把数输出为十六进制、八进制或二进制。
+
+``` javascript
+var myNumber = 128;
+myNumber.toString(16);     // 返回 80
+myNumber.toString(8);      // 返回 200
+myNumber.toString(2);      // 返回 10000000
+```
+**数值可以是对象**
+
+通常 JavaScript 数值是通过字面量创建的原始值：var x = 123
+
+但是也可以通过关键词 new 定义为对象：var y = new Number(123)
+
+``` javascript
+var x = 123;
+var y = new Number(123);
+
+// typeof x 返回 number
+// typeof y 返回 object
+```
+请不要创建数值对象。这样会拖慢执行速度。
+
+new 关键词使代码复杂化，并产生某些无法预料的结果：
+
+当使用 == 相等运算符时，相等的数看上去相等：
+
+``` javascript
+var x = 500;             
+var y = new Number(500);
+
+// (x == y) 为 true，因为 x 和 y 有相等的值
+```
+当使用 === 相等运算符后，相等的数变为不相等，因为 === 运算符需要类型和值同时相等。
+
+``` javascript
+var x = 500;             
+var y = new Number(500);
+
+// (x === y) 为 false，因为 x 和 y 的类型不同
+```
