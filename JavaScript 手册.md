@@ -614,3 +614,17 @@ Switch case 使用严格比较（===）。
 
 在这个例子中，x 将不匹配：
 
+``` javascript
+var x = "0";
+switch (x) {
+  case 0:
+    text = "Off";
+    break;
+  case 1:
+    text = "On";
+    break;
+  default:
+    text = "No value found";
+}
+```
+
