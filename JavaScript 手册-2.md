@@ -50,3 +50,21 @@ function name(参数 1, 参数 2, 参数 3) {
 
 函数通常会计算出返回值。这个返回值会返回给调用者：
 
+实例
+
+计算两个数的乘积，并返回结果：
+
+``` javascript
+var x = myFunction(7, 8);        // 调用函数，返回值被赋值给 x
+
+function myFunction(a, b) {
+    return a * b;                // 函数返回 a 和 b 的乘积
+}
+```
+
+x 的结果将是：
+
+``` javascript
+56
+```
+
