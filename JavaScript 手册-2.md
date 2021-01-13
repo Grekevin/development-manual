@@ -200,3 +200,21 @@ JavaScript 允许您在事件被侦测到时执行代码。
 
 通过 JavaScript 代码，HTML 允许您向 HTML 元素添加事件处理程序。
 
+使用单引号：
+
+``` javascript
+<element event='一些 JavaScript'>
+```
+
+使用双引号：
+
+``` javascript
+<element event="一些 JavaScript">
+```
+
+在下面的例子中，onclick 属性（以及代码）被添加到 <button> 元素：
+
+``` javascript
+<button onclick='document.getElementById("demo").innerHTML=Date()'>现在的时间是？</button>
+```
+
