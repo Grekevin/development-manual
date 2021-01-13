@@ -522,8 +522,18 @@ JavaScript 对象用花括号来书写。
 var person = {firstName:"Bill", lastName:"Gates", age:62, eyeColor:"blue"};
 ```
 
+**Undefined**
 
+在 JavaScript 中，没有值的变量，其值是 undefined。typeof 也返回 undefined。
 
+``` javascript
+var person;                  // 值是 undefined，类型是 undefined
+```
+任何变量均可通过设置值为 undefined 进行清空。其类型也将是 undefined。
+
+``` javascript
+person = undefined;          // 值是 undefined，类型是 undefined
+```
 
 
 
