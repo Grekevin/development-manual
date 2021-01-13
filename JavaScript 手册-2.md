@@ -922,3 +922,11 @@ var y = new Number(500);
 
 // (x === y) 为 false，因为 x 和 y 的类型不同
 ```
+甚至更糟。对象无法进行对比：
+
+``` javascript
+var x = new Number(500);             
+var y = new Number(500);
+
+// (x == y) 为 false，因为对象无法比较
+```
