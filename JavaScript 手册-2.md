@@ -588,3 +588,10 @@ var new_str = str.trim();	//Hello World!
 ```
 警告：Internet Explorer 8 或更低版本不支持 trim() 方法。
 
+如需支持 IE 8，您可搭配正则表达式使用 replace() 方法代替：
+
+``` javascript
+var str = "       Hello World!        ";
+alert(str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, ''));
+```
+
