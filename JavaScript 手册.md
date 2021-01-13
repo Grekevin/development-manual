@@ -346,3 +346,25 @@ Unicode 覆盖世界上几乎所有的字符、标点和符号。
 
 **声明（创建） JavaScript 变量**
 
+在 JavaScript 中创建变量被称为“声明”变量。
+
+您可以通过 var 关键词来声明 JavaScript 变量：
+
+``` javascript
+var carName;
+```
+声明之后，变量是没有值的。（技术上，它的值是 undefined。）
+
+如需赋值给变量，请使用等号：
+
+``` javascript
+carName = "porsche";
+```
+您可以在声明变量时向它赋值：
+
+``` javascript
+var carName = "porsche";
+```
+
+> 提示：在脚本的开头声明所有变量是个好习惯！
+
