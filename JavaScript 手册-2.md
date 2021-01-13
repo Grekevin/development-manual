@@ -595,3 +595,14 @@ var str = "       Hello World!        ";
 alert(str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, ''));
 ```
 
+您还可以使用上面的 replace 方案把 trim 函数添加到 JavaScript String.prototype：
+
+``` javascript
+if (!String.prototype.trim) {
+  String.prototype.trim = function () {
+    return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+};
+var str = "       Hello World!        ";
+var new_str = str.trim();	//Hello World!
+```
+
