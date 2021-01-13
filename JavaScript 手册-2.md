@@ -252,3 +252,7 @@ JavaScript 代码通常有很多行。事件属性调用函数更为常见：
 
 ### JavaScript 字符串
 
+JavaScript 字符串用于存储和操作文本。
+
+JavaScript 字符串是引号中的零个或多个字符。
+
