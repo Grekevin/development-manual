@@ -433,3 +433,8 @@ search() 方法搜索特定值的字符串，返回字符串中指定文本第�
 var str = "The full name of China is the People's Republic of China.";
 var pos = str.search("China"); //17
 ```
+
+> indexOf() 与 search()区别在于：
+>  - search() 方法无法设置第二个开始位置参数。
+>  - indexOf() 方法无法设置更强大的搜索值（正则表达式）。
+
