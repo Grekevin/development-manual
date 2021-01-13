@@ -606,3 +606,19 @@ var str = "       Hello World!        ";
 var new_str = str.trim();	//Hello World!
 ```
 
+**提取字符串字符**
+
+这是两个提取字符串字符的安全方法：
+
+ - charAt(position)
+ - charCodeAt(position)
+
+**charAt() 方法**
+
+charAt() 方法返回字符串中指定下标（位置）的字符串：
+
+``` javascript
+var str = "HELLO WORLD";
+str.charAt(0);            // 返回 H
+```
+
