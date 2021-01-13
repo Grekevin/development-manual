@@ -518,7 +518,7 @@ replace() 方法用另一个值替换在字符串中指定的值：
 
 ``` javascript
 str = "Please visit Microsoft!";
-var n = str.replace("Microsoft", "W3School");	//Please visit W3Schoo!
+var n = str.replace("Microsoft", "W3School");	//n = Please visit W3Schoo!
 ```
 replace() 方法不会改变调用它的字符串。它返回的是新字符串。
 
@@ -526,6 +526,41 @@ replace() 方法不会改变调用它的字符串。它返回的是新字符串�
 
 ``` javascript
 str = "Please visit Microsoft and Microsoft!";
-var n = str.replace("Microsoft", "W3School");	//Please visit W3School and Microsoft!
+var n = str.replace("Microsoft", "W3School");	//n = Please visit W3School and Microsoft!
+```
+默认地，replace() 对大小写敏感。因此不对匹配 MICROSOFT：
+
+``` javascript
+str = "Please visit Microsoft!";
+var n = str.replace("MICROSOFT", "W3School");
+```
+如需执行大小写不敏感的替换，请使用正则表达式 /i（大小写不敏感）：
+
+``` javascript
+str = "Please visit Microsoft!";
+var n = str.replace(/MICROSOFT/i, "W3School"); 	//n = "Please visit W3School!"
+```
+请注意正则表达式不带引号。
+
+如需替换所有匹配，请使用正则表达式的 g 标志（用于全局搜索）：
+
+``` javascript
+str = "Please visit Microsoft and Microsoft!";
+var n = str.replace(/Microsoft/g, "W3School");	//n = "Please visit W3School and W3School!"
+```
+
+**转换为大写和小写**
+
+通过 toUpperCase() 把字符串转换为大写：
+
+``` javascript
+var text1 = "Hello World!";       // 字符串
+var text2 = text1.toUpperCase();  // text2 是被转换为大写的 HELLO WORLD!
+```
+通过 toLowerCase() 把字符串转换为小写：
+
+``` javascript
+var text1 = "Hello World!";       // 字符串
+var text2 = text1.toLowerCase();  // text2 是被转换为小写的 hello world!
 ```
 
