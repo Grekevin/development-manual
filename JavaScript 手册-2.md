@@ -361,4 +361,11 @@ var y = new String("Bill");
 // (x == y) 为 true，因为 x 和 y 的值相等
 ```
 
+当使用 === 运算符时，相等字符串是不相等的，因为 === 运算符需要类型和值同时相等。
+
+``` javascript
+var x = "Bill";             
+var y = new String("Bill");
+// (x === y) 为 false，因为 x 和 y 的类型不同（字符串与对象）
+```
 
