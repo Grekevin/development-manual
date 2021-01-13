@@ -472,6 +472,28 @@ var x;               // 现在 x 是 undefined
 var x = 7;           // 现在 x 是数值
 var x = "Bill";      // 现在 x 是字符串值
 ```
+**JavaScript 字符串值**
+
+字符串（或文本字符串）是一串字符（比如 "Bill Gates"）。
+
+字符串被引号包围。您可使用单引号或双引号。
+
+**JavaScript 数值**
+
+JavaScript 只有一种数值类型。
+
+写数值时用不用小数点均可：
+
+``` JavaScript
+var x1 = 34.00;     // 带小数点
+var x2 = 34;        // 不带小数点
+```
+超大或超小的数值可以用科学计数法来写：
+
+``` javascript
+var y = 123e5;      // 12300000
+var z = 123e-5;     // 0.00123
+```
 
 
 
