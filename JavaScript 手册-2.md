@@ -398,4 +398,14 @@ indexOf() 方法返回字符串中指定文本首次出现的索引（位置）�
 var str = "The full name of China is the People's Republic of China.";
 var pos = str.indexOf("China");
 ```
+JavaScript 从零计算位置。
+
+0 是字符串中的第一个位置，1 是第二个，2 是第三个 ...
+
+lastIndexOf() 方法返回指定文本在字符串中最后一次出现的索引：
+
+``` javascript
+var str = "The full name of China is the People's Republic of China.";
+var pos = str.lastIndexOf("China");
+```
 
