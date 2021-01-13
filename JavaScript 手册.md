@@ -6,10 +6,15 @@
 		* [JavaScript 语法](#javascript-语法)
 		* [JavaScript 注释](#javascript-注释)
 		* [JavaScript 变量](#javascript-变量)
+		* [JavaScript 数据类型](#javascript-数据类型)
 		* [JavaScript 运算符](#javascript-运算符)
 		* [JavaScript If...Else 语句](#javascript-ifelse-语句)
 		* [JavaScript Switch 语句](#javascript-switch-语句)
 		* [JavaScript For 循环](#javascript-for-循环)
+		* [JavaScript While 循环](#javascript-while-循环)
+		* [JavaScript Break 和 Continue](#javascript-break-和-continue)
+		* [JavaScript 类型转换](#javascript-类型转换)
+		* [JavaScript 位运算符](#javascript-位运算符)
 
 # JavaScript 手册
 
