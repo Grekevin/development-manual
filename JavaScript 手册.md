@@ -51,3 +51,8 @@ JavaScript 文件的文件扩展名是 .js。
 
 如需向一张页面添加多个脚本文件 - 请使用多个 script 标签：
 
+``` javascript
+<script src="myScript1.js"></script>
+<script src="myScript2.js"></script>
+```
+
