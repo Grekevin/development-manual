@@ -131,4 +131,15 @@ var text = "The temperature is " + toCelsius(77) + " Celsius";
 ``` JavaScript
 var person = {firstName:"Bill", lastName:"Gates", age:62, eyeColor:"blue"};
 ```
+空格和折行都是允许的。对象定义可横跨多行：
+
+``` javascript
+var person = {
+    firstName:"Bill",
+    lastName:"Gates",
+    age:50,
+    eyeColor:"blue"
+};
+```
+
 
