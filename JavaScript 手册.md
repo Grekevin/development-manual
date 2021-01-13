@@ -1109,3 +1109,5 @@ JavaScript 将数字存储为 64 位浮点数，但所有按位运算都以 32 �
 
 有符号整数使用最左边的位作为减号。
 
+[官方参考](https://www.w3school.com.cn/js/js_bitwise.asp)
+
