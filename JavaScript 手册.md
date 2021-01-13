@@ -587,8 +587,25 @@ typeof true                // 返回 "boolean"
 typeof false               // 返回 "boolean"
 typeof x                   // 返回 "undefined" (假如 x 没有值)
 ```
+**复杂数据**
 
+typeof 运算符可返回以下两种类型之一：
 
+ - function
+ - object
+
+typeof 运算符把对象、数组或 null 返回 object。
+
+typeof 运算符不会把函数返回 object。
+
+``` javascript
+typeof {name:'Bill', age:62} // 返回 "object"
+typeof [1,2,3,4]             // 返回 "object" (并非 "array"，参见下面的注释)
+typeof null                  // 返回 "object"
+typeof function myFunc(){}   // 返回 "function"
+```
+
+> typeof 运算符把数组返回为 "object"，因为在 JavaScript 中数组即对象。
 
 
 
