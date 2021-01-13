@@ -961,4 +961,8 @@ x.toString()
 
 全局方法 String() 能够将布尔转换为字符串。
 
+``` JavaScript
+String(false)        // 返回 "false"
+String(true)         // 返回 "true" 
+```
 
