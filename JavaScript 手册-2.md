@@ -406,6 +406,10 @@ lastIndexOf() 方法返回指定文本在字符串中最后一次出现的索引
 
 ``` javascript
 var str = "The full name of China is the People's Republic of China.";
-var pos = str.lastIndexOf("China"); //
+var pos = str.lastIndexOf("China"); //51
 ```
+
+> 如果未找到文本， indexOf() 和 lastIndexOf() 均返回 -1。
+
+
 
