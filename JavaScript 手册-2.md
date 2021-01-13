@@ -1415,4 +1415,13 @@ document.getElementById("demo").innerHTML = fruits;
 ```
 ### JavaScript 数组排序
 
+**数组排序**
 
+sort() 方法以字母顺序对数组进行排序：
+
+``` javascript
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();   
+```
+
+       
