@@ -976,3 +976,28 @@ x.toExponential(6);     // 返回 9.656000e+0
 ```
 该参数是可选的。如果您没有设置它，JavaScript 不会对数字进行舍入。
 
+**toFixed() 方法**
+
+toFixed() 返回字符串值，它包含了指定位数小数的数字：
+
+``` javascript
+var x = 9.656;
+x.toFixed(0);           // 返回 10
+x.toFixed(2);           // 返回 9.66
+x.toFixed(4);           // 返回 9.6560
+x.toFixed(6);           // 返回 9.656000
+```
+
+toFixed(2) 非常适合处理金钱。
+
+**toPrecision() 方法**
+
+toPrecision() 返回字符串值，它包含了指定长度的数字：
+
+``` javascript
+var x = 9.656;
+x.toPrecision();        // 返回 9.656
+x.toPrecision(2);       // 返回 9.7
+x.toPrecision(4);       // 返回 9.656
+x.toPrecision(6);       // 返回 9.65600
+```
