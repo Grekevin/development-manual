@@ -1239,3 +1239,5 @@ var x = person.length;         // person.length 将返回 0
 var y = person[0];              // person[0] 将返回 undefined
 ```
 
+### JavaScript 数组方法
+
