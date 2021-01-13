@@ -421,3 +421,7 @@ var x = 3 + 5 + "8";	//88
 
 [运算符及优先级](https://www.w3school.com.cn/js/js_arithmetic.asp)
 
+**JavaScript 比较运算符**
+
+![比较运算符](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1610517077926.png)
+
