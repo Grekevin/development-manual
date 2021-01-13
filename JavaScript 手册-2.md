@@ -224,3 +224,9 @@ JavaScript 允许您在事件被侦测到时执行代码。
 <button onclick="this.innerHTML=Date()">现在的时间是？</button>
 ```
 
+JavaScript 代码通常有很多行。事件属性调用函数更为常见：
+
+``` javascript
+<button onclick="displayDate()">现在的时间是？</button>
+```
+
