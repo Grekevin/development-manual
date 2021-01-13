@@ -1,3 +1,11 @@
+* [JavaScript 手册-2](#javascript-手册-2)
+		* [JavaScript 函数](#javascript-函数)
+		* [JavaScript 对象](#javascript-对象)
+		* [JavaScript 事件](#javascript-事件)
+		* [JavaScript 字符串](#javascript-字符串)
+		* [JavaScript 字符串方法](#javascript-字符串方法)
+		* [JavaScript 数字](#javascript-数字)
+
 # JavaScript 手册-2 
 
 ### JavaScript 函数
