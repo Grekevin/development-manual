@@ -793,3 +793,25 @@ break 语句会中断循环，并继续执行循环之后的代码（如果有�
 
 continue 语句中断（循环中）的一个迭代，如果发生指定的条件。然后继续循环中的下一个迭代。
 
+**JavaScript 标签**
+
+如需标记 JavaScript 语句，请将标签名和冒号置于语句之前：
+
+``` javascript
+label:
+statements
+```
+break 和 continue 语句是仅有的可“跳出”代码块的 JavaScript 语句。
+
+语法：
+
+``` javascript
+break labelname;
+continue labelname;
+```
+
+continue 语句（不论有无标签引用）只能用于跳过一个迭代。
+
+break 语句，如果没有标签引用，只能用于跳出一个循环或一个 switch。
+
+如果有标签引用，则 break 语句可用于跳出任意代码块：
