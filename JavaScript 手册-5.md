@@ -116,3 +116,35 @@ Hoisting（对很多开发者来说）是 JavaScript 的一种未知的或被忽
  - 版本 5.1 以后的 Safari
  - 版本 12 以后的 Opera
 
+**声明严格模式**
+
+通过在脚本或函数的开头添加 "use strict"; 来声明严格模式。
+
+在脚本开头进行声明，拥有全局作用域（脚本中的所有代码均以严格模式来执行）：
+
+``` javascript
+"use strict";
+x = 3.14;       // 这会引发错误，因为 x 尚未声明
+```
+
+``` javascript
+"use strict";
+myFunction();
+
+function myFunction() {
+     y = 3.14;   // 这会引发错误，因为 y 尚未声明
+}
+```
+
+在函数中声明严格模式，拥有局部作用域（只有函数中的代码以严格模式执行）：
+
+``` javascript
+x = 3.14;       // 这不会引发错误
+myFunction();
+
+function  myFunction() {
+	"use strict";
+	 y = 3.14;   // 这会引发错误
+}
+```
+
