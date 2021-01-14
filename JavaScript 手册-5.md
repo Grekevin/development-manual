@@ -94,3 +94,25 @@ Hoisting（对很多开发者来说）是 JavaScript 的一种未知的或被忽
 
 严格模式中的 JavaScript 不允许在未被声明的情况下使用变量。
 
+### 	JavaScript Use Strict
+
+> "use strict"; 定义 JavaScript 代码应该以“严格模式”执行。
+
+**"use strict" 指令**
+
+"use strict" 是 JavaScript 1.8.5 中的新指令（ECMAScript version 5）。
+
+它不算一条语句，而是一段文字表达式，更早版本的 JavaScript 会忽略它。
+
+"use strict"; 的作用是指示 JavaScript 代码应该以“严格模式”执行。
+
+> 在严格模式中，您无法，例如，使用未声明的变量。
+
+以下版本的浏览器支持严格模式：
+
+ - 版本 10 以后的 IE
+ - 版本 4 以后的 Firefox
+ - 版本 13 以后的 Chrome
+ - 版本 5.1 以后的 Safari
+ - 版本 12 以后的 Opera
+
