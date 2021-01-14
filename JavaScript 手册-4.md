@@ -537,3 +537,44 @@ function myFunction() {
 </html> 
 ```
 
+**finally 语句**
+
+finally 语句允许您在 try 和 catch 之后执行代码，无论结果：
+
+``` javascript
+try {
+     供测试的代码块
+}
+ catch(err) {
+     处理错误的代码块
+} 
+finally {
+     无论 try / catch 结果如何都执行的代码块
+}
+```
+**Error 对象**
+
+JavaScript 拥有当错误发生时提供错误信息的内置 error 对象。
+
+error 对象提供两个有用的属性：name 和 message。
+
+**Error 对象属性**
+
+| 属性 | 描述 |
+| --- | --- |
+| name | 设置或返回错误名 |
+| message | 设置或返回错误消息（一条字符串） |
+
+**Error Name Values**
+
+error 的 name 属性可返回六个不同的值：
+
+| 错误名 | 描述 |
+| --- | --- |
+| EvalError | 已在 eval() 函数中发生的错误 |
+| RangeError | 已发生超出数字范围的错误 |
+| ReferenceError | 已发生非法引用 |
+| SyntaxError | 已发生语法错误 |
+| TypeError | 已发生类型错误 |
+| URIError | 在 encodeURI() 中已发生的错误 |
+
