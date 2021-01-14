@@ -315,3 +315,46 @@ JavaScript this 关键词指的是它所属的对象。
 *   在事件中，this 指的是接收事件的元素。
 
 像 call() 和 apply() 这样的方法可以将 this 引用到任何对象。
+
+**方法中的 this**
+
+在对象方法中，this 指的是此方法的“拥有者”。
+
+在下面的例子中，this 指的是 person 对象。
+
+person 对象是 fullName 方法的拥有者。
+
+``` javascript
+<script>
+// 创建对象：
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  id     : 678,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// 显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.fullName();	//Bill Gates
+</script>
+```
+
+**单独的 this**
+
+在单独使用时，拥有者是全局对象，因此 this 指的是全局对象。
+
+在浏览器窗口中，全局对象是 [object Window]：
+
+``` javascript
+var x = this;
+```
+
+在严格模式中，如果单独使用，那么 this 指的是全局对象 [object Window]：
+
+``` javascript
+"use strict";
+var x = this;
+```
+
