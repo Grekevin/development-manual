@@ -709,3 +709,26 @@ UTC 日期方法用于处理 UTC 日期（通用时区日期，Univeral Time Zon
 | getUTCSeconds() | 等于 getSeconds()，但返回 UTC 秒 |
 
 
+### JavaScript 设置日期方法
+
+使用“设置日期”方法可以设置日期对象的日期值（年、月、日、小时、分钟、秒、毫秒）。
+
+**日期设置方法**
+
+设置方法用于设置日期的某个部分。下面是最常用的方法（按照字母顺序排序）：
+
+| 方法 | 描述 |
+| --- | --- |
+| setDate() | 以数值（1-31）设置日 |
+| setFullYear() | 设置年（可选月和日） |
+| setHours() | 设置小时（0-23） |
+| setMilliseconds() | 设置毫秒（0-999） |
+| setMinutes() | 设置分（0-59） |
+| setMonth() | 设置月（0-11） |
+| setSeconds() | 设置秒（0-59） |
+| setTime() | 设置时间（从 1970 年 1 月 1 日至今的毫秒数） |
+
+具体使用见：
+
+[官方使用教程](https://www.w3school.com.cn/js/js_date_methods_set.asp)
+
