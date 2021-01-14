@@ -733,3 +733,57 @@ const PI = 3.14159265359;
 
 因此，我们不能更改常量原始值，但我们可以更改常量对象的属性。
 
+**原始值**
+
+如果我们将一个原始值赋给常量，我们就不能改变原始值：
+
+``` javascript
+const PI = 3.141592653589793;
+PI = 3.14;      // 会出错
+PI = PI + 10;   // 也会出错
+```
+
+**常量对象可以更改**
+
+您可以更改常量对象的属性：
+
+``` javascript
+// 您可以创建 const 对象：
+const car = {type:"porsche", model:"911", color:"Black"};
+
+// 您可以更改属性：
+car.color = "White";
+
+// 您可以添加属性：
+car.owner = "Bill";
+```
+
+但是您无法重新为常量对象赋值：
+
+``` javascript
+const car = {type:"porsche", model:"911", color:"Black"};
+car = {type:"Volvo", model:"XC60", color:"White"};    // ERROR
+```
+
+**常量数组可以更改**
+
+您可以更改常量数组的元素：
+
+``` javascript
+// 您可以创建常量数组：
+const cars = ["Audi", "BMW", "porsche"];
+
+// 您可以更改元素：
+cars[0] = "Honda";
+
+// 您可以添加元素：
+cars.push("Volvo");
+```
+
+但是您无法重新为常量数组赋值：
+
+``` javascript
+const cars = ["Audi", "BMW", "porsche"];
+cars = ["Honda", "Toyota", "Volvo"];    // ERROR
+```
+
