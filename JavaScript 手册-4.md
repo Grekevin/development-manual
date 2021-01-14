@@ -260,3 +260,43 @@ var y = new Boolean(false);
 ```
 
 > 比较两个 JavaScript 对象将始终返回 false。
+
+### JavaScript 比较和逻辑运算符
+
+比较和逻辑运算符用于测试 true 或 false。
+
+**比较运算符**
+
+比较运算符在逻辑语句中使用，以判定变量或值是否相等。
+
+我们给定 x = 5，下表中解释了比较运算符：
+
+| 运算符 | 描述 | 比较 | 返回 |
+| --- | --- | --- | --- | --- |
+| == | 等于 | x == 8 | false | 
+|  |  | x == 5 | true | 
+|  |  | x == "5" | true |
+| === | 值相等并且类型相等 | x === 5 | true | 
+|  |  | x === "5" | false |
+| != | 不相等 | x != 8 | true |
+| !== | 值不相等或类型不相等 | x !== 5 | false |
+|  |  | x !== "5" | true | 
+|  |  | x !== 8 | true | 
+| > | 大于 | x > 8 | false | 
+| < | 小于 | x < 8 | true |
+| >= | 大于或等于 | x >= 8 | false |
+| <= | 小于或等于 | x <= 8 | true |
+
+**条件（三元）运算符**
+
+JavaScript 也包含了可基于某些条件向变量赋值的条件运算符。
+
+``` javascript
+variablename = (condition) ? value1:value2
+```
+
+``` javascript
+var voteable = (age < 18) ? "太年轻":"足够成熟";
+```
+如果变量 age 的值小于 18，变量 voteable 的值将是 "太年轻"，否则变量 voteable 的值将是 "足够成熟"。
+
