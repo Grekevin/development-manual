@@ -578,3 +578,23 @@ var x = 10;       // 全局作用域
 let y = 6;       // 全局作用域
 ```
 
+**HTML 中的全局变量**
+
+使用 JavaScript 的情况下，全局作用域是 JavaScript 环境。
+
+在 HTML 中，全局作用域是 window 对象。
+
+通过 var 关键词定义的全局变量属于 window 对象：
+
+``` javascript
+var carName = "porsche";
+// 此处的代码可使用 window.carName
+```
+
+通过 let 关键词定义的全局变量不属于 window 对象：
+
+``` javascript
+let carName = "porsche";
+// 此处的代码不可使用 window.carName
+```
+
