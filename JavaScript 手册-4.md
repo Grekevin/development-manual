@@ -681,6 +681,27 @@ function myFunction() {
 }
 ```
 
+**JavaScript 变量**
 
+在 JavaScript 中，对象和函数也是变量。
+
+作用域决定了从代码不同部分对变量、对象和函数的可访问性。
+
+**自动全局**
+
+如果您为尚未声明的变量赋值，此变量会自动成为全局变量。
+
+这段代码将声明一个全局变量 carName，即使在函数内进行了赋值。
+
+``` javascript
+myFunction();
+
+
+// 此处的代码能够使用 carName 变量
+
+function myFunction() {
+    carName = "porsche";	//全局变量 carName
+}
+```
 
 
