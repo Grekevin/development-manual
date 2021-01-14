@@ -148,3 +148,155 @@ function  myFunction() {
 }
 ```
 
+**"use strict"; 语法**
+
+声明严格模式的语法被设计为兼容更早版本的 JavaScript。
+
+编译 JavaScript 程序中的数值文字（比如 4+5）或字符串文字（"Bill Gates"）不会有负面效果。它只会编译为不存在的变量然后消失。
+
+所有 "use strict"; 只会对“理解”其含义的新编译器产生影响。
+
+**为什么使用严格模式？**
+
+严格模式使我们更容易编写“安全的” JavaScript。
+
+严格模式把之前可接受的“坏语法”转变为真实的错误。
+
+举例来说，在普通的 JavaScript 中，错打变量名会创建新的全局变量。在严格模式中，此举将抛出错误，这样就不可能意外创建全局变量。
+
+在普通 JavaScript 中，如果向不可写属性赋值，开发者不会得到任何错误反馈。
+
+在严格模式中，向不可写的、只能读取的、不存在的属性赋值，或者向不存在的变量或对象赋值，将抛出错误。
+
+**严格模式中不允许的事项**
+
+在不声明变量的情况下使用变量，是不允许的：
+
+``` javascript
+"use strict";
+x = 3.14;                // 这将引发错误
+```
+
+
+对象也是变量，在不声明对象的情况下使用对象也是不允许的：
+
+``` javascript
+"use strict";
+x = {p1:10, p2:20};      // 这将引发错误
+```
+
+删除变量（或对象）是不允许的：
+
+``` javascript
+"use strict";
+var x = 3.14;
+delete x;                // 这将引发错误
+```
+
+删除函数是不允许的：
+
+``` javascript
+"use strict";
+function x(p1, p2) {}; 
+delete x;                 // 这将引发错误
+```
+
+重复参数名是不允许的：
+
+``` javascript
+"use strict";
+function x(p1, p1) {};   // 这将引发错误
+```
+
+八进制数值文本是不允许的：
+
+``` javascript
+"use strict";
+var x = 010;             // 这将引发错误
+```
+
+转义字符是不允许的：
+
+``` javascript
+"use strict";
+var x = \010;            // 这将引发错误
+```
+
+写入只读属性是不允许的：
+
+``` javascript
+"use strict";
+var obj = {};
+Object.defineProperty(obj, "x", {value:0, writable:false});
+
+obj.x = 3.14;            // 这将引发错误
+```
+
+写入只能获取的属性是不允许的：
+
+``` javascript
+"use strict";
+var obj = {get x() {return 0} };
+
+obj.x = 3.14;            // 这将引发错误
+```
+
+删除不可删除的属性是不允许的：
+
+``` javascript
+"use strict";
+delete Object.prototype; // 这将引发错误
+```
+
+字符串 "eval" 不可用作变量：
+
+``` javascript
+"use strict";
+var eval = 3.14;         // 这将引发错误
+```
+
+字符串 "arguments" 不可用作变量：
+
+``` javascript
+"use strict";
+var arguments = 3.14;    // 这将引发错误
+```
+
+with 语句是不允许的：
+
+``` javascript
+"use strict";
+with (Math){x = cos(2)}; // 这将引发错误
+```
+
+处于安全考虑，不允许 eval() 在其被调用的作用域中创建变量：
+
+``` javascript
+"use strict";
+eval ("var x = 2");
+alert (x);               // 这将引发错误
+```
+
+> 在类似 f() 的函数调用中，this 的值是全局对象。在严格模式中，现在它成为了 undefined。
+
+**对未来的保障**
+
+严格模式中不允许使用为未来预留的关键词。它们是：
+
+ - implements
+ - interface
+ - let
+ - package
+ - private
+ - protected
+ - public
+ - static
+ - yield
+
+``` javascript
+"use strict";
+var public = 1500;      // 这将引发错误
+```
+
+> 警告："use strict" 指令只能在脚本或函数的开头被识别。
+
