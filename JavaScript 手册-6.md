@@ -237,3 +237,57 @@ document.getElementById("demo").innerHTML =
  - JavaScript 本身、jQuery 以及其他 JavaScript 库使用驼峰大小写。
  - JavaScript 命名请不要以 $ 符号开头。此举会引起 JavaScript 库名称冲突。
 
+**在 HTML 中加载 JavaScript**
+
+使用简单的语法来加载外部脚本（type 属性不是必需的）：
+
+``` html
+<script src="myscript.js"></script>
+```
+
+**访问 HTML 元素**
+
+使用“不整洁的” HTML 样式的后果，也许是导致 JavaScript 错误。
+
+这两条 JavaScript 语句会产生不同的结果：
+
+``` javascript
+var obj = getElementById("Demo")
+
+var obj = getElementById("demo") 
+```
+
+如果可能，请在 HTML 中使用相同的命名约定（就像 JavaScript 那样）。
+
+**文件扩展名**
+
+HTML 文件应该使用 .html 扩展名（而非 .htm）。
+
+CSS 文件应该使用 .css 扩展名。
+
+JavaScript 文件应该使用 .js 扩展名。
+
+**使用小写文件名**
+
+大多数 web 服务器（Apache、Unix）对文件名的大小写敏感：
+
+ - london.jpg 无法视作 London.jpg 进行访问。
+
+其他 web 服务器（微软的 IIS）对大小写不敏感：
+
+ - london.jpg 能够以 London.jpg 或 london.jpg 来访问。
+
+如果您混合使用大小写，则必须严格保持连续和一致。
+
+如果您将站点从大小写不敏感的服务器转移至对大小写敏感的服务器，即使这种小错误也可能破坏您的网站。
+
+为了避免这些问题，请始终使用小写文件名（如果可能）。
+
+**性能**
+
+计算机不会使用代码约定。大部分规则对程序的执行影响很小。
+
+缩进和额外的空格对小段脚本并不重要。
+
+对于开发中的脚本，应该优先考虑可读性。应该缩小更大型的生产脚本。
+
