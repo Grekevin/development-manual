@@ -662,3 +662,25 @@ let x = 6;       // 允许
 }
 ```
 
+**提升**
+
+通过 var 声明的变量会提升到顶端。
+
+您可以在声明变量之前就使用它：
+
+``` javascript
+// 在此处，您可以使用 carName
+var carName;
+```
+
+通过 let 定义的变量不会被提升到顶端。
+
+在声明 let 变量之前就使用它会导致 ReferenceError。
+
+变量从块的开头一直处于“暂时死区”，直到声明为止：
+
+``` javascript
+// 在此处，您不可以使用 carName
+let carName;
+```
+
