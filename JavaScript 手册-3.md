@@ -47,7 +47,7 @@ map() 方法不会对没有值的数组元素执行函数。
 
 ``` javascript
 var numbers1 = [45, 4, 9, 16, 25];
-var numbers2 = numbers1.map(myFunction);
+var numbers2 = numbers1.map(myFunction);	//90,8,18,32,50
 
 function myFunction(value, index, array) {
   return value * 2;
@@ -64,7 +64,7 @@ function myFunction(value, index, array) {
 
 ``` javascript
 var numbers1 = [45, 4, 9, 16, 25];
-var numbers2 = numbers1.map(myFunction);
+var numbers2 = numbers1.map(myFunction);	//90,8,18,32,50
 
 function myFunction(value) {
   return value * 2;
