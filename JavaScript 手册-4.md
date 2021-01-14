@@ -150,3 +150,80 @@ function getRndInteger(min, max) {
 }
 ```
 
+### JavaScript 逻辑
+
+JavaScript 布尔（逻辑）代表两个值之一：true 或 false。
+
+**布尔值**
+
+通常，在编程中，您会需要只能有两个值之一的数据类型，比如
+
+ - YES / NO
+ - ON / OFF
+ - TRUE / FALSE
+
+鉴于此，JavaScript 提供一种布尔数据类型。它只接受值 true 或 false。
+
+**Boolean() 函数**
+
+您可以使用 Boolean() 函数来确定表达式（或变量）是否为真：
+
+``` javascript
+Boolean(10 > 9)        // 返回 true
+```
+或者甚至更简单：
+
+``` javascript
+(10 > 9)              // 也返回 true
+10 > 9                // 也返回 true
+```
+
+**所有具有“真实”值的即为 True**
+
+``` javascript
+100
+
+3.14
+
+-15
+
+"Hello"
+
+"false"
+
+7 + 1 + 3.14
+
+5 < 6
+```
+**所有不具有“真实”值的即为 False**
+
+ - 0（零）的布尔值为 false
+ - -0 （负零）的布尔值为 false
+ - ""（空值）的布尔值为 false
+ - undefined 的布尔值是 false
+ - null 的布尔值是 false
+ - false 的布尔值是 false
+ - NaN 的布尔值是 false
+
+ **布尔可以是对象**
+ 
+通常 JavaScript 布尔是由字面量创建的原始值：
+
+``` javascript
+var x = false
+```
+
+但是布尔也可以通过关键词 new 作为对象来定义：
+
+``` javascript
+var y = new Boolean(false)
+```
+示例：
+
+``` javascript
+var x = false;
+var y = new Boolean(false);
+
+// typeof x 返回 boolean
+// typeof y 返回 object
+```
