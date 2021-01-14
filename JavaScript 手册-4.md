@@ -450,3 +450,10 @@ exec() 方法是一个正则表达式方法。
 /e/.exec("The best things in life are free!");	//e
 ```
 
+### JavaScript 错误 - Throw 和 Try to Catch
+
+> try 语句使您能够测试代码块中的错误。
+catch 语句允许您处理错误。
+throw 语句允许您创建自定义错误。
+finally 使您能够执行代码，在 try 和 catch 之后，无论结果如何。
+
