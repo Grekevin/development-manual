@@ -482,3 +482,58 @@ try {
 
 JavaScript 实际上会创建带有两个属性的 Error 对象：name 和 message。
 
+**throw 语句**
+
+throw 语句允许您创建自定义错误。
+
+从技术上讲您能够抛出异常（抛出错误）。
+
+异常可以是 JavaScript 字符串、数字、布尔或对象：
+
+``` javascript
+throw "Too big";    // 抛出文本
+throw 500;          //抛出数字
+```
+
+如果把 throw 与 try 和 catch 一同使用，就可以控制程序流并生成自定义错误消息。
+
+**输入验证案例**
+
+本例会检查输入。如果值是错误的，将抛出异常（err）。
+
+该异常（err）被 catch 语句捕获并显示一条自定义的错误消息：
+
+``` html
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>请输入 5 - 10 之间的数字：</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">测试输入</button>
+<p id="message"></p>
+
+<script>
+function myFunction() {
+    var message, x;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try { 
+        if(x == "") throw "空的";
+         if(isNaN(x)) throw "不是数字";
+         x = Number(x);
+        if(x < 5) throw  "太小";
+        if(x > 10) throw "太大";
+    }
+    catch(err) {
+        message.innerHTML = "输入是 " + err;
+    }
+}
+</script>
+
+</body>
+</html> 
+```
+
