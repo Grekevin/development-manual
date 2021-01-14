@@ -293,3 +293,103 @@ JavaScript 文件应该使用 .js 扩展名。
 
 ### JavaScript 最佳实践
 
+> 请避免全局变量、new、===、eval()
+
+**避免全局变量**
+
+请尽量少地使用全局变量。
+
+它包括所有的数据类型、对象和函数。
+
+全局变量和函数可被其他脚本覆盖。
+
+请使用局部变量替代，并学习如何使用闭包。
+
+**始终声明局部变量**
+
+所有在函数中使用的变量应该被声明为局部变量。
+
+局部变量未经声明关键字声明，将变成全局变量。
+
+严格模式不允许使用未声明的变量。
+
+**在顶部声明**
+
+一项好的编码习惯是把所有声明放在每段脚本或函数的顶部。
+
+这么做的好处是：
+
+ - 获得更整洁的代码
+ - 提供了查找局部变量的好位置
+ - 更容易避免不需要的全局变量
+ - 减少不需要的重新声明的可能性
+
+``` javascript
+// 在顶部声明
+var firstName, lastName, price, discount, fullPrice;
+
+// 稍后使用
+firstName = "Bill";
+lastName = "Gates";
+
+price = 19.90;
+discount = 0.10;
+
+fullPrice = price * 100 / discount;
+```
+
+也可以用于循环变量：
+
+``` javascript
+// 在顶部声明
+var i;
+
+// 稍后使用
+for (i = 0; i < 5; i++)  {}
+```
+
+默认地，JavaScript 会将所有声明移至顶部（JavaScript hoisting）。
+
+**初始化变量**
+
+在您声明变量时对其进行初始化是个好习惯。
+
+这么做的好处是：
+
+ - 更整洁的代码
+ - 在单独的位置来初始化变量
+ - 避免未定义值
+
+``` javascript
+// 在开头进行声明和初始化
+var firstName = "",
+    lastName  = "",
+    price = 0,
+    discount = 0,
+    fullPrice  = 0,
+    myArray = [],
+    myObject = {};
+```
+
+变量初始化使我们能够了解预期用途和预期的数据类型。
+
+**请不要声明数值、字符串或布尔对象**
+
+请始终将数值、字符串或布尔值视作原始值。而非对象。
+
+如果把这些类型声明为对象，会拖慢执行速度，并产生讨厌的副作用：
+
+``` javascript
+var x = "Bill";             
+var y = new String("Bill");
+(x === y) // 结果为 false，因为 x 是字符串，而 y 是对象。
+```
+
+或者甚至更糟：
+
+``` javascript
+var x = new String("Bill");             
+var y = new String("Bill");
+(x == y) // 结果是 false，因为你无法比较对象。
+```
+
