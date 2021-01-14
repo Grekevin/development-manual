@@ -116,3 +116,37 @@ Math.random();				// 返回随机数
 
 > Math.random() 总是返回小于 1 的数。
 
+**JavaScript 随机整数**
+
+Math.random() 与 Math.floor() 一起使用用于返回随机整数。
+
+``` javascript
+Math.floor(Math.random() * 10);		// 返回 0 至 9 之间的数
+Math.floor(Math.random() * 11);		// 返回 0 至 10 之间的数
+Math.floor(Math.random() * 100);	// 返回 0 至 99 之间的数
+Math.floor(Math.random() * 101);	// 返回 0 至 100 之间的数
+
+Math.floor(Math.random() * 100) + 1;	// 返回 1 至 100 之间的数
+Math.floor(Math.random() * 10) + 1;	// 返回 1 至 10 之间的数
+```
+
+**一个适当的随机函数**
+
+创建一个随机函数用于生成所有随机整数是一个好主意。
+
+这个 JavaScript 函数始终返回介于 min（包括）和 max（不包括）之间的随机数：
+
+``` javascript
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+}
+```
+
+这个 JavaScript 函数始终返回介于 min 和 max（都包括）之间的随机数：
+
+``` javascript
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+```
+
