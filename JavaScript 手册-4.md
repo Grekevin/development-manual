@@ -600,5 +600,32 @@ RangeError 会在您使用了合法值的范围之外的数字时抛出。
 
 假如您使用的值的类型不在期望值的类型，则 TypeError 被抛出。
 
+**URI 错误**
+
+假如您在 URI 函数中使用非法字符，则 URIError 被抛出：
+
+``` javascript
+try {
+    decodeURI("%%%");   // 您无法对这些百分号进行 URI 编码
+ }
+catch(err) {
+    document.getElementById("demo").innerHTML = err.name;
+} 
+```
+
+**非标准的 Error 对象属性**
+
+Mozilla 和 Microsoft 定义了非标准的 error 对象属性：
+
+ - 
+ - fileName (Mozilla)
+ - lineNumber (Mozilla)
+ - columnNumber (Mozilla)
+ - stack (Mozilla)
+ - description (Microsoft)
+ - number (Microsoft)
+
+> 请勿在公共网站使用这些属性。它们并不会在所有浏览器中工作。
+
 
 
