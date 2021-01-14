@@ -552,3 +552,29 @@ for (let i = 0; i < 10; i++) {
 }
 // 此处 i 为 7
 ```
+**函数作用域**
+
+在函数内声明变量时，使用 var 和 let 很相似。
+
+它们都有函数作用域：
+
+``` javascript
+function myFunction() {
+  var carName = "porsche";   // 函数作用域
+}
+function myFunction() {
+  let carName = "porsche";   // 函数作用域
+}
+```
+
+**全局作用域**
+
+如果在块外声明声明，那么 var 和 let 也很相似。
+
+它们都拥有全局作用域：
+
+``` javascript
+var x = 10;       // 全局作用域
+let y = 6;       // 全局作用域
+```
+
