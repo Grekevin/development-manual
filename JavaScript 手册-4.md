@@ -360,3 +360,20 @@ var str = "Visit W3School";
 var n = str.search(/w3school/i); 	//6
 ```
 
+**使用字符串方法 replace() 处理字符串**
+
+replace() 也接受字符串作为搜索参数：
+
+``` javascript
+var str = "Visit Microsoft!";
+var res = str.replace("Microsoft", "W3School"); //Visit W3School!
+```
+
+在字符串方法 replace() 中使用正则表达式
+
+使用大小写不明的正则表达式以 W3school 来替换字符串中的 Microsoft：
+
+``` javascript
+var str = "Visit Microsoft!";
+var res = str.replace(/microsoft/i, "W3School"); //Visit W3School!
+```
