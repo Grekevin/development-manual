@@ -393,3 +393,39 @@ function myFunction() {
 </button>
 ```
 
+**对象方法绑定**
+
+在此例中，this 是 person 对象（person 对象是该函数的“拥有者”）：
+
+``` javascript
+var person = {
+  firstName  : "Bill",
+  lastName   : "Gates",
+  id         : 678,
+  myFunction : function() {
+    return this;	//[object Object]
+  }
+};
+```
+
+**显式函数绑定**
+
+call() 和 apply() 方法是预定义的 JavaScript 方法。
+
+它们都可以用于将另一个对象作为参数调用对象方法。
+
+在下面的例子中，当使用 person2 作为参数调用 person1.fullName 时，this 将引用 person2，即使它是 person1 的方法：
+
+``` javascript
+var person1 = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person2 = {
+  firstName:"Bill",
+  lastName: "Gates",
+}
+person1.fullName.call(person2);  // 会返回 "Bill Gates"
+```
+
