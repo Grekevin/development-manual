@@ -321,3 +321,74 @@ Date 对象由新的 Date() 构造函数创建。
 
 new Date() 用当前日期和时间创建新的日期对象：
 
+日期对象是静态的。计算机时间正在滴答作响，但日期对象不会。
+
+``` javascript
+<script>
+var d = new Date();
+
+// d = "Thu Jan 14 2021 13:32:47 GMT+0800 (China Standard Time)"
+document.getElementById("demo").innerHTML = d;
+</script>
+```
+
+**new Date(year, month, ...)**
+
+new Date(year, month, ...) 用指定日期和时间创建新的日期对象。
+
+7个数字分别指定年、月、日、小时、分钟、秒和毫秒（按此顺序）：
+
+``` javascript
+var d = new Date(2018, 11, 24, 10, 33, 30, 0);
+```
+
+注释：JavaScript 从 0 到 11 计算月份。
+
+一月是 0。十二月是11。
+
+
+6个数字指定年、月、日、小时、分钟、秒：
+
+``` javascript
+var d = new Date(2018, 11, 24, 10, 33, 30);
+```
+
+5个数字指定年、月、日、小时和分钟：
+
+``` javascript
+var d = new Date(2018, 11, 24, 10, 33);
+```
+
+4个数字指定年、月、日和小时：
+
+``` javascript
+var d = new Date(2018, 11, 24, 10);
+```
+
+3 个数字指定年、月和日：
+
+``` javascript
+var d = new Date(2018, 11, 24);
+```
+
+2个数字指定年份和月份：
+
+``` javascript
+var d = new Date(2018, 11);
+```
+
+您不能省略月份。如果只提供一个参数，则将其视为毫秒。
+
+``` javascript
+var d = new Date(2018);
+```
+
+**new Date(dateString)**
+
+new Date(dateString) 从日期字符串创建一个新的日期对象：
+
+``` javascript
+//Wed Dec 25 2019 12:46:00 GMT+0800 (China Standard Time)
+var d = new Date("October 13, 2014 11:13:00");
+```
+
