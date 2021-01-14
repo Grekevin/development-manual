@@ -19,3 +19,21 @@ function myFunction(value, index, array) {
 }
 ```
 
+注释：该函数接受 3 个参数：
+
+ - 项目值
+ - 项目索引
+ - 数组本身
+
+上面的例子只用了 value 参数。这个例子可以重新写为：
+
+``` javascript
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+function myFunction(value) {
+  txt = txt + value + "<br>"; 
+}
+```
+
