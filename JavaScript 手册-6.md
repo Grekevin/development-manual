@@ -61,3 +61,24 @@ debugger;
 document.getElementbyId("demo").innerHTML = x; 
 ```
 
+### JavaScript 样式指南和代码约定
+
+请始终为您所有的 JavaScript 项目使用相同的代码约定。
+
+**JavaScript 代码约定**
+
+代码约定(Coding conventions)指的是_编程的样式指导方针_。这些原则大体上包括：
+
+*   变量和函数的命名和声明规则
+*   使用空格、缩进和注释的规则
+*   编程习惯和准则
+
+代码约定_确保质量_：
+
+*   改善代码可读性
+*   提升代码可维护性
+
+代码约定可以是团队遵守的成文规则，也可以是您个人的编码习惯。
+
+本页介绍 W3School 使用的通用 JavaScript 代码约定。
+
