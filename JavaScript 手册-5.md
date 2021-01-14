@@ -300,3 +300,5 @@ var public = 1500;      // 这将引发错误
 
 > 警告："use strict" 指令只能在脚本或函数的开头被识别。
 
+### JavaScript this 关键词
+
