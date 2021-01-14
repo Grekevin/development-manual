@@ -632,11 +632,45 @@ var d = new Date("Fri Mar 26 2018 09:56:24 GMT+0100 (Tokyo Time)");
 | getHours() | 获取小时（0-23） |
 | getMilliseconds() | 获取毫秒（0-999） |
 | getMinutes() | 获取分（0-59） |
-| getMonth() | 获取月（0-11） |
+| getMonth() | 以数字（0-11）返回日期的月份 |
 | getSeconds() | 获取秒（0-59） |
 | getTime() | 获取时间（从 1970 年 1 月 1 日至今毫秒数） |
 
 ``` javascript
 var d = new Date();
-d.getTime()	;	//
+d.getTime()	;	//1610605225518
+d.getFullTear();	//2021
+d.getMonth();	//0
+
 ```
+
+**getMonth() 方法**
+
+在 JavaScript 中，第一个月（1 月）是月号 0，因此 12 月返回月号 11。
+
+您可以使用名称数组，并使用 getMonth() 将月份作为名称返回：
+
+``` javascript
+var d = new Date();
+var months = 
+            [
+            "January", "February", "March", "April", "May", "June", 
+            "July", "August", "September", "October", "November", "December"
+            ];
+document.getElementById("demo").innerHTML = months[d.getMonth()];
+```
+
+通过加1来获取正确月份：
+
+``` javascript
+<script>
+var d = new Date();
+
+//getMonth（）方法以 0 到 11 之间的数字返回日期的月份。
+//要获得正确的月份，您必须添加 1
+document.getElementById("demo").innerHTML = d.getMonth() + 1;
+</script>
+```
+
+
+
