@@ -578,3 +578,13 @@ error 的 name 属性可返回六个不同的值：
 | TypeError | 已发生类型错误 |
 | URIError | 在 encodeURI() 中已发生的错误 |
 
+**Eval 错误**
+
+EvalError 指示 eval() 函数中的错误。
+
+> 更新版本的 JavaScript 不会抛出任何 EvalError。请使用 SyntaxError 代替。
+
+**范围错误**
+
+RangeError 会在您使用了合法值的范围之外的数字时抛出。
+
