@@ -629,5 +629,35 @@ Mozilla 和 Microsoft 定义了非标准的 error 对象属性：
 
 ### JavaScript 作用域
 
+**JavaScript 函数作用域**
+
+在 JavaScript 中有两种作用域类型：
+
+ - 局部作用域
+ - 全局作用域
+
+JavaScript 拥有函数作用域：每个函数创建一个新的作用域。
+
+作用域决定了这些变量的可访问性（可见性）。
+
+函数内部定义的变量从函数外部是不可访问的（不可见的）。
+
+**局部 JavaScript 变量**
+
+在 JavaScript 函数中声明的变量，会成为函数的局部变量。
+
+局部变量的作用域是局部的：只能在函数内部访问它们。
+
+``` javascript
+// 此处的代码不能使用 carName 变量
+
+function myFunction() {
+    var carName = "porsche";
+
+    // 此处的代码能使用 carName 变量
+
+}
+```
+
 
 
