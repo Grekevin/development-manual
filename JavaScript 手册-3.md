@@ -262,7 +262,9 @@ var a = fruits.lastIndexOf("Apple");  //2
 var a = fruits.lastIndexOf("Apple", -3);	//0
 ```
 
-**Array.find()**
+**Array.find()和Array.findIndex()**
+
+> Array.findIndex()和Array.find()用类似，只不过返回的是找的元素的索引值。
 
 find() 方法返回通过测试函数的第一个数组元素的值。
 
