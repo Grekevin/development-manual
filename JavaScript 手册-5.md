@@ -383,3 +383,13 @@ function myFunction() {
 }
 ```
 
+**事件处理程序中的 this**
+
+在 HTML 事件处理程序中，this 指的是接收此事件的 HTML 元素：
+
+``` javascript
+<button onclick="this.style.display='none'">
+  点击来删除我！
+</button>
+```
+
