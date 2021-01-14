@@ -82,3 +82,115 @@ document.getElementbyId("demo").innerHTML = x;
 
 本页介绍 W3School 使用的通用 JavaScript 代码约定。
 
+**变量名**
+
+在 W3School，我们对标识符名称（变量和函数）使用了驼峰式大小写。
+
+所有名称以字母开头。
+
+``` javascript
+firstName = "Bill";
+lastName = "Gates";
+
+price = 19.90;
+tax = 0.20;
+
+fullPrice = price + (price * tax);
+```
+
+**运算符周围的空格**
+
+请始终在运算符（ = + - * / ）周围以及逗号之后添加空格：
+
+``` javascript
+var x = y + z;
+var values = ["Volvo", "Saab",  "Fiat"];
+```
+
+**代码缩进**
+
+请始终使用对代码块缩进使用 4 个空格：
+
+``` javascript
+function toCelsius(fahrenheit) {
+    return (5 / 9) * (fahrenheit - 32);
+}
+```
+
+请不要对缩进使用制表符。不同的编辑器对 tab 的解释也不尽相同。
+
+**语句规则**
+
+简单语句的通用规则：
+
+请始终以分号结束单条语句：
+
+``` javascript
+var values = ["Volvo", "Saab",  "Fiat"];
+
+var person = {
+    firstName: "Bill",
+     lastName: "Gates",
+    age: 50,
+    eyeColor:  "blue"
+};
+```
+
+针对复杂语句（compound）的通用规则：
+
+ - 请在第一行的结尾处写开括号
+ - 请在开括号前使用一个空格
+ - 请在新行上写闭括号，不带前导空格
+ - 请不要以分号来结束复杂语句
+
+函数：
+
+``` javascript
+function toCelsius(fahrenheit) {
+    return (5 / 9) * (fahrenheit - 32);
+}
+```
+
+循环：
+
+``` javascript
+for (i = 0; i < 5; i++) {
+    x += i;
+}
+```
+
+条件：
+
+``` javascript
+if (time < 20) {
+    greeting = "Good day";
+} else {
+     greeting = "Good evening";
+}
+```
+
+**对象规则**
+
+针对对象定义的通用规则：
+
+ - 把开括号与对象名放在同一行
+ - 在每个属性与其值之间使用冒号加一个空格
+ - 不要在最后一个属性值对后面写逗号
+ - 请在新行上写闭括号，不带前导空格
+ - 请始终以分号结束对象定义
+
+``` javascript
+var person = {
+    firstName: "Bill",
+    lastName: "Gates",
+    age: 50,
+    eyeColor:  "blue"
+};
+```
+
+可以对短对象在一行中进行压缩，就像这样：
+
+``` javascript
+var person = {firstName:"Bill", lastName:"Gates", age:50, eyeColor:"blue"};
+```
+
