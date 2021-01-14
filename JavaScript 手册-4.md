@@ -662,6 +662,25 @@ function myFunction() {
 > 由于只能在函数内部识别局部变量，因此能够在不同函数中使用同名变量。
 在函数开始时会创建局部变量，在函数完成时会删除它们。
 
+**全局 JavaScript 变量**
+
+函数之外声明的变量，会成为全局变量。
+
+全局变量的作用域是全局的：网页的所有脚本和函数都能够访问它。
+
+``` javascript
+var carName = " porsche";
+
+
+// 此处的代码能够使用 carName 变量
+
+function myFunction() {
+
+    // 此处的代码也能够使用 carName 变量
+
+}
+```
+
 
 
 
