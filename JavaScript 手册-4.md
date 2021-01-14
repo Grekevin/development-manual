@@ -474,3 +474,11 @@ try {
 } 
 ```
 
+**JavaScript 抛出错误**
+
+当发生错误时，JavaScript 通常会停止并产生错误消息。
+
+技术术语是这样描述的：JavaScript 将抛出异常（抛出错误）。
+
+JavaScript 实际上会创建带有两个属性的 Error 对象：name 和 message。
+
