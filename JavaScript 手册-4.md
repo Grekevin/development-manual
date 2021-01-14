@@ -227,3 +227,36 @@ var y = new Boolean(false);
 // typeof x 返回 boolean
 // typeof y 返回 object
 ```
+
+不要创建布尔对象。它会拖慢执行速度。
+
+new 关键词会使代码复杂化，并产生某些意想不到的结果：
+
+当使用 == 运算符时，相等的布尔是相等的：
+
+``` javascript
+var x = false;             
+var y = new Boolean(false);
+
+// (x == y) 为 true，因为 x 和 y 拥有相等的值
+```
+
+当使用 === 运算符时，相等的布尔是不相等的，因为 === 运算符需要在类型和值两方面同时相等。
+
+``` javascript
+var x = false;             
+var y = new Boolean(false);
+
+// (x === y) 为 false，因为 x 和 y 的类型不同
+```
+
+或者甚至更糟。对象无法进行比较：
+
+``` javascript
+var x = new Boolean(false);             
+var y = new Boolean(false);
+
+// (x == y) 为 false，因为对象无法比较
+```
+
+> 比较两个 JavaScript 对象将始终返回 false。
