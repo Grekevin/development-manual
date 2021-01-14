@@ -219,6 +219,8 @@ indexOf() 方法在数组中搜索元素值并返回在数组中可以找到一�
 
 > 注释：从左向右：第一个项目的位置是 0，第二个项目的位置是 1，以此类推。
 
+`indexOf` 使用[strict equality](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Comparison_Operators#Using_the_Equality_Operators) (无论是 ===, 还是 triple-equals操作符都基于同样的方法)进行判断 `item`与数组中包含的元素之间的关系。
+
 **语法**
 
 ``` javascript
