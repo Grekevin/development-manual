@@ -237,6 +237,8 @@ array.indexOf(item, start)
 ``` javascript
 var fruits = ["Apple", "Orange", "Apple", "Mango"];
 var a = fruits.indexOf("Apple");	//0
+
+var a = fruits.indexOf("Apple", -3);	//2
 ```
 
 **Array.lastIndexOf()**
@@ -253,4 +255,6 @@ array.lastIndexOf(item, start)
 ``` javascript
 var fruits = ["Apple", "Orange", "Apple", "Mango"];
 var a = fruits.lastIndexOf("Apple");
+
+var a = fruits.lastIndexOf("Apple", -3);
 ```
