@@ -317,3 +317,7 @@ Date 对象由新的 Date() 构造函数创建。
  - new Date(milliseconds)
  - new Date(date string)
 
+**new Date()**
+
+new Date() 用当前日期和时间创建新的日期对象：
+
