@@ -628,11 +628,15 @@ var d = new Date("Fri Mar 26 2018 09:56:24 GMT+0100 (Tokyo Time)");
 | --- | --- |
 | getDate() | 以数值返回天（1-31） |
 | getDay() | 以数值获取周名（0-6） |
-| getFullYear() | 获取四位的年（yyyy） |
+| getFullYear() | 以四位数字形式返回日期年份（yyyy） |
 | getHours() | 获取小时（0-23） |
 | getMilliseconds() | 获取毫秒（0-999） |
 | getMinutes() | 获取分（0-59） |
 | getMonth() | 获取月（0-11） |
 | getSeconds() | 获取秒（0-59） |
-| getTime() | 获取时间（从 1970 年 1 月 1 日至今） |
+| getTime() | 获取时间（从 1970 年 1 月 1 日至今毫秒数） |
 
+``` javascript
+var d = new Date();
+d.getTime()	;	//
+```
