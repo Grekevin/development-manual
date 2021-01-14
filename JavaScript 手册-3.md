@@ -218,7 +218,6 @@ function myFunction(value) {
 indexOf() 方法在数组中搜索元素值并返回其位置。
 
 > 注释：从左向右：第一个项目的位置是 0，第二个项目的位置是 1，以此类推。
-> 从右向左：第一个项目的位置是 1（索引是-1），第二个项目的位置是 2（索引是-2），以此类推。
 
 **语法**
 
@@ -243,7 +242,7 @@ var a = fruits.indexOf("Apple", -3);	//2
 
 **Array.lastIndexOf()**
 
-Array.lastIndexOf() 与 Array.indexOf() 类似，但是从数组结尾开始搜索。
+Array.lastIndexOf() 与 Array.indexOf() 类似，但是从数组结尾开始搜索，返回指定元素在数组中的最后一个的索引。
 
 ``` javascript
 array.lastIndexOf(item, start)
@@ -254,7 +253,7 @@ array.lastIndexOf(item, start)
 
 ``` javascript
 var fruits = ["Apple", "Orange", "Apple", "Mango"];
-var a = fruits.lastIndexOf("Apple");
+var a = fruits.lastIndexOf("Apple");  //2
 
-var a = fruits.lastIndexOf("Apple", -3);
+var a = fruits.lastIndexOf("Apple", -3);	//1
 ```
