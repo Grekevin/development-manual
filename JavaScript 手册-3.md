@@ -292,3 +292,28 @@ function myFunction(value) {
 
 ### JavaScript 日期
 
+实例
+
+``` javascript
+var d = new Date();
+```
+
+**JavaScript 日期输出**
+
+默认情况下，JavaScript 将使用浏览器的时区并将日期显示为全文本字符串：
+
+``` javascript
+Thu Jan 14 2021 13:28:40 GMT+0800 (China Standard Time)
+```
+
+**创建 Date 对象**
+
+Date 对象由新的 Date() 构造函数创建。
+
+有 4 种方法创建新的日期对象：
+
+ - new Date()
+ - new Date(year, month, day, hours, minutes, seconds, milliseconds)
+ - new Date(milliseconds)
+ - new Date(date string)
+
