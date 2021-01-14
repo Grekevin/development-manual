@@ -457,3 +457,20 @@ catch 语句允许您处理错误。
 throw 语句允许您创建自定义错误。
 finally 使您能够执行代码，在 try 和 catch 之后，无论结果如何。
 
+**JavaScript try 和 catch**
+
+try 语句允许您定义一个代码块，以便在执行时检测错误。
+
+catch 语句允许你定义一个要执行的代码块，如果 try 代码块中发生错误。
+
+JavaScript 语句 try 和 catch 成对出现：
+
+``` javascript
+try {
+     供测试的代码块
+}
+ catch(err) {
+     处理错误的代码块
+} 
+```
+
