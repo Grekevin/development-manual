@@ -429,3 +429,45 @@ var person2 = {
 person1.fullName.call(person2);  // 会返回 "Bill Gates"
 ```
 
+### JavaScript Let
+
+ES2015 引入了两个重要的 JavaScript 新关键词：let 和 const。
+
+这两个关键字在 JavaScript 中提供了块作用域（Block Scope）变量（和常量）。
+
+在 ES2015 之前，JavaScript 只有两种类型的作用域：全局作用域和函数作用域。
+
+**全局作用域**
+
+全局（在函数之外）声明的变量拥有全局作用域。
+
+全局变量可以在 JavaScript 程序中的任何位置访问。
+
+``` javascript
+var carName = "porsche";
+
+// 此处的代码可以使用 carName
+
+function myFunction() {
+  // 此处的代码也可以使用 carName
+}
+```
+
+**函数作用域**
+
+局部（函数内）声明的变量拥有函数作用域。
+
+局部变量只能在它们被声明的函数内访问。
+
+``` javascript
+// 此处的代码不可以使用 carName
+
+function myFunction() {
+  var carName = "porsche";
+  // 此处的代码可以使用carName
+}
+
+// 此处的代码不可以使用 carName
+```
+
+
