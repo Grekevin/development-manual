@@ -728,6 +728,8 @@ UTC 日期方法用于处理 UTC 日期（通用时区日期，Univeral Time Zon
 | setSeconds() | 设置秒（0-59） |
 | setTime() | 设置时间（从 1970 年 1 月 1 日至今的毫秒数） |
 
+> JavaScript 从 0 到 11 计数月份。1 月是 0。12 月是 11。
+
 具体使用见：
 
 [官方使用教程](https://www.w3school.com.cn/js/js_date_methods_set.asp)
