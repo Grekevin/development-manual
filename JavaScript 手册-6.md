@@ -442,3 +442,42 @@ var x = 5 - "x";     // x.valueOf() 是 NaN, typeof x 是数值
 "Hello" - "Dolly"    // 返回 NaN
 ```
 
+**使用 === 比较**
+
+== 比较运算符总是在比较之前进行类型转换（以匹配类型）。
+
+=== 运算符会强制对值和类型进行比较：
+
+``` javascript
+0 == "";        // true
+1 == "1";       // true
+1 == true;      // true
+
+0 === "";       // false
+1 === "1";      // false
+1 === true;     // false
+```
+
+**使用 Parameter Defaults**
+
+如果调用函数时缺少一个参数，那么这个缺失参数的值会被设置为 undefined。
+
+undefined 值会破坏您的代码。为参数设置默认值是一个好习惯。
+
+``` javascript
+function myFunction(x, y) {
+    if (y === undefined) {
+        y = 0;
+    }
+}
+```
+
+**用 default 来结束 switch**
+
+请使用使用 default 来结束您的 switch 语句。即使您认为没有这个必要。
+
+**避免使用 eval()**
+
+eval() 函数用于将文本作为代码来允许。在几乎所有情况下，都没有必要使用它。
+
+因为允许任意代码运行，它同时也意味着安全问题。
