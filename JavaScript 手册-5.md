@@ -787,3 +787,76 @@ const cars = ["Audi", "BMW", "porsche"];
 cars = ["Honda", "Toyota", "Volvo"];    // ERROR
 ```
 
+**重新声明**
+
+在程序中的任何位置都允许重新声明 JavaScript var 变量：
+
+``` javascript
+var x = 2;    //  允许
+var x = 3;    //  允许
+x = 4;        //  允许
+```
+
+在同一作用域或块中，不允许将已有的 var 或 let 变量重新声明或重新赋值给 const：
+
+``` javascript
+var x = 2;         // 允许
+const x = 2;       // 不允许
+{
+  let x = 2;     // 允许
+  const x = 2;   // 不允许
+}
+```
+
+在同一作用域或块中，为已有的 const 变量重新声明声明或赋值是不允许的：
+
+``` javascript
+const x = 2;       // 允许
+const x = 3;       // 不允许
+x = 3;             // 不允许
+var x = 3;         // 不允许
+let x = 3;         // 不允许
+
+{
+  const x = 2;   // 允许
+  const x = 3;   // 不允许
+  x = 3;         // 不允许
+  var x = 3;     // 不允许
+  let x = 3;     // 不允许
+}
+```
+
+在另外的作用域或块中重新声明 const 是允许的：
+
+``` javascript
+const x = 2;       // 允许
+
+{
+  const x = 3;   // 允许
+}
+
+{
+  const x = 4;   // 允许
+}
+```
+
+**提升**
+
+通过 var 定义的变量会被提升到顶端。
+
+您可以在声明 var 变量之前就使用它：
+
+``` javascript
+carName = "Volvo";    // 您可以在此处使用 carName
+var carName;
+```
+
+通过 const 定义的变量不会被提升到顶端。
+
+const 变量不能在声明之前使用：
+
+``` javascript
+carName = "Volvo";    // 您不可以在此处使用 carName
+const carName = "Volvo";
+```
+
