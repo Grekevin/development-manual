@@ -244,6 +244,8 @@ var a = fruits.indexOf("Apple", -3);	//2
 
 Array.lastIndexOf() 与 Array.indexOf() 类似，但是从数组结尾开始搜索，返回指定元素在数组中的最后一个的索引。
 
+lastIndexOf 使用严格相等（strict equality，即 ===）比较。
+
 ``` javascript
 array.lastIndexOf(item, start)
 ```
