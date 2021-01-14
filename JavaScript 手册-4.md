@@ -700,8 +700,13 @@ myFunction();
 // 此处的代码能够使用 carName 变量
 
 function myFunction() {
-    carName = "porsche";	//全局变量 carName
+    carName = "porsche";	//全局变量 carName(非严格模式下)
 }
 ```
 
+**严格模式**
+
+所有现代浏览器都支持以“严格模式”运行 JavaScript。
+
+> 在“严格模式”中不会自动创建全局变量。
 
