@@ -260,3 +260,4 @@ var y = new Boolean(false);
 ```
 
 > 比较两个 JavaScript 对象将始终返回 false。
+
