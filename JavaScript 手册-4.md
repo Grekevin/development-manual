@@ -414,3 +414,39 @@ var res = str.replace(/microsoft/i, "W3School"); //Visit W3School!
 | n* | 匹配任何包含零个或多个 n 的字符串。 | 
 | n? | 匹配任何包含零个或一个 n 的字符串。 | 
 
+**RegExp 对象**
+
+在 JavaScript 中，RegExp 对象是带有预定义属性和方法的正则表达式对象。
+
+**使用 test()**
+
+test() 是一个正则表达式方法。
+
+它通过模式来搜索字符串，然后根据结果返回 true 或 false。
+
+下面的例子搜索字符串中的字符 "e"：
+
+``` javascript
+var patt = /e/;
+patt.test("The best things in life are free!"); //true
+```
+您不必首先把正则表达式放入变量中。上面的两行可缩短为一行：
+
+``` javascript
+/e/.test("The best things in life are free!");
+```
+
+**使用 exec()**
+
+exec() 方法是一个正则表达式方法。
+
+它通过指定的模式（pattern）搜索字符串，并返回已找到的文本。
+
+如果未找到匹配，则返回 null。
+
+下面的例子搜索字符串中的字符 "e"：
+
+``` javascript
+/e/.exec("The best things in life are free!");	//e
+```
+
