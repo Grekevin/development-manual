@@ -219,3 +219,37 @@ indexOf() 方法在数组中搜索元素值并返回其位置。
 
 > 注释：第一个项目的位置是 0，第二个项目的位置是 1，以此类推。
 
+**语法**
+
+``` javascript
+array.indexOf(item, start)
+```
+
+| item | 必需。要检索的项目。 |
+| --- | --- |
+| start | 可选。从哪里开始搜索。负值将从结尾开始的给定位置开始，并搜索到结尾。 |
+
+如果未找到项目，Array.indexOf() 返回 -1。
+
+如果项目多次出现，则返回第一次出现的位置。
+
+``` javascript
+var fruits = ["Apple", "Orange", "Apple", "Mango"];
+var a = fruits.indexOf("Apple");	//0
+```
+
+**Array.lastIndexOf()**
+
+Array.lastIndexOf() 与 Array.indexOf() 类似，但是从数组结尾开始搜索。
+
+``` javascript
+array.lastIndexOf(item, start)
+```
+| item | 必需。要检索的项目。 |
+| --- | --- |
+| start | 可选。从哪里开始搜索。负值将从结尾开始的给定位置开始，并搜索到开头。 |
+
+``` javascript
+var fruits = ["Apple", "Orange", "Apple", "Mango"];
+var a = fruits.lastIndexOf("Apple");
+```
