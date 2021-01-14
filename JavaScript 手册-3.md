@@ -261,3 +261,4 @@ var a = fruits.lastIndexOf("Apple");  //2
 
 var a = fruits.lastIndexOf("Apple", -3);	//0
 ```
+
