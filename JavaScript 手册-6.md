@@ -393,3 +393,52 @@ var y = new String("Bill");
 (x == y) // 结果是 false，因为你无法比较对象。
 ```
 
+**请勿使用 new Object()**
+
+ - 请使用 {} 来代替 new Object()
+ - 请使用 "" 来代替 new String()
+ - 请使用 0 来代替 new Number()
+ - 请使用 false 来代替 new Boolean()
+ - 请使用 [] 来代替 new Array()
+ - 请使用 /()/ 来代替 new RegExp()
+ - 请使用 function (){}来代替 new Function()
+
+``` javascript
+var x1 = {};           // 新对象
+var x2 = "";           // 新的原始字符串值
+var x3 = 0;            // 新的原始数值
+var x4 = false;        // 新的原始布尔值
+var x5 = [];           // 新的数组对象
+var x6 = /()/;         // 新的正则表达式
+var x7 = function(){}; // 新的函数对象
+```
+
+**意识到自动类型转换**
+
+请意识到数值会被意外转换为字符串或 NaN（Not a Number）。
+
+JavaScript 属于松散类型。变量可包含不同的数据类型，并且变量能够改变其数据类型：
+
+``` javascript
+var x = "Hello";     // typeof x 为字符串
+x = 5;               // 把 typeof x 更改为数值
+```
+
+如果进行数学运算，JavaScript 能够将数值转换为字符串：
+
+``` javascript
+var x = 5 + 7;       // x.valueOf() 是 12,  typeof x 是数值
+var x = 5 + "7";     // x.valueOf() 是 57,  typeof x 是字符串
+var x = "5" + 7;     // x.valueOf() 是 57,  typeof x 是字符串
+var x = 5 - 7;       // x.valueOf() 是 -2,  typeof x 是数值
+var x = 5 - "7";     // x.valueOf() 是 -2,  typeof x 是数值
+var x = "5" - 7;     // x.valueOf() 是 -2,  typeof x 是数值
+var x = 5 - "x";     // x.valueOf() 是 NaN, typeof x 是数值
+```
+
+用字符串减去字符串，不会产生错误而是返回 NaN（Not a Number）：
+
+``` javascript
+"Hello" - "Dolly"    // 返回 NaN
+```
+
