@@ -686,3 +686,13 @@ let carName;
 
 ### JavaScript Const
 
+ES2015 引入了两个重要的 JavaScript 新关键词：let 和 const。
+
+通过 const 定义的变量与 let 变量类似，但不能重新赋值：
+
+``` javascript
+const PI = 3.141592653589793;
+PI = 3.14;      // 会出错
+PI = PI + 10;   // 也会出错
+```
+
