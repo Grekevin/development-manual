@@ -534,6 +534,85 @@ var d = new Date("2021");
 
 
 ``` javascript
-//
+//Thu May 02 2019 20:00:00 GMT+0800 (China Standard Time)
+var d = new Date("2019-05-02T12:00:00Z");
+
+//Thu May 02 2019 12:00:00 GMT+0800 (China Standard Time)
 var d = new Date("2019-05-02T12:00:00Z");
 ```
+日期和时间通过大写字母 T 来分隔。
+
+UTC 时间通过大写字母 Z 来定义。
+
+如果您希望修改相对于 UTC 的时间，请删除 Z 并用 +HH:MM 或 -HH:MM 代替：
+
+``` javascript
+//Thu Mar 26 2015 02:00:00 GMT+0800 (China Standard Time)
+var d = new Date("2015-03-25T12:00:00-06:00");
+```
+UTC（Universal Time Coordinated）等同于 GMT（格林威治时间）。
+
+注释：UTC，协调世界时，又称世界统一时间，世界标准时间，国际协调时间。
+
+在日期-时间字符串中省略 T 或 Z，在不同浏览器中会产生不同结果。
+
+**时区**
+
+在设置日期时，如果不规定时区，则 JavaScript 会使用浏览器的时区。
+
+当获取日期时，如果不规定时区，则结果会被转换为浏览器时区。
+
+换句话说，假如日期/时间以 GMT（格林威治标准时间）创建，该日期/时间将被转换为 CST（中国标准时间），如果用户从中国进行浏览。
+
+**JavaScript 短日期**
+
+短日期通常使用 "MM/DD/YYYY" 这样的语法：
+
+``` javascript
+//Sun May 26 2019 00:00:00 GMT+0800 (China Standard Time)
+var d = new Date("05/26/2019");
+```
+警告: 在某些浏览器中，不带前导零的月或其会产生错误。
+
+**JavaScript 长日期**
+
+长日期通常以 "MMM DD YYYY" 这样的语法来写：
+
+``` javascript
+var d = new Date("Feb 19 2018");
+```
+
+月和天能够以任意顺序出现：
+
+``` javascript
+var d = new Date("19 Feb 2018");
+```
+
+并且，月能够以全称 (January) 或缩写 (Jan) 来写：
+
+``` javascript
+var d = new Date("February 19 2018");
+var d = new Date("Feb 19 2018");
+```
+
+逗号会被忽略，且对大小写不敏感：
+
+``` javascript
+var d = new Date("FEBRUARY, 25, 2015");
+```
+
+**JavaScript 完整日期**
+
+JavaScript 接受“完整 JavaScript 格式”的日期字符串：
+
+``` javascript
+var d = new Date("Mon Feb 19 2018 06:55:23 GMT+0100 (W. Europe Standard Time)");
+```
+
+JavaScript 会忽略日期名称和时间括号中的错误：
+
+``` javascript
+//Mon Mar 26 2018 16:56:24 GMT+0800 (China Standard Time)
+var d = new Date("Fri Mar 26 2018 09:56:24 GMT+0100 (Tokyo Time)");
+```
+
