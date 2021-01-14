@@ -405,23 +405,135 @@ JavaScript 将日期存储为自 1970 年 1 月 1 日 00:00:00 UTC（协调世�
 new Date(milliseconds) 创建一个零时加毫秒的新日期对象：
 
 ``` javascript
+//Thu Jan 01 1970 08:00:00 GMT+0800 (China Standard Time)
 var d = new Date(0);
 ```
 
 1970年 1 月 1 日加上100 000 000 000毫秒，大约是 1973 年 3 月 3 日：
 
 ``` javascript
+//Sat Mar 03 1973 17:46:40 GMT+0800 (China Standard Time)
 var d = new Date(100000000000);
 ```
 
 1970 年 1 月 1 日减去 100 000 000 000 毫秒大约是 1966 年 10 月 31 日：
 
 ``` javascript
+//Mon Oct 31 1966 22:13:20 GMT+0800 (China Standard Time)
 var d = new Date(-100000000000);
 ```
+
 一天（24 小时）是 86 400 000 毫秒：
 
 ``` javascript
+//Fri Jan 02 1970 08:00:00 GMT+0800 (China Standard Time)
 var d = new Date(86400000);
 ```
 
+**日期方法**
+
+创建 Date 对象时，可以使用许多方法对其进行操作。
+
+日期方法允许您使用本地时间或 UTC（通用或 GMT）时间来获取和设置日期对象的年、月、日、小时、分钟、秒和毫秒。
+
+**显示日期**
+
+JavaScript（默认情况下）将以全文本字符串格式输出日期：
+
+在 HTML 中显示日期对象时，会使用 toString() 方法自动转换为字符串。
+
+``` javascript
+d = new Date();
+
+//Thu Jan 14 2021 13:47:46 GMT+0800 (China Standard Time)
+document.getElementById("demo").innerHTML = d;
+```
+
+等同于：
+
+``` javascript
+d = new Date();
+
+//Thu Jan 14 2021 13:48:02 GMT+0800 (China Standard Time)
+document.getElementById("demo").innerHTML = d.toString();
+```
+
+toUTCString() 方法将日期转换为 UTC 字符串（一种日期显示标准）。
+
+``` javascript
+var d = new Date();
+
+//Thu, 14 Jan 2021 05:48:19 GMT
+document.getElementById("demo").innerHTML = d.toUTCString();
+```
+
+toDateString() 方法将日期转换为更易读的格式：
+
+``` javascript
+var d = new Date();
+
+//Thu Jan 14 2021
+document.getElementById("demo").innerHTML = d.toDateString();
+```
+
+### JavaScript 日期格式化
+
+有四种 JavaScript 日期输入格式：
+
+| 类型 | 实例 |
+| --- | --- |
+| ISO 日期 | "2018-02-19" （国际标准） |
+| 短日期 | "02/19/2018" 或者 "2018/02/19" |
+| 长日期 | "Feb 19 2018" 或者 "19 Feb 2019" |
+| 完整日期 | "Monday February 25 2015" |
+
+ISO 格式遵守 JavaScript 中的严格标准。
+
+其他格式不太明确，可能是浏览器特定的。
+
+**JavaScript 日期输出**
+
+无论输入格式如何，JavaScript 默认将输出全文本字符串格式：
+
+Mon Feb 19 2018 06:00:00 GMT+0800 (中国标准时间)
+
+**JavaScript ISO 日期**
+
+ISO 8601 是表现日期和时间的国际标准。
+
+ISO 8601 语法 (YYYY-MM-DD) 也是首选的 JavaScript 日期格式：
+
+``` javascript
+//Thu May 02 2019 08:00:00 GMT+0800 (China Standard Time)
+var d = new Date("2019-05-02");
+```
+
+计算的日期相对于您的时区。
+
+**ISO 日期（年和月）**
+
+写日期也可以不规定具体某日 (YYYY-MM)：
+
+``` javascript
+//Fri Mar 01 2019 08:00:00 GMT+0800 (China Standard Time)
+var d = new Date("2019-03");
+```
+**ISO 日期（只有年）**
+
+写日期也可以不规定具体的月和日 (YYYY)：
+
+``` javascript
+//Fri Jan 01 2021 08:00:00 GMT+0800 (China Standard Time)
+var d = new Date("2021");
+```
+
+**ISO 日期（完整的日期加时、分和秒）**
+
+写日期也可以添加时、分和秒 (YYYY-MM-DDTHH:MM:SS)：
+
+
+
+``` javascript
+//
+var d = new Date("2019-05-02T12:00:00Z");
+```
