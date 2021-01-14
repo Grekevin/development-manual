@@ -213,3 +213,9 @@ function myFunction(value) {
 }
 ```
 
+**Array.indexOf()**
+
+indexOf() 方法在数组中搜索元素值并返回其位置。
+
+> 注释：第一个项目的位置是 0，第二个项目的位置是 1，以此类推。
+
