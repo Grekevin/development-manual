@@ -106,3 +106,13 @@ Math.LOG10E     // 返回以 10 为底的 e 的对数（约等于0.434）
 
 ### JavaScript 随机
 
+**Math.random()**
+
+Math.random() 返回 0（包括） 至 1（不包括） 之间的随机数：
+
+``` javascript
+Math.random();				// 返回随机数
+```
+
+> Math.random() 总是返回小于 1 的数。
+
