@@ -710,3 +710,32 @@ function myFunction() {
 
 > 在“严格模式”中不会自动创建全局变量。
 
+**HTML 中的全局变量**
+
+通过 JavaScript，全局作用域形成了完整的 JavaScript 环境。
+
+在 HTML 中，全局作用域是 window。所有全局变量均属于 window 对象。
+
+实例
+
+``` javascript
+var carName = "porsche";
+
+// 此处的代码能够使用 window.carName
+```
+
+**警告**
+
+ - 除非有意为之，否则请勿创建全局变量。
+ - 您的全局变量（或函数）能够覆盖 window 变量（或函数）。
+ - 任何函数，包括 window 对象，能够覆盖您的全局变量和函数。
+
+**JavaScript 变量的有效期**
+
+ - JavaScript 变量的有效期始于其被创建时。
+ - 局部变量会在函数完成时被删除。
+ - 全局变量会在您关闭页面是被删除。
+
+**函数参数**
+
+函数参数也是函数内的局部变量。
