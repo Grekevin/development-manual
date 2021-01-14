@@ -348,13 +348,25 @@ document.getElementById("demo").innerHTML = person.fullName();	//Bill Gates
 在浏览器窗口中，全局对象是 [object Window]：
 
 ``` javascript
-var x = this;
+var x = this;	//this: [object Window]
 ```
 
 在严格模式中，如果单独使用，那么 this 指的是全局对象 [object Window]：
 
 ``` javascript
 "use strict";
-var x = this;
+var x = this;	//this: [object Window]
+```
+
+**函数中的 this（默认）**
+
+在 JavaScript 函数中，函数的拥有者默认绑定 this。
+
+因此，在函数中，this 指的是全局对象 [object Window]。
+
+``` javascript
+function myFunction() {
+  return this;	//this: [object Window]
+}
 ```
 
