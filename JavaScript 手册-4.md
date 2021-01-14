@@ -340,3 +340,23 @@ var patt = /w3school/i;
  - search() 方法使用表达式来搜索匹配，然后返回匹配的位置。
  - replace() 方法返回模式被替换处修改后的字符串。
 
+**使用字符串方法 search() 来处理字符串**
+
+search() 方法也接受字符串作为搜索参数。字符串参数将被转换为正则表达式：
+
+使用字符串来执行对 "W3school" 的搜索：
+
+``` javascript
+var str = "Visit W3School!";
+var n = str.search("W3School"); 	//6
+```
+
+在字符串方法 search() 中使用正则表达式
+
+使用正则表达式执行搜索字符串中 "w3school" 的大小写不敏感的搜索：
+
+``` javascript
+var str = "Visit W3School";
+var n = str.search(/w3school/i); 	//6
+```
+
