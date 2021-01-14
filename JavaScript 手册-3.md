@@ -732,3 +732,23 @@ UTC 日期方法用于处理 UTC 日期（通用时区日期，Univeral Time Zon
 
 [官方使用教程](https://www.w3school.com.cn/js/js_date_methods_set.asp)
 
+**比较日期**
+
+日期可以很容易地进行比较。
+
+下面的例子把今日与 2049 年 1 月 16 日进行比较：
+
+``` javascript
+var today, someday, text;
+today = new Date();
+someday = new Date();
+someday.setFullYear(2049, 0, 16);
+
+if (someday > today) {
+  text = "今天在 2049 年 1 月 16 日之前";
+} else {
+  text = "今天在 2049 年 1 月 16 日之后";
+}
+document.getElementById("demo").innerHTML = text;
+```
+
