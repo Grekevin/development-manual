@@ -262,3 +262,23 @@ var a = fruits.lastIndexOf("Apple");  //2
 var a = fruits.lastIndexOf("Apple", -3);	//0
 ```
 
+**Array.find()**
+
+find() 方法返回通过测试函数的第一个数组元素的值。
+
+请注意此函数接受 3 个参数：
+
+ - 项目值
+ - 项目索引
+ - 数组本身
+
+例子查找（返回）大于 18 的第一个元素的值：
+
+``` javascript
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.find(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+```
