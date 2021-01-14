@@ -269,16 +269,21 @@ find() 方法返回通过测试函数的第一个数组元素的值。
 请注意此函数接受 3 个参数：
 
  - 项目值
- - 项目索引
- - 数组本身
+ - 项目索引(可省略)
+ - 数组本身(可省略)
 
 例子查找（返回）大于 18 的第一个元素的值：
 
 ``` javascript
 var numbers = [4, 9, 16, 25, 29];
-var first = numbers.find(myFunction);
+var first = numbers.find(myFunction);	//25
 
 function myFunction(value, index, array) {
+  return value > 18;
+}
+
+//等效
+function myFunction(value) {
   return value > 18;
 }
 ```
