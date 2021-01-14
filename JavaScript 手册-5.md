@@ -598,3 +598,67 @@ let carName = "porsche";
 // 此处的代码不可使用 window.carName
 ```
 
+**重新声明**
+
+允许在程序的任何位置使用 var 重新声明 JavaScript 变量：
+
+``` javascript
+var x = 10;
+
+// 现在，x 为 10
+ 
+var x = 6;
+
+// 现在，x 为 6
+```
+
+在相同的作用域，或在相同的块中，通过 let 重新声明一个 var 变量是不允许的：
+
+``` javascript
+var x = 10;       // 允许
+let x = 6;       // 不允许
+
+{
+  var x = 10;   // 允许
+  let x = 6;   // 不允许
+}
+```
+
+在相同的作用域，或在相同的块中，通过 let 重新声明一个 let 变量是不允许的：
+
+``` javascript
+let x = 10;       // 允许
+let x = 6;       // 不允许
+
+{
+  let x = 10;   // 允许
+  let x = 6;   // 不允许
+}
+```
+
+在相同的作用域，或在相同的块中，通过 var 重新声明一个 let 变量是不允许的：
+
+``` javascript
+let x = 10;       // 允许
+var x = 6;       // 不允许
+
+{
+  let x = 10;   // 允许
+  var x = 6;   // 不允许
+}
+```
+
+在不同的作用域或块中，通过 let 重新声明变量是允许的：
+
+``` javascript
+let x = 6;       // 允许
+
+{
+  let x = 7;   // 允许
+}
+
+{
+  let x = 8;   // 允许
+}
+```
+
