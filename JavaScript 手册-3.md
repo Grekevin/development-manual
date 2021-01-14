@@ -9,6 +9,14 @@
 
 forEach() 方法为每个数组元素调用一次函数（回调函数）, 不修改原数组。
 
+该函数可接受 3 个参数：
+
+ - 项目值(value)
+ - 项目索引(index)，可省略
+ - 数组本身(array)， 可省略
+
+> 当回调函数仅使用 value 参数时，可以省略索引和数组参数
+
 ``` javascript
 var txt = "";
 var numbers = [45, 4, 9, 16, 25];
@@ -17,21 +25,8 @@ numbers.forEach(myFunction);
 function myFunction(value, index, array) {
   txt = txt + value + "<br>"; 
 }
-```
 
-注释：该函数接受 3 个参数：
-
- - 项目值
- - 项目索引
- - 数组本身
-
-上面的例子只用了 value 参数。这个例子可以重新写为：
-
-``` javascript
-var txt = "";
-var numbers = [45, 4, 9, 16, 25];
-numbers.forEach(myFunction);
-
+//省略项目索引(index)和数组本身(array)
 function myFunction(value) {
   txt = txt + value + "<br>"; 
 }
@@ -43,6 +38,14 @@ map() 方法通过对每个数组元素执行函数来创建新数组, 不会更
 
 map() 方法不会对没有值的数组元素执行函数。
 
+该函数可接受 3 个参数：
+
+ - 项目值(value)
+ - 项目索引(index)，可省略
+ - 数组本身(array)， 可省略
+
+> 当回调函数仅使用 value 参数时，可以省略索引和数组参数
+
 下面这个例子将每个数组值乘以2：
 
 ``` javascript
@@ -51,22 +54,38 @@ var numbers2 = numbers1.map(myFunction);	//90,8,18,32,50
 
 function myFunction(value, index, array) {
   return value * 2;
+  }
+  
+//省略项目索引(index)和数组本身(array)  
+function myFunction(value) {
+  return value * 2;
 }
 ```
 
-请注意，该函数有 3 个参数：
+**Array.filter()**
 
- - 项目值
- - 项目索引
- - 数组本身
+filter() 方法创建一个包含通过测试的数组元素的新数组。
 
-当回调函数仅使用 value 参数时，可以省略索引和数组参数：
+函数可接受 3 个参数：
+
+ - 项目值(value)
+ - 项目索引(index)，可省略
+ - 数组本身(array)， 可省略
+
+> 回调函数不使用 index 和 array 参数，因此可以省略它们
+
+下面这个例子用值大于 18 的元素创建一个新数组：
 
 ``` javascript
-var numbers1 = [45, 4, 9, 16, 25];
-var numbers2 = numbers1.map(myFunction);	//90,8,18,32,50
+var numbers = [45, 4, 9, 16, 25];
+var over18 = numbers.filter(myFunction);
 
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+//省略项目索引(index)和数组本身(array)
 function myFunction(value) {
-  return value * 2;
+  return value > 18;
 }
 ```
