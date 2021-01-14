@@ -64,3 +64,33 @@ elem.innerHTML = x + " " + y;           // 显示 x 和 y     x = 5  y = undefin
  
 var y = 7; // 初始化 y 
 ```
+例2是因为只有声明（var y）被提升到作用域顶部而初始化（x =7）没有被提升到顶部而是被留在原来的位置。
+
+由于 hoisting，y 在其被使用前已经被声明，但是由于未对初始化进行提升，y 的值仍是未定义。
+
+例2的代码实际是下面这样的：
+
+``` javascript
+var x = 5; // 初始化 x
+var y;	//声明变量y
+ 
+elem = document.getElementById("demo"); // 查找元素
+
+//在javascript中，声明但未初始化的变量的值是undefined，所以此时y = undefined
+elem.innerHTML = x + " " + y;           // 显示 x 和 y     x = 5  y = undefined
+ 
+y = 7; // 在此初始化 y 
+```
+
+**在顶部声明您的变量！**
+
+Hoisting（对很多开发者来说）是 JavaScript 的一种未知的或被忽视的行为。
+
+如果开发者不理解 hoisting，程序也许会包含 bug（错误）。
+
+为了避免 bug，请始终在每个作用域的开头声明所有变量。
+
+由于这就是 JavaScript 解释代码的方式，请保持这个好习惯。
+
+严格模式中的 JavaScript 不允许在未被声明的情况下使用变量。
+
