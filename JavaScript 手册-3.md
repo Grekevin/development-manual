@@ -693,3 +693,19 @@ var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 document.getElementById("demo").innerHTML = days[d.getDay()];
 ```
 
+**UTC 日期方法**
+
+UTC 日期方法用于处理 UTC 日期（通用时区日期，Univeral Time Zone dates）：
+
+| 方法 | 描述 |
+| --- | --- |
+| getUTCDate() | 等于 getDate()，但返回 UTC 日期 |
+| getUTCDay() | 等于 getDay()，但返回 UTC 日 |
+| getUTCFullYear() | 等于 getFullYear()，但返回 UTC 年 |
+| getUTCHours() | 等于 getHours()，但返回 UTC 小时 |
+| getUTCMilliseconds() | 等于 getMilliseconds()，但返回 UTC 毫秒 |
+| getUTCMinutes() | 等于 getMinutes()，但返回 UTC 分 |
+| getUTCMonth() | 等于 getMonth()，但返回 UTC 月 |
+| getUTCSeconds() | 等于 getSeconds()，但返回 UTC 秒 |
+
+
