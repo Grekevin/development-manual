@@ -7,7 +7,7 @@
 
 **Array.forEach()**
 
-forEach() 方法为每个数组元素调用一次函数（回调函数）。
+forEach() 方法为每个数组元素调用一次函数（回调函数）, 不修改原数组。
 
 ``` javascript
 var txt = "";
