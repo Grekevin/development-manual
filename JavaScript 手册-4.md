@@ -627,5 +627,7 @@ Mozilla 和 Microsoft 定义了非标准的 error 对象属性：
 
 > 请勿在公共网站使用这些属性。它们并不会在所有浏览器中工作。
 
+### JavaScript 作用域
+
 
 
