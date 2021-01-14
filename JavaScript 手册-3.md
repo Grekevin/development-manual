@@ -626,21 +626,28 @@ var d = new Date("Fri Mar 26 2018 09:56:24 GMT+0100 (Tokyo Time)");
 
 | 方法 | 描述 |
 | --- | --- |
-| getDate() | 以数值返回天（1-31） |
-| getDay() | 以数值获取周名（0-6） |
+| getDate() | 以数字（1-31）返回日期的日 |
+| getDay() | 以数字（0-6）返回日期的星期名（weekday） |
 | getFullYear() | 以四位数字形式返回日期年份（yyyy） |
-| getHours() | 获取小时（0-23） |
-| getMilliseconds() | 获取毫秒（0-999） |
-| getMinutes() | 获取分（0-59） |
+| getHours() | 以数字（0-23）返回日期的小时数 |
+| getMilliseconds() | 以数字（0-999）返回日期的毫秒数 |
+| getMinutes() | 以数字（0-59）返回日期的分钟数 |
 | getMonth() | 以数字（0-11）返回日期的月份 |
-| getSeconds() | 获取秒（0-59） |
+| getSeconds() | 以数字（0-59）返回日期的秒数 |
 | getTime() | 获取时间（从 1970 年 1 月 1 日至今毫秒数） |
 
 ``` javascript
+//测试时间2021-1-14 14:29：00 左右
 var d = new Date();
 d.getTime()	;	//1610605225518
 d.getFullTear();	//2021
 d.getMonth();	//0
+d.getDate();	//14
+d.getHours();	//14
+d.getMinutes();		//31
+d.getSeconds();		//27
+d.getMilliseconds();	//8
+d.getDay();		//4
 
 ```
 
@@ -672,5 +679,17 @@ document.getElementById("demo").innerHTML = d.getMonth() + 1;
 </script>
 ```
 
+**getDay() 方法**
 
+getDay() 方法以数字（0-6）返回日期的星期名（weekday）：
+
+在 JavaScript 中，一周的第一天（0）表示“星期日”，即使世界上的一些国家认为周的第一天是“星期一”。
+
+可以使用名称数组，并使用 getDay() 将星期名作为名称返回：
+
+``` javascript
+var d = new Date();
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+document.getElementById("demo").innerHTML = days[d.getDay()];
+```
 
