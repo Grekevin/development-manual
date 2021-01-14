@@ -370,3 +370,16 @@ function myFunction() {
 }
 ```
 
+**函数中的 this（严格模式）**
+
+JavaScript 严格模式不允许默认绑定。
+
+因此，在函数中使用时，在严格模式下，this 是未定义的（undefined）。
+
+``` javascript
+"use strict";
+function myFunction() {
+  return this;	//this: undefined
+}
+```
+
