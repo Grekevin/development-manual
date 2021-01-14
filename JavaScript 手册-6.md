@@ -194,3 +194,46 @@ var person = {
 var person = {firstName:"Bill", lastName:"Gates", age:50, eyeColor:"blue"};
 ```
 
+**行长度小于 80**
+
+为了提高可读性，请避免每行的长度超过 80 个字符。
+
+如果 JavaScript 语句超过一行的长度，换行的最佳位置是运算符或逗号之后。
+
+``` javascript
+document.getElementById("demo").innerHTML =
+    "Hello Kitty."; 
+```
+
+**命名约定**
+
+请始终对您所有的代码使用相同的命名约定。例如：
+
+*   变量和函数名以_驼峰大小写_来写
+*   全局变量使用_大写_（我们不这样做，但是相当普遍）
+*   常量（比如 PI）使用_大写_
+
+我们是否应在变量名中使用_连字符_、\_驼峰大小写_或_下划线_吗？
+
+这是程序员们经常讨论的问题。答案取决于这个问题是谁回答的：
+
+*HTML 和 CSS 中的连字符:*
+
+ - HTML5 属性能够以 data- 开头（data-quantity, data-price）。
+ - CSS 在 property-names 中使用连字符（font-size）。
+ - Hyphens 可被错误地视为减法运算符。JavaScript 命名不允许使用连字符。
+
+*下划线：*
+
+ - 许多程序员喜欢使用下划线（date_of_birth），特别是在 SQL 数据库中。
+ - 下划线经常被用在 PHP 参考资料中。
+
+*帕斯卡命名法（PascalCase）：*
+
+ - C 语言程序员经常使用帕斯卡命名法。
+
+*驼峰大小写（camelCase）：*
+
+ - JavaScript 本身、jQuery 以及其他 JavaScript 库使用驼峰大小写。
+ - JavaScript 命名请不要以 $ 符号开头。此举会引起 JavaScript 库名称冲突。
+
