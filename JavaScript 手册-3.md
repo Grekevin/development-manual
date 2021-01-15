@@ -1,4 +1,9 @@
-
+* [JavaScript 手册-3](#javascript-手册-3)
+		* [JavaScript 数组迭代方法](#javascript-数组迭代方法)
+		* [JavaScript 日期](#javascript-日期)
+		* [JavaScript 日期格式化](#javascript-日期格式化)
+		* [JavaScript 获取日期方法](#javascript-获取日期方法)
+		* [JavaScript 设置日期方法](#javascript-设置日期方法)
 
 # JavaScript 手册-3
 ### JavaScript 数组迭代方法
