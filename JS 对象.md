@@ -289,3 +289,60 @@ delete person.age;   // 或 delete person["age"];
 JavaScript 对象继承了它们的原型的属性。
 
 delete 关键词不会删除被继承的属性，但是如果您删除了某个原型属性，则将影响到所有从原型继承的对象。
+
+## JavaScript 对象方法
+
+### JavaScript 方法
+
+JavaScript 方法是能够在对象上执行的动作。
+
+JavaScript 方法是包含函数定义的属性。
+
+| 属性 | 值 |
+| --- | --- |
+| firstName | Bill |
+| lastName | Gates |
+| age | 62 |
+| eyeColor | blue |
+| fullName | function() {return this.firstName + " " + this.lastName;} |
+
+方法是存储为对象属性的函数。
+
+### this 关键词
+
+在 JavaScript 中，被称为 this 的事物，指的是拥有该 JavaScript 代码的对象。
+
+this 的值，在函数中使用时，是“拥有”该函数的对象。
+
+请注意 this 并非变量。它是关键词。您无法改变 this 的值。
+
+### 访问对象方法
+
+请使用如下语法创建对象方法：
+
+``` javascript
+methodName : function() { 代码行 }
+```
+
+请通过如下语法来访问对象方法：
+
+``` javascript
+objectName.methodName()
+```
+
+您通常会把 fullName() 描述为 person 对象的方法，把 fullName 描述为属性。
+
+fullName 属性在被通过 () 调用后会以函数形式执行。
+
+此例访问 person 对象的 fullName() 方法：
+
+``` javascript
+name = person.fullName();
+```
+
+如果您访问 fullName 属性时没有使用 ()，则将返回函数定义：
+
+``` javascript
+name = person.fullName;
+```
+
