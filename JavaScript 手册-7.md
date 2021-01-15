@@ -445,3 +445,33 @@ isFinite(10/0);       // 返回 false
 isFinite(10/1);       // 返回 true
 ```
 
+**箭头函数（Arrow Function）**
+
+箭头函数允许使用简短的语法来编写函数表达式。
+
+您不需要 function 关键字、return 关键字以及花括号。
+
+``` javascript
+// ES5
+var x = function(x, y) {
+   return x * y;
+}
+
+// ES6
+const x = (x, y) => x * y;
+```
+
+箭头功能没有自己的 this。它们不适合定义对象方法。
+
+箭头功能未被提升。它们必须在使用前进行定义。
+
+使用 const 比使用 var 更安全，因为函数表达式始终是常量值。
+
+如果函数是单个语句，则只能省略 return 关键字和花括号。因此，保留它们可能是一个好习惯：
+
+``` javascript
+const x = (x, y) => { return x * y };
+```
+
+### JavaScript JSON
+
