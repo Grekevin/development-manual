@@ -761,3 +761,90 @@ var x = person.length;         // person.length 将返回 0
 var y = person[0];              // person[0] 将返回 undefined
 ```
 
+**用逗号来结束定义**
+
+对象和数组定义中的尾随逗号在 ECMAScript 5 中是合法的。
+
+对象实例：
+
+``` javascript
+person = {firstName:"Bill", lastName:"Gates", age:62,}
+```
+
+数组实例：
+
+``` javascript
+points = [35, 450, 2, 7, 30, 16,];
+```
+
+警告！！
+Internet Explorer 8 会崩溃。
+
+JSON 不允许尾随逗号。
+
+JSON:
+
+``` javascript
+person = {firstName:"Bill", lastName:"Gates", age:62}
+```
+
+JSON:
+
+``` javascript
+points = [35, 450, 2, 7, 30, 16];
+```
+
+**Undefined 不是 Null**
+
+JavaScript 对象、变量、属性和方法可以是未定义的。
+
+此外，空的 JavaScript 对象的值可以为 null。
+
+这可能会使测试对象是否为空变得有点困难。
+
+您可以通过测试类型是否为 undefined，来测试对象是否存在：
+
+``` javascript
+if (typeof myObj === "undefined")
+```
+
+但是您无法测试对象是否为 null，因为如果对象未定义，将抛出错误：
+
+不正确的：
+
+``` javascript
+if (myObj === null)
+```
+
+要解决此问题，必须测试对象是否为 null，而不是未定义。
+
+但这仍然会引发错误：
+
+不正确的：
+
+``` javascript
+if (myObj !== null && typeof myObj !== "undefined")
+```
+
+因此，在测试非 null 之前，必须先测试未定义：
+
+正确的：
+
+``` javascript
+if (typeof myObj !== "undefined" && myObj !== null)
+```
+
+**期望块级范围**
+
+JavaScript 不会为每个代码块创建新的作用域。
+
+很多编程语言都是如此，但是 JavaScript 并非如此。
+
+认为这段代码会返回 undefined，是新的 JavaScript 开发者的常见错误：
+
+``` javascript
+for (var i = 0; i < 10; i++) {
+  // 代码块
+}
+return i;
+```
