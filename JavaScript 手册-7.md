@@ -357,3 +357,34 @@ ECMAScript 5允许保留字作为属性名称：
 var obj = {name: "Bill", new: "yes"}
 ```
 
+### ECMAScript 6 - ECMAScript 2015
+
+**ECMAScript 6 是什么？**
+
+ECMAScript 6 也称为 ES6 和 ECMAScript 2015。
+
+一些人把它称作 JavaScript 6。
+
+本章介绍 ES6 中的一些新特性。
+
+ - JavaScript let
+ - JavaScript const
+ - 幂 (\*\*)
+ - 默认参数值
+ - Array.find()
+ - Array.findIndex()
+
+**默认参数值**
+
+ES6 允许函数参数具有默认值。
+
+实例
+
+``` javascript
+function myFunction(x, y = 10) {
+  // y is 10 if not passed or undefined
+  return x + y;
+}
+myFunction(5); // 将返回 15
+```
+
