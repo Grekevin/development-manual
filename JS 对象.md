@@ -394,3 +394,43 @@ ECMAScript 5 (2009) 引入了 Getter 和 Setter。
 
 Getter 和 Setter 允许您定义对象访问器（被计算的属性）。
 
+### JavaScript Getter（get 关键词）
+
+本例使用 lang 属性来获取 language 属性的值。
+
+``` javascript
+// 创建对象：
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  language : "en",
+  get lang() {
+    return this.language;
+  }
+};
+
+// 使用 getter 来显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.lang;
+```
+
+### JavaScript Setter（set 关键词）
+
+本例使用 lang 属性来设置 language 属性的值。
+
+``` javascript
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  language : "",
+  set lang(lang) {
+    this.language = lang;
+  }
+};
+
+// 使用 setter 来设置对象属性：
+person.lang = "en";
+
+// 显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.language;
+```
+
