@@ -674,13 +674,9 @@ function Person(first, last, age, eyecolor) {
 您的构造器函数也可以定义方法：
 
 ``` javascript
-function Person(first, last, age, eyecolor) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eyecolor;
-    this.name = function() {return this.firstName + " " + this.lastName;};
-}
+  Person.changeName = function (name) {
+        this.lastName = name;
+    };
 ```
 
 与向已有对象添加新方法不同，您无法为对象构造器添加新方法。
@@ -706,3 +702,35 @@ myMother.changeName("Jobs");
 ```
 
 通过用 myMother 替代 this，JavaScript 可以获知目前处理的哪个 person。
+
+### 内建 JavaScript 构造器
+
+JavaScript 提供用于原始对象的构造器：
+
+``` javascript
+var x1 = new Object();    // 一个新的 Object 对象
+var x2 = new String();    // 一个新的 String 对象
+var x3 = new Number();    // 一个新的 Number 对象
+var x4 = new Boolean();   // 一个新的 Boolean 对象
+var x5 = new Array();     // 一个新的 Array 对象
+var x6 = new RegExp();    // 一个新的 RegExp 对象
+var x7 = new Function();  // 一个新的 Function 对象
+var x8 = new Date();      // 一个新的 Date 对象
+```
+
+Math() 对象不再此列。Math 是全局对象。new 关键词不可用于 Math。
+
+### 多用字面量，少用new
+
+JavaScript 提供原始数据类型字符串、数字和布尔的对象版本。但是并无理由创建复杂的对象。原始值快得多！
+
+ - 请使用对象字面量 {} 代替 new Object()。
+ - 请使用字符串字面量 "" 代替 new String()。
+ - 请使用数值字面量代替 Number()。
+ - 请使用布尔字面量代替 new Boolean()。
+ - 请使用数组字面量 [] 代替 new Array()。
+ - 请使用模式字面量代替 new RexExp()。
+ - 请使用函数表达式 () {} 代替 new Function()。
+
+## JavaScript 对象原型
+
