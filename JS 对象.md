@@ -647,3 +647,62 @@ myFather.name = function () {
 
 新方法被添加到 myFather。不是 myMother，也不是任何其他 person 对象。
 
+### 为构造器添加属性
+
+与向已有对象添加新属性不同，您无法为对象构造器添加新属性：
+
+``` javascript
+Person.nationality = "English";
+```
+
+如需向构造器添加一个新属性，您必须添加到构造器函数：
+
+``` javascript
+function Person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+    this.nationality = "English";
+}
+```
+
+这样对象属性就可以拥有默认值。
+
+### 为构造器添加方法
+
+您的构造器函数也可以定义方法：
+
+``` javascript
+function Person(first, last, age, eyecolor) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eyecolor;
+    this.name = function() {return this.firstName + " " + this.lastName;};
+}
+```
+
+与向已有对象添加新方法不同，您无法为对象构造器添加新方法。
+
+必须在构造器函数内部向一个对象添加方法：
+
+``` javascript
+function Person(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName;  
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    this.changeName = function (name) {
+        this.lastName = name;
+    };
+}
+```
+
+changeName() 函数把 name 赋值给 person 的 lastName 属性。
+
+``` javascript
+myMother.changeName("Jobs");
+```
+
+通过用 myMother 替代 this，JavaScript 可以获知目前处理的哪个 person。
