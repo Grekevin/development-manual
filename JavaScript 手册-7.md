@@ -274,3 +274,86 @@ var str = "HELLO WORLD";
 str[0];                   // 返回 H
 ```
 
+**尾随逗号(Trailing Commas)**
+
+ECMAScript 5 允许在对象和数组定义中使用尾随逗号：
+
+Object 实例
+
+``` javascript
+person = {
+  firstName: "Bill",
+  lastName: " Gates",
+  age: 62,
+}
+```
+
+Array 实例
+
+``` javascript
+points = [
+  1,
+  5,
+  10,
+  25,
+  40,
+  100,
+];
+```
+
+JSON 不允许使用尾随逗号。
+
+JSON 对象：
+
+``` javascript
+// 允许：
+var person = '{"firstName":"Bill", "lastName":"Gates", "age":62}'
+JSON.parse(person)
+
+// 不允许：
+var person = '{"firstName":"Bill", "lastName":"Gates", "age":62,}'
+JSON.parse(person)
+```
+
+JSON 数组：
+
+``` javascript
+// 允许：
+points = [40, 100, 1, 5, 25, 10]
+
+// 不允许：
+points = [40, 100, 1, 5, 25, 10,]
+```
+
+**多行字符串**
+
+如果使用反斜杠转义，ECMAScript 5 允许多行的字符串文字（字面量）：
+
+``` javascript
+"Hello \
+Kitty!";
+```
+
+\ 方法可能没有得到普遍的支持。
+
+较旧的浏览器可能会以不同的方式处理反斜杠周围的空格。
+
+一些旧的浏览器不允许 \ 字符后面的空格。
+
+分解字符串文字的一种更安全的方法是使用字符串添加：
+
+``` javascript
+"Hello " + 
+"Kitty!";
+```
+
+**保留字作为属性名称**
+
+ECMAScript 5允许保留字作为属性名称：
+
+对象实例
+
+``` javascript
+var obj = {name: "Bill", new: "yes"}
+```
+
