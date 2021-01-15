@@ -31,4 +31,15 @@ for (i = 0; i < l; i++) {}
 
 好代码在循环之外访问 length 属性，使循环更快。
 
-### 
+**减少 DOM 访问**
+
+与其他 JavaScript 相比，访问 HTML DOM 非常缓慢。
+
+假如您期望访问某个 DOM 元素若干次，那么只访问一次，并把它作为本地变量来使用：
+
+``` javascript
+var obj;
+obj = document.getElementById("demo");
+obj.innerHTML = "Hello"; 
+```
+
