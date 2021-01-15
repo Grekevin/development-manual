@@ -346,3 +346,51 @@ name = person.fullName();
 name = person.fullName;
 ```
 
+### 使用内建方法
+
+此例使用 String 对象的 toUpperCase() 方法，把文本转换为大写：
+
+``` javascript
+var message = "Hello world!";
+var x = message.toUpperCase();
+```
+
+x 的值，在以上代码执行后将是：
+
+``` javascript
+HELLO WORLD!
+```
+
+### 添加新的方法
+
+向对象添加方法是在构造器函数内部完成的：
+
+``` javascript
+function person(firstName, lastName, age, eyeColor) {
+    this.firstName = firstName;  
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    this.changeName = function (name) {
+        this.lastName = name;
+    };
+}
+changeName() 函数 name 的值赋给了 person 的 lastName 属性。
+```
+
+现在您可以尝试：
+
+``` javascript
+myMother.changeName("Jobs");
+```
+
+通过用 myMother “替代” this，JavaScript 清楚您指的是哪个 person。
+
+## JavaScript 对象访问器
+
+### JavaScript 访问器（Getter 和 Setter）
+
+ECMAScript 5 (2009) 引入了 Getter 和 Setter。
+
+Getter 和 Setter 允许您定义对象访问器（被计算的属性）。
+
