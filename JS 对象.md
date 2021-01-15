@@ -434,3 +434,151 @@ person.lang = "en";
 document.getElementById("demo").innerHTML = person.language;
 ```
 
+### JavaScript 函数还是 Getter？
+
+下面两个例子的区别在哪里？
+
+例子 1
+
+``` javascript
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// 使用方法来显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.fullName();
+```
+
+亲自试一试
+
+``` javascript
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// 使用 getter 来显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.fullName;
+```
+
+例子 1 以函数形式访问 fullName：person.fullName()。
+
+例子 2 以属性形式访问 fullName：person.fullName。
+
+第二个例子提供了更简洁的语法。
+
+### 数据质量
+
+使用 getter 和 setter 时，JavaScript 可以确保更好的数据质量。
+
+在本例中，使用 lang 属性以大写形式返回 language 属性的值：
+
+``` javascript
+// Create an object:
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  language : "en",
+  get lang() {
+    return this.language.toUpperCase();
+  }
+};
+
+// 使用 getter 来显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.lang;
+```
+
+在本例中，使用 lang 属性将大写值存储在 language 属性中：
+
+``` javascript
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  language : "",
+  set lang(lang) {
+    this.language = lang.toUpperCase();
+  }
+};
+
+// 使用 getter 来设置对象属性：
+person.lang = "en";
+
+// 显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.language;
+```
+
+### 为什么使用 Getter 和 Setter？
+
+ - 它提供了更简洁的语法
+ - 它允许属性和方法的语法相同
+ - 它可以确保更好的数据质量
+ - 有利于后台工作
+
+### 一个计数器实例
+
+``` javascript
+var obj = {
+  counter : 0,
+  get reset() {
+    this.counter = 0;
+  },
+  get increment() {
+    this.counter++;
+  },
+  get decrement() {
+    this.counter--;
+  },
+  set add(value) {
+    this.counter += value;
+  },
+  set subtract(value) {
+    this.counter -= value;
+  }
+};
+
+// 操作计数器：
+obj.reset;
+obj.add = 5;
+obj.subtract = 1;
+obj.increment;
+obj.decrement;
+Object.defineProperty()
+```
+
+Object.defineProperty() 方法也可用于添加 Getter 和 Setter：
+
+``` javascript
+// 定义对象
+var obj = {counter : 0};
+
+// 定义 setters
+Object.defineProperty(obj, "reset", {
+  get : function () {this.counter = 0;}
+});
+Object.defineProperty(obj, "increment", {
+  get : function () {this.counter++;}
+});
+Object.defineProperty(obj, "decrement", {
+  get : function () {this.counter--;}
+});
+Object.defineProperty(obj, "add", {
+  set : function (value) {this.counter += value;}
+});
+Object.defineProperty(obj, "subtract", {
+  set : function (value) {this.counter -= value;}
+});
+
+// 操作计数器：
+obj.reset;
+obj.add = 5;
+obj.subtract = 1;
+obj.increment;
+obj.decrement;
+```
