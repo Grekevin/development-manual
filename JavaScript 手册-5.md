@@ -506,6 +506,27 @@ function myFunction() {
 }
 ```
 
+在循环中通过var声明的变量也是全局作用域：
+
+``` javascript
+<script>
+//变量提升
+console.log(i);	//undefined
+for(var i=0; i<10; i++){
+	//code
+}
+
+console.log("global:" + i);	//global:10
+
+function test(){
+	//循环中var声明的变量i没有块作用域，i是全局变量
+	console.log("function test:" + i);	//function test:10
+}
+
+test();
+</script>
+```
+
 **函数作用域**
 
 局部（函数内）声明的变量拥有函数作用域。
@@ -534,26 +555,6 @@ function myFunction() {
   var x = 10; 
 }
 // 此处可以使用 x
-```
-在循环中通过var声明的变量也是全局作用域：
-
-``` javascript
-<script>
-//变量提升
-console.log(i);	//undefined
-for(var i=0; i<10; i++){
-	//code
-}
-
-console.log("global:" + i);	//global:10
-
-function test(){
-	//循环中var声明的变量i没有块作用域，i是全局变量
-	console.log("function test:" + i);	//function test:10
-}
-
-test();
-</script>
 ```
 
 在 ES2015 之前，JavaScript 是没有块作用域的。
