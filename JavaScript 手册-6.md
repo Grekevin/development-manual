@@ -843,8 +843,11 @@ JavaScript 不会为每个代码块创建新的作用域。
 认为这段代码会返回 undefined，是新的 JavaScript 开发者的常见错误：
 
 ``` javascript
+console.log(i); // Return undefined
+
 for (var i = 0; i < 10; i++) {
   // 代码块
 }
-return i;
+return i;	//10
 ```
+
