@@ -137,3 +137,18 @@ var person = {
 };
 ```
 
+#### 使用 JavaScript 关键词 new
+下面的例子也创建了带有四个属性的新的 JavaScript 对象：
+
+``` javascript
+var person = new Object();
+person.firstName = "Bill";
+person.lastName = "Gates";
+person.age = 50;
+person.eyeColor = "blue"; 
+```
+
+上面的两个例子结果是一样的。无需使用 new Object()。
+
+出于简易性、可读性和执行速度的考虑，请使用第一种创建方法（对象文字方法）。
+
