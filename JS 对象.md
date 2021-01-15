@@ -152,3 +152,26 @@ person.eyeColor = "blue";
 
 出于简易性、可读性和执行速度的考虑，请使用第一种创建方法（对象文字方法）。
 
+### JavaScript 对象是易变的
+
+对象是易变的：它们通过引用来寻址，而非值。
+
+如果 person 是一个对象，下面的语句不会创建 person 的副本：
+
+``` javascript
+var x = person;  // 这不会创建 person 的副本。
+```
+
+对象 x 并非 person 的副本。它就是 person。x 和 person 是同一个对象。
+
+对 x 的任何改变都将改变 person，因为 x 和 person 是相同的对象。
+
+``` javascript
+var person = {firstName:"Bill", lastName:"Gates", age:62, eyeColor:"blue"}
+ 
+var x = person;
+x.age = 10;           // 这将同时改变 both x.age 和 person.age
+```
+
+> 注释：JavaScript 变量不是易变的。只有 JavaScript 对象如此。
+
