@@ -516,3 +516,40 @@ if (x = 0)
 ```
 赋值总是返回赋值的值。
 
+**期望松散的比较**
+
+在常规比较中，数据类型不重要。这条 if 语句返回 true：
+
+``` javascript
+var x = 10;
+var y = "10";
+if (x == y) 
+```
+
+在严格比较中，数据类型确实重要。这条 if 语句返回 false：
+
+``` javascript
+var x = 10;
+var y = "10";
+if (x === y) 
+```
+
+有一个常见的错误是忘记在 switch 语句中使用严格比较：
+
+这条 switch 语句会显示提示框：
+
+``` javascript
+var x = 10;
+switch(x) {
+    case 10: alert("Hello");
+}
+```
+
+这条 switch 语句不会显示提示框：
+
+``` javascript
+var x = 10;
+switch(x) {
+    case "10": alert("Hello");
+}
+```
