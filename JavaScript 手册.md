@@ -406,6 +406,18 @@ carName = "porsche",
 price = 15000;
 ```
 
+给两个变量赋值成字符串值：
+
+``` javascript
+var a = "A";
+var b = a;
+
+// 等效于：
+
+var a, b = a = "A";
+```
+
+
 **Value = undefined**
 
 在计算机程序中，被声明的变量经常是不带值的。值可以是需被计算的内容，或是之后被提供的数据，比如数据输入。
