@@ -250,3 +250,35 @@ person.nationality = "English";
 
 您不能使用预留词作为属性名（或方法名）。请使用 JavaScript 命名规则。
 
+### 删除属性
+delete 关键词从对象中删除属性：
+
+``` javascript
+var person = {firstName:"Bill", lastName:"Gates", age:62, eyeColor:"blue"};
+delete person.age;   // 或 delete person["age"];
+```
+
+ - delete 关键词会同时删除属性的值和属性本身。
+ - 删除完成后，属性在被添加回来之前是无法使用的。
+ - delete 操作符被设计用于对象属性。它对变量或函数没有影响。
+ - delete 操作符不应被用于预定义的 JavaScript 对象属性。这样做会使应用程序崩溃。
+
+### 属性值
+
+所有属性都有名称。此外它们还有值。
+
+值是属性的特性之一。
+
+其他特性包括：可列举、可配置、可写。
+
+这些特性定义了属性被访问的方式（是可读的还是可写的？）
+
+在 JavaScript 中，所有属性都是可读的，但是只有值是可修改的（只有当属性为可写时）。
+
+（ECMAScript 5 拥有获取和设置所有属性特性的方法）
+
+### 原型属性
+
+JavaScript 对象继承了它们的原型的属性。
+
+delete 关键词不会删除被继承的属性，但是如果您删除了某个原型属性，则将影响到所有从原型继承的对象。
