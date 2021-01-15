@@ -130,3 +130,46 @@ input 元素的 validity 属性包含了与数据合法性相关的一系列�
 | valueMissing | 设置为 true，如果元素（包含 required）没有值。 |
 | valid | 设置为 true，如果元素值是有效的。 |
 
+**实例**
+
+如果输入字段中的数字大于 100（input 元素的 max 属性），则显示一条消息：
+
+rangeOverflow 属性
+
+``` html
+<input id="id1" type="number" max="100">
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt = "";
+    if (document.getElementById("id1").validity.rangeOverflow) {
+        txt = "值太大";
+    }
+     document.getElementById("demo").innerHTML = txt;
+}
+</script> 
+```
+
+如果输入字段中的数字小于 100（input 元素的 min 属性），则显示一条消息：
+
+rangeUnderflow 属性
+
+``` html
+<input id="id1" type="number" min="100">
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+     var txt = "";
+    if (document.getElementById("id1").validity.rangeUnderflow) {
+        txt = "值太小";
+    }
+     document.getElementById("demo").innerHTML = txt;
+}
+</script>
+```
