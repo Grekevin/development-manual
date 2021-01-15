@@ -8,6 +8,13 @@
 			* [使用对象字面量](#使用对象字面量)
 			* [使用 JavaScript 关键词 new](#使用-javascript-关键词-new)
 		* [JavaScript 对象是易变的](#javascript-对象是易变的)
+	* [JavaScript 对象属性](#javascript-对象属性)
+		* [访问 JavaScript 属性](#访问-javascript-属性)
+		* [JavaScript for...in 循环](#javascript-forin-循环)
+		* [添加新属性](#添加新属性)
+		* [删除属性](#删除属性)
+		* [属性值](#属性值)
+		* [原型属性](#原型属性)
 
 # JS 对象
 
