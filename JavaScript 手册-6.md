@@ -695,3 +695,35 @@ function myFunction(a) {
 }
 ```
 
+**解释**
+
+如果某条语句是不完整的：
+
+``` javascript
+var
+```
+
+JavaScript 将通过读取下一行来完成这条语句：
+
+``` javascript
+power = 10;
+```
+
+但是由于这条语句是完整的：
+
+``` javascript
+return
+```
+
+JavaScript 会自动关闭该语句：
+
+``` javascript
+return;
+```
+
+发生这种情况是因为，在 JavaScript 中，用分号来关闭（结束）语句是可选的。
+
+JavaScript 会在行末关闭 return 语句，因为它本身就是一条完整的语句。
+
+所以，绝不要对 return 语句进行换行。
+
