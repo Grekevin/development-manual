@@ -139,45 +139,138 @@ ECMAScript 5 也称为 ES5 和 ECMAScript 2009。
  - 多行字符串字面量
  - 作为属性名称的保留字
 
-**属性 Getter 和 Setter**
+**新的对象属性和方法**
 
-ES5 允许您使用类似于获取或设置属性的语法来定义对象方法。
+Object.defineProperty() 是 ES5 中的新对象方法。
 
-这个例子为名为 fullName 的属性创建一个 getter：
+它允许您定义对象属性和/或更改属性的值和/或元数据。
 
 ``` javascript
 // 创建对象：
 var person = {
   firstName: "Bill",
   lastName : "Gates",
-  get fullName() {
-    return this.firstName + " " + this.lastName;
-  }
+  language : "NO", 
 };
 
-// 使用 getter 显示来自对象的数据：
-document.getElementById("demo").innerHTML = person.fullName;
+// 更改属性：
+Object.defineProperty(person, "language", {
+  value: "EN",
+  writable : true,
+  enumerable : true,
+  configurable : true
+});
+
+// 枚举属性
+var txt = "";
+for (var x in person) {
+  txt += person[x] + "<br>";
+}
+document.getElementById("demo").innerHTML = txt;
 ```
 
-这个例子为语言属性创建一个 setter 和一个 getter：
+下一个例子是相同的代码，但它隐藏了枚举中的语言属性：
 
 ``` javascript
+// 创建对象：
 var person = {
   firstName: "Bill",
   lastName : "Gates",
-  language : "NO",
-  get lang() {
-    return this.language;
-  },
-  set lang(value) {
-    this.language = value;
-  }
+  language : "NO", 
 };
 
-// 使用 setter 设置对象属性：
-person.lang = "en";
+// 更改属性：
+Object.defineProperty(person, "language", {
+  value: "EN",
+  writable : true,
+  enumerable : false,
+  configurable : true
+});
 
-// 使用 getter 显示来自对象的数据：
-document.getElementById("demo").innerHTML = person.lang;
+// 枚举属性
+var txt = "";
+for (var x in person) {
+  txt += person[x] + "<br>";
+}
+document.getElementById("demo").innerHTML = txt;
+```
+
+此例创建一个 setter 和 getter 来确保语言的大写更新：
+
+``` javascript
+// 创建对象：
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  language : "NO"
+};
+
+// 更改属性：
+Object.defineProperty(person, "language", {
+  get : function() { return language },
+  set : function(value) { language = value.toUpperCase()}
+});
+
+// 更改语言
+person.language = "en";
+
+// 显示语言
+document.getElementById("demo").innerHTML = person.language;
+```
+
+**ES5 新的对象方法**
+
+``` javascript
+// 添加或更改对象属性
+Object.defineProperty(object, property, descriptor)
+
+// 添加或更改多个对象属性
+Object.defineProperties(object, descriptors)
+
+// 访问属性
+Object.getOwnPropertyDescriptor(object, property)
+
+// 将所有属性作为数组返回
+Object.getOwnPropertyNames(object)
+
+// 将可枚举属性作为数组返回
+Object.keys(object)
+
+// 访问原型
+Object.getPrototypeOf(object)
+
+// 防止向对象添加属性
+Object.preventExtensions(object)
+
+// 如果可以将属性添加到对象，则返回 true
+Object.isExtensible(object)
+
+// 防止更改对象属性（而不是值）
+Object.seal(object)
+
+// 如果对象被密封，则返回 true
+Object.isSealed(object)
+
+// 防止对对象进行任何更改
+Object.freeze(object)
+
+// 如果对象被冻结，则返回 true
+Object.isFrozen(object)
+```
+
+**对字符串的属性访问**
+
+charAt() 方法返回字符串中指定索引（位置）的字符：
+
+``` javascript
+var str = "HELLO WORLD";
+str.charAt(0);            // 返回 H
+```
+
+ECMAScript 5 允许对字符串进行属性访问：
+
+``` javascript
+var str = "HELLO WORLD";
+str[0];                   // 返回 H
 ```
 
