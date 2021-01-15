@@ -599,3 +599,99 @@ var z = x + y             // z 中的结果并不是 0.3
 var z = (x * 10 + y * 10) / 10;       // z 中的结果将是 0.3
 ```
 
+**对 JavaScript 字符串换行**
+
+JavaScript 允许您把一条语句换行为两行：
+
+``` javascript
+var x =
+"Hello World!";
+```
+
+但是，在字符串中间来换行是不对的：
+
+``` javascript
+var x = "Hello
+World!";
+```
+如果必须在字符串中换行，则必须使用反斜杠：
+
+``` javascript
+var x = "Hello \
+World!";
+```
+**错位的分号**
+
+因为一个错误的分号，此代码块无论 x 的值如何都会执行：
+
+``` javascript
+if (x == 19);
+{
+     // code block
+}
+```
+
+**对 return 语句进行换行**
+
+在一行的结尾自动关闭语句是默认的 JavaScript 行为。
+
+正因如此，下面两个例子返回相同的结果：
+
+例子 1
+
+``` javascript
+function myFunction(a) {
+    var power = 10  
+    return a * power
+}
+```
+
+例子 2
+
+``` javascript
+function myFunction(a) {
+    var power = 10;
+    return a * power;
+}
+```
+
+JavaScript 也允许您将一条语句换行为两行。
+
+正因如此，例子 3 也将返回相同的结果：
+
+例子 3
+
+``` javascript
+function myFunction(a) {
+    var
+    power = 10;  
+    return a * power;
+}
+```
+
+但是，如果把 return 语句换行为两行会发生什么呢：
+
+例子 4
+
+``` javascript
+function myFunction(a) {
+    var
+    power = 10;  
+    return
+    a * power;
+}
+```
+
+此函数将返回 undefined！
+
+为什么呢？因为 JavaScript 认为你的意思是：
+
+``` javascript
+function myFunction(a) {
+     var
+    power = 10;  
+    return;
+    a * power;
+}
+```
+
