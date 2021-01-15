@@ -68,3 +68,35 @@ document.getElementById("demo").innerHTML = fullName;
 document.getElementById("demo").innerHTML = firstName + " " + lastName
 ```
 
+**延迟 JavaScript 加载**
+
+请把脚本放在页面底部，使浏览器首先加载页面。
+
+脚本在下载时，浏览器不会启动任何其他的下载。此外所有解析和渲染活动都可能会被阻塞。
+
+HTTP 规范定义浏览器不应该并行下载超过两种要素。
+
+一个选项是在 script 标签中使用 defer="true"。defer 属性规定了脚本应该在页面完成解析后执行，但它只适用于外部脚本。
+
+如果可能，您可以在页面完成加载后，通过代码向页面添加脚本：
+
+实例
+
+``` javascript
+<script>
+window.onload = downScripts;
+
+function downScripts() {
+    var element = document.createElement("script");
+    element.src = "myScript.js";
+    document.body.appendChild(element);
+}
+</script>
+```
+
+**避免使用 with**
+
+请避免使用 with 关键词。它对速度有负面影响。它也将混淆 JavaScript 作用域。
+
+严格模式中不允许 with 关键词。
+
