@@ -77,3 +77,56 @@ HTML 约束验证基于：
 
 [详细参考文档](https://www.w3school.com.cn/js/js_validation.asp)
 
+## JavaScript 验证 API
+
+### 约束验证 DOM 方法
+
+| 属性 | 描述 |
+| --- | --- |
+| checkValidity() | 返回 true，如果 input 元素包含有效数据 |
+| setCustomValidity() | 设置 input 元素的 validationMessage 属性。 |
+
+**checkValidity() 方法**
+
+如果输入字段包含无效的数据，显示一条消息：
+
+``` html
+<input id="id1" type="number" min="100" max="300" required>
+<button onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+ function myFunction() {
+    var inpObj = document.getElementById("id1");
+    if (inpObj.checkValidity() == false) {
+        document.getElementById("demo").innerHTML = inpObj.validationMessage;
+    }
+}
+</script>
+```
+
+###  约束验证 DOM 属性
+
+| 属性 | 描述 |
+| --- | --- |
+| validity | 包含与 input 元素的合法性相关的布尔属性。 |
+| validationMessage | 包含当 validity 为 false 时浏览器显示的消息。 |
+| willValidate | 指示是否验证 input 元素。 |
+
+### 合法性属性
+
+input 元素的 validity 属性包含了与数据合法性相关的一系列属性：
+
+| 属性 | 描述 |
+| --- | --- |
+| customError | 设置为 true，如果设置自定义的合法性消息。 |
+| patternMismatch | 设置为 true，如果元素值不匹配其 pattern 属性。 |
+| rangeOverflow | 设置为 true，如果元素值大于其 max 属性。 |
+| rangeUnderflow | 设置为 true，如果元素值小于其 min 属性。 |
+| stepMismatch | 当字段拥有 step 属性，且输入的 value 值不符合设定的间隔值时，该属性值为 true。 |
+| tooLong | 设置为 true，如果元素值超过了其 maxLength 属性。 |
+| typeMismatch | 当字段的 type 是 email 或者 url 但输入的值不是正确的类型时，属性值为 true。 |
+| valueMissing | 设置为 true，如果元素（包含 required）没有值。 |
+| valid | 设置为 true，如果元素值是有效的。 |
+
