@@ -582,3 +582,19 @@ obj.subtract = 1;
 obj.increment;
 obj.decrement;
 ```
+
+## JavaScript 对象构造器
+
+示例：
+
+``` javascript
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+```
+
+> 用大写首字母对构造器函数命名是个好习惯。
+
