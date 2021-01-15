@@ -185,3 +185,68 @@ x.age = 10;           // 这将同时改变 both x.age 和 person.age
 
 > 注释：JavaScript 变量不是易变的。只有 JavaScript 对象如此。
 
+## JavaScript 对象属性
+
+属性指的是与 JavaScript 对象相关的值。
+
+JavaScript 对象是无序属性的集合。
+
+属性通常可以被修改、添加和删除，但是某些属性是只读的。
+
+### 访问 JavaScript 属性
+
+访问对象属性的语法是：
+
+``` javascript
+_objectName_._property_           // person.age
+
+person.firstname + " is " + person.age + " years old.";
+```
+
+或者：
+
+``` javascript
+_objectName_["_property_"]       // person["age"]
+
+person["firstname"] + " is " + person["age"] + " years old.";
+```
+
+或者：
+
+``` javascript
+_objectName_[_expression_]       // x = "age"; person[x]
+```
+表达式必须计算为属性名。
+
+### JavaScript for...in 循环
+JavaScript for...in 语句遍历对象的属性。
+
+``` javascript
+for (variable in object) {
+    要执行的代码
+}
+```
+
+for...in 循环中的代码块会为每个属性执行一次。
+
+循环对象的属性：
+
+var person = {fname:"Bill", lname:"Gates", age:62}; 
+
+``` javascript
+for (x in person) {
+    txt += person[x];
+}
+```
+
+### 添加新属性
+您可以通过简单的赋值，向已存在的对象添加新属性。
+
+假设 person 对象已存在 - 那么您可以为其添加新属性：
+
+``` javascript
+person.nationality = "English";
+```
+
+您不能使用预留词作为属性名（或方法名）。请使用 JavaScript 命名规则。
+
