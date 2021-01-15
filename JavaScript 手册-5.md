@@ -1,3 +1,10 @@
+* [JavaScript 手册-5](#javascript-手册-5)
+		* [JavaScript 提升（Hoisting）](#javascript-提升hoisting)
+		* [	JavaScript Use Strict](#javascript-use-strict)
+		* [JavaScript this 关键词](#javascript-this-关键词)
+		* [JavaScript Let](#javascript-let)
+		* [JavaScript Const](#javascript-const)
+
 # JavaScript 手册-5 
 
 ### JavaScript 提升（Hoisting）
