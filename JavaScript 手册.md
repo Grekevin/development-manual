@@ -394,6 +394,8 @@ var carName = "porsche";
 
 ``` js
 var person = "Bill Gates", carName = "porsche", price = 15000;
+
+var a = 0, b = 0;
 ```
 
 声明可横跨多行：
