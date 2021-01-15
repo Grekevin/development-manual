@@ -100,3 +100,7 @@ function downScripts() {
 
 严格模式中不允许 with 关键词。
 
+### JavaScript 保留词
+
+[官方文档](https://www.w3school.com.cn/js/js_reserved.asp)
+
