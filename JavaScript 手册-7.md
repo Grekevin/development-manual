@@ -43,3 +43,28 @@ obj = document.getElementById("demo");
 obj.innerHTML = "Hello"; 
 ```
 
+**缩减 DOM 规模**
+
+请尽量保持 HTML DOM 中较少的元素数量。
+
+这么做总是会提高页面加载，并加快渲染（页面显示），尤其是在较小的设备上。
+
+每一次试图搜索 DOM（比如 getElementsByTagName）都将受益于一个较小的 DOM。
+
+**避免不必要的变量**
+
+请不要创建不打算存储值的新变量。
+
+通常您可以替换代码：
+
+``` javascript
+var fullName = firstName + " " + lastName;
+document.getElementById("demo").innerHTML = fullName; 
+```
+
+用这段代码：
+
+``` javascript
+document.getElementById("demo").innerHTML = firstName + " " + lastName
+```
+
