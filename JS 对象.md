@@ -598,3 +598,52 @@ function Person(first, last, age, eye) {
 
 > 用大写首字母对构造器函数命名是个好习惯。
 
+### 对象类型（蓝图）（类）
+
+通过字面量和new关键字创建实例是有限制的。它们只创建单一对象。
+
+有时我们需要创建相同“类型”的许多对象的“蓝图”。
+
+创建一种“对象类型”的方法，是使用对象构造器函数。
+
+在上面的示例中，函数 Person() 就是对象构造器函数。
+
+通过 new 关键词调用构造器函数可以创建相同类型的对象：
+
+``` javascript
+var myFather = new Person("Bill", "Gates", 62, "blue");
+var myMother = new Person("Steve", "Jobs", 56, "green");
+```
+
+### this 关键词
+
+在 JavaScript 中，被称为 this 的事物是代码的“拥有者”。
+
+this 的值，在对象中使用时，就是对象本身。
+
+在构造器函数中，this 是没有值的。它是新对象的替代物。 当一个新对象被创建时，this 的值会成为这个新对象。
+
+请注意 this 并不是变量。它是关键词。您无法改变 this 的值。
+
+### 为对象添加属性
+
+为已有的对象添加新属性很简单：
+
+``` javascript
+myFather.nationality = "English";
+```
+
+新属性被添加到 myFather。不是 myMother，也不是任何其他 person 对象。
+
+### 为对象添加方法
+
+为已有的对象添加新方法很简单：
+
+``` javascript
+myFather.name = function () {
+    return this.firstName + " " + this.lastName;
+};
+```
+
+新方法被添加到 myFather。不是 myMother，也不是任何其他 person 对象。
+
