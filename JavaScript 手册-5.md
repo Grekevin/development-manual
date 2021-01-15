@@ -58,7 +58,6 @@ function catName(name) {
 > Hoisting 是 JavaScript 将所有声明提升到当前作用域顶部的默认行为（提升到当前脚本或当前函数的顶部）。
 > 函数和变量相比，会被优先提升。这意味着函数会被提升到更靠前的位置。
 
-
 **JavaScript 声明会被提升**
 
 在 JavaScript 中，可以在使用变量之后对其进行声明。
