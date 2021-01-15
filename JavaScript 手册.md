@@ -422,6 +422,15 @@ var a, b = a = "A";
 ``` javascript
 var x = y, y = 'A';
 console.log(x + y); // undefinedA
+
+//等价于：
+var x;
+var y;
+x = y;
+y = 'A';
+
+// x = undefined   y = 'A'
+console.log(x + y); // undefinedA
 ```
 
 在这里，x 和 y 在代码执行前就已经创建了，而赋值操作发生在创建之后。当"x = y"执行时，y 已经存在，所以不抛出ReferenceError，并且它的值是'undefined'。所以 x 被赋予 undefined 值。然后，y 被赋予'A'。于是，在执行完第一行之后，x === undefined && y === 'A' 才出现了这样的结果。
