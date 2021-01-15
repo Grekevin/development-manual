@@ -104,3 +104,80 @@ function downScripts() {
 
 [官方文档](https://www.w3school.com.cn/js/js_reserved.asp)
 
+### ECMAScript 5 - JavaScript 5
+
+**ECMAScript 5 是什么？**
+
+ECMAScript 5 也称为 ES5 和 ECMAScript 2009。
+
+**ECMAScript 5 特性**
+
+这些是 2009 年发布的新特性：
+
+ - "use strict" 指令
+ - String.trim()
+ - Array.isArray()
+ - Array.forEach()
+ - Array.map()
+ - Array.filter()
+ - Array.reduce()
+ - Array.reduceRight()
+ - Array.every()
+ - Array.some()
+ - Array.indexOf()
+ - Array.lastIndexOf()
+ - JSON.parse()
+ - JSON.stringify()
+ - Date.now()
+ - 属性 Getter 和 Setter
+ - 新的对象属性和方法
+
+**ECMAScript 5 语法更改**
+
+ - 对字符串的属性访问 [ ]
+ - 数组和对象字面量中的尾随逗号
+ - 多行字符串字面量
+ - 作为属性名称的保留字
+
+**属性 Getter 和 Setter**
+
+ES5 允许您使用类似于获取或设置属性的语法来定义对象方法。
+
+这个例子为名为 fullName 的属性创建一个 getter：
+
+``` javascript
+// 创建对象：
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+// 使用 getter 显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.fullName;
+```
+
+这个例子为语言属性创建一个 setter 和一个 getter：
+
+``` javascript
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  language : "NO",
+  get lang() {
+    return this.language;
+  },
+  set lang(value) {
+    this.language = value;
+  }
+};
+
+// 使用 setter 设置对象属性：
+person.lang = "en";
+
+// 使用 getter 显示来自对象的数据：
+document.getElementById("demo").innerHTML = person.lang;
+```
+
