@@ -388,3 +388,60 @@ function myFunction(x, y = 10) {
 myFunction(5); // 将返回 15
 ```
 
+**新的数字属性**
+
+ES6 将以下属性添加到 Number 对象：
+
+ - EPSILON
+ - MIN_SAFE_INTEGER
+ - MAX_SAFE_INTEGER
+
+实例
+
+``` javascript
+var x = Number.EPSILON;	//2.220446049250313e-16
+var x = Number.MIN_SAFE_INTEGER;	//-9007199254740991
+var x = Number.MAX_SAFE_INTEGER;	//9007199254740991
+```
+
+**新的数字方法**
+
+ES6 为 Number 对象添加了 2 个新方法：
+
+ - Number.isInteger()
+ - Number.isSafeInteger()
+
+Number.isInteger() 方法
+如果参数是整数，则 Number.isInteger() 方法返回 true。
+
+``` javascript
+Number.isInteger(10);        // 返回 true
+Number.isInteger(10.5);      // 返回 false
+```
+
+Number.isSafeInteger() 方法
+安全整数是可以精确表示为双精度数的整数。
+
+如果参数是安全整数，则 Number.isSafeInteger() 方法返回 true。
+
+``` javascript
+Number.isSafeInteger(10);    // 返回 true
+Number.isSafeInteger(12345678901234567890);  // 返回 false
+```
+新的全局方法
+ES6 还增加了 2 个新的全局数字方法：
+
+**isFinite()**
+
+ - isNaN()
+ - isFinite() 方法
+
+如果参数为 Infinity 或 NaN，则全局 isFinite() 方法返回 false。
+
+否则返回 true：
+
+``` javascript
+isFinite(10/0);       // 返回 false
+isFinite(10/1);       // 返回 true
+```
+
