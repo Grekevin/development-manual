@@ -650,3 +650,58 @@ add();
 
 JavaScript 内部函数可以解决这个问题。
 
+### JavaScript 嵌套函数
+
+所有函数都有权访问全局作用域。
+
+事实上，在 JavaScript 中，所有函数都有权访问它们“上面”的作用域。
+
+JavaScript 支持嵌套函数。嵌套函数可以访问其上的作用域。
+
+在本例中，内部函数 plus() 可以访问父函数中的 counter 计数器变量：
+
+``` javascript
+function add() {
+    var counter = 0;
+    function plus() {counter += 1;}
+    plus();     
+    return counter; 
+}
+```
+
+这样即可解决计数器困境，如果我们能够从外面访问 plus() 函数。
+
+我们还需要找到只执行一次 counter = 0 的方法。
+
+我们需要闭包（closure）。
+
+### JavaScript 闭包
+
+记得自调用函数吗？这种函数会做什么呢？
+
+``` javascript
+var add = (function () {
+    var counter = 0;
+    return function () {return counter += 1;}
+})();
+
+add();
+add();
+add();
+
+// 计数器目前是 3 
+```
+
+例子解释
+
+变量 add 的赋值是自调用函数的返回值。
+
+这个自调用函数只运行一次。它设置计数器为零（0），并返回函数表达式。
+
+这样 add 成为了函数。最“精彩的”部分是它能够访问父作用域中的计数器。
+
+这被称为 JavaScript 闭包。它使函数拥有“私有”变量成为可能。
+
+计数器被这个匿名函数的作用域保护，并且只能使用 add 函数来修改。
+
+> 闭包指的是有权访问父作用域的函数，即使在父函数关闭之后。
