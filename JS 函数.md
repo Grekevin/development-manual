@@ -467,3 +467,28 @@ var person1 = {
 person.fullName.call(person1, "Seattle", "USA");
 ```
 
+## JavaScript 函数 Apply
+
+### 方法重用
+
+通过 apply() 方法，您能够编写用于不同对象的方法。
+
+ ### JavaScript apply() 方法
+ 
+apply() 方法与 call() 方法非常相似：
+
+在本例中，person 的 fullName 方法被应用到 person1：
+
+``` javascript
+var person = {
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+var person1 = {
+    firstName: "Bill",
+    lastName: "Gates",
+}
+person.fullName.apply(person1);  // 将返回 "Bill Gates"
+```
+
