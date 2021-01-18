@@ -615,5 +615,89 @@ if (x.addEventListener) {                    // 针对主流浏览器，除了 I
 } 
 ```
 
-### [JavaScript HTML DOM 导航](https://www.w3school.com.cn/js/js_htmldom_navigation.asp)
+## [JavaScript HTML DOM 导航](https://www.w3school.com.cn/js/js_htmldom_navigation.asp)
+
+### 子节点和节点值
+
+DOM 处理中的一种常见错误是认为元素节点中包含文本。
+
+``` javascript
+<title id="demo">DOM 教程</title> 
+```
+
+（上面例子中的）元素节点 `<title>` 不包含文本。
+
+它包含了值为 "DOM 教程" 的文本节点。
+
+文本节点的值能够通过节点的 innerHTML 属性进行访问：
+
+``` javascript
+var myTitle = document.getElementById("demo").innerHTML;
+```
+
+访问 innerHTML 属性等同于访问首个子节点的 nodeValue：
+
+``` javascript
+var myTitle = document.getElementById("demo").firstChild.nodeValue;
+```
+
+也可以这样访问第一个子节点：
+
+``` javascript
+var myTitle = document.getElementById("demo").childNodes[0].nodeValue;
+```
+
+### DOM 根节点
+
+有两个特殊属性允许访问完整文档：
+
+ - document.body - 文档的 body
+ - document.documentElement - 完整文档
+
+### nodeName 属性
+
+nodeName 属性规定节点的名称。
+
+nodeName 是只读的
+
+ - 元素节点的 nodeName 等同于标签名
+ - 属性节点的 nodeName 是属性名称
+ - 文本节点的 nodeName 总是 #text
+ - 文档节点的 nodeName 总是 #document
+
+``` html
+<h1 id="id01">我的第一张网页</h1>
+<p id="id02">Hello!</p>
+
+<script>
+document.getElementById("id02").innerHTML  = document.getElementById("id01").nodeName;	//H1
+</script>
+```
+
+> 注释：nodeName 总是包含 HTML 元素的大写标签名。
+
+### nodeValue 属性
+
+nodeValue 属性规定节点的值。
+
+ - 元素节点的 nodeValue 是 undefined
+ - 文本节点的 nodeValue 是文本文本
+ - 属性节点的 nodeValue 是属性值
+
+### nodeType 属性
+
+nodeType 属性返回节点的类型。nodeType 是只读的。
+
+最重要的 nodeType 属性是：
+
+| 节点 | 类型 | 例子 |
+| --- | --- | --- |
+| ELEMENT_NODE | 1 | `<h1 class="heading">`W3School`</h1>` |
+| ATTRIBUTE_NODE | 2 | class = "heading" （弃用） |
+| TEXT_NODE | 3 | W3School |
+| COMMENT_NODE | 8 | <!-- 这是注释 --> |
+| DOCUMENT_NODE | 9 | HTML 文档本身（<html> 的父） |
+| DOCUMENT_TYPE_NODE | 10 | <!Doctype html> |
+
+Type 2 在 HTML DOM 中已弃用。XML DOM 中未弃用。
 
