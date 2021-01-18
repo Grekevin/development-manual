@@ -223,3 +223,37 @@ function myFunction(x, y) {
 ```
 > 如果函数调用的参数太多（超过声明），则可以使用 arguments 对象来达到这些参数。
 
+### arguments 对象
+
+JavaScript 函数有一个名为 arguments 对象的内置对象。
+
+arguments 对象包含函数调用时使用的参数数组。
+
+这样，您就可以简单地使用函数来查找（例如）数字列表中的最高值：
+
+``` javascript
+x = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+    var i;
+    var max = -Infinity;
+    for (i = 0; i < arguments.length; i++) {
+        if (arguments[i] > max) {
+            max = arguments[i];
+        }
+    }
+    return max;
+}
+```
+或创建一个函数来总和所有输入值：
+``` javascript
+x = sumAll(1, 123, 500, 115, 44, 88);
+
+function sumAll() {
+    var i, sum = 0;
+    for (i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+}
+```
