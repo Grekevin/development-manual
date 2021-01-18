@@ -373,11 +373,11 @@ var myObject = {
 myObject.fullName();          // 将返回 [object Object]（拥有者对象）
 ```
 
-以对象方法来调用函数，会导致 this 的值成为对象本身。
+以对象方法来调用函数，会导致 `this` 的值成为对象本身。
 
 ### 通过函数构造器来调用函数
 
-如果函数调用的前面是 new 关键字，那么这是一个构造函数调用。
+如果函数调用的前面是 `new` 关键字，那么这是一个构造函数调用。
 
 它看起来像你创建一个新的函数，但由于 JavaScript 函数是对象，你实际上创建一个新对象：
 
@@ -394,7 +394,76 @@ x.firstName;                             // 会返回 "Bill"
 ```
 构造器调用会创建新对象。新对象会从其构造器继承属性和方法。
 
-构造器内的 this 关键词没有值。
+构造器内的 `this` 关键词没有值。
 
-this 的值会成为调用函数时创建的新对象。
+`this` 的值会成为调用函数时创建的新对象。
+
+## JavaScript 函数 Call
+
+### 方法重用
+
+使用 `call()` 方法，您可以编写能够在不同对象上使用的方法。
+
+### 函数是对象方法
+
+在 JavaScript 中，函数是对象的方法。
+
+> 如果一个函数不是 JavaScript 对象的方法，那么它就是全局对象的函数。
+
+下面的例子创建了带有三个属性的对象（firstName、lastName、fullName）。
+
+``` javascript
+var person = {
+    firstName:"Bill",
+    lastName: "Gates",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+}
+person.fullName();		// 将返回 "Bill Gates"
+```
+
+ - fullName 属性是一个方法。person 对象是该方法的拥有者。
+ - fullName 属性属于 person 对象的方法。
+
+### JavaScript call() 方法
+
+call() 方法是预定义的 JavaScript 方法。
+
+通过 call()，可以把一个对象的方法应用到另外一个对象上。
+
+``` javascript
+var person = {
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+var person1 = {
+    firstName:"Bill",
+    lastName: "Gates",
+}
+var person2 = {
+    firstName:"Steve",
+    lastName: "Jobs",
+}
+person.fullName.call(person1);  // 将返回 "Bill Gates"
+person.fullName.call(person2);  // 将返回 "Steve Jobs"
+```
+
+### 带参数的 call() 方法
+
+call() 方法可接受参数：
+
+``` javascript
+var person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+var person1 = {
+  firstName:"Bill",
+  lastName: "Gates"
+}
+person.fullName.call(person1, "Seattle", "USA");
+```
 
