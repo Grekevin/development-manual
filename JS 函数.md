@@ -190,3 +190,36 @@ const x = (x, y) => { return x * y };
 
 > JavaScript 函数不会对参数值进行任何检查。
 
+### 函数参数
+
+函数可以拥有参数：
+
+``` javascript
+functionName(parameter1, parameter2, parameter3) {
+    要执行的代码
+}
+```
+ - 函数参数（parameter）指的是在函数定义中列出的名称。
+ - 函数参数（argument）指的是传递到函数或由函数接收到的真实值。
+
+### 参数规则
+
+ - JavaScript 函数定义不会为参数（parameter）规定数据类型。
+ - JavaScript 函数不会对所传递的参数（argument）实行类型检查。
+ - JavaScript 函数不会检查所接收参数（argument）的数量。
+
+### 参数默认
+
+如果调用参数时省略了参数（少于被声明的数量），则丢失的值被设置为：undefined。
+
+有时这是可以接受的，但是有时最好给参数指定默认值：
+
+``` javascript
+function myFunction(x, y) {
+    if (y === undefined) {
+          y = 0;
+    } 
+}
+```
+> 如果函数调用的参数太多（超过声明），则可以使用 arguments 对象来达到这些参数。
+
