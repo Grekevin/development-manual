@@ -469,3 +469,70 @@ onmousedown, onmouseup 以及 onclick 事件构成了完整的鼠标点击事件
 
 首先当鼠标按钮被点击时，onmousedown 事件被触发；然后当鼠标按钮被释放时，onmouseup 事件被触发；最后，当鼠标点击完成后，onclick 事件被触发。
 
+## JavaScript HTML DOM 事件监听器
+
+### addEventListener() 方法
+
+添加当用户点击按钮时触发的事件监听器：
+
+``` javascript
+document.getElementById("myBtn").addEventListener("click", displayDate);
+```
+
+ - addEventListener() 方法为指定元素指定事件处理程序。
+ - addEventListener() 方法为元素附加事件处理程序而不会覆盖已有的事件处理程序。
+ - 您能够向一个元素添加多个事件处理程序。
+ - 您能够向一个元素添加多个相同类型的事件处理程序，例如两个 "click" 事件。
+ - 您能够向任何 DOM 对象添加事件处理程序而非仅仅 HTML 元素，例如 window 对象。
+ - addEventListener() 方法使我们更容易控制事件如何对冒泡作出反应。
+ - 当使用 addEventListener() 方法时，JavaScript 与 HTML 标记是分隔的，已达到更佳的可读性；即使在不控制 HTML 标记时也允许您添加事件监听器。
+ - 您能够通过使用 removeEventListener() 方法轻松地删除事件监听器。
+
+**语法**
+
+``` javascript
+element.addEventListener(event, function, useCapture);
+```
+
+ - 第一个参数是事件的类型（比如 "click" 或 "mousedown"）。
+ - 第二个参数是当事件发生时我们需要调用的函数。
+ - 第三个参数是布尔值，指定使用事件冒泡还是事件捕获。此参数是可选的。
+
+> 注意：请勿对事件使用 "on" 前缀；请使用 "click" 代替 "onclick"。
+
+### 向元素添加事件处理程序
+
+当用户点击某个元素时提示 "Hello World!"：
+
+``` javascript
+element.addEventListener("click", function(){ alert("Hello World!"); });
+```
+
+您也可以引用外部“命名”函数：
+
+当用户点击某个元素时提示 "Hello World!"：
+
+``` javascript
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+    alert ("Hello World!");
+}
+```
+### 向相同元素添加多个事件处理程序
+
+addEventListener() 方法允许您向相同元素添加多个事件，同时不覆盖已有事件：
+
+``` javascript
+element.addEventListener("click", myFunction);
+element.addEventListener("click", mySecondFunction);
+```
+
+亲自试一试
+您能够向相同元素添加不同类型的事件：
+
+``` javascript
+element.addEventListener("mouseover", myFunction);
+element.addEventListener("click", mySecondFunction);
+element.addEventListener("mouseout", myThirdFunction);
+```
