@@ -536,3 +536,15 @@ element.addEventListener("mouseover", myFunction);
 element.addEventListener("click", mySecondFunction);
 element.addEventListener("mouseout", myThirdFunction);
 ```
+
+### 向 Window 对象添加事件处理程序
+
+addEventListener() 允许您将事件监听器添加到任何 HTML DOM 对象上，比如 HTML 元素、HTML 对象、window 对象或其他支持事件的对象，比如 xmlHttpRequest 对象。
+
+添加当用户调整窗口大小时触发的事件监听器：
+
+``` javascript
+window.addEventListener("resize", function(){
+    document.getElementById("demo").innerHTML = sometext;
+});
+```
