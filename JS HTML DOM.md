@@ -203,3 +203,44 @@ var x = document.querySelectorAll("p.intro");
 
 > querySelectorAll() 不适用于 Internet Explorer 8 及其更早版本。
 
+### 通过 HTML 对象选择器查找 HTML 对象
+
+本例查找 id="frm1" 的 form 元素，在 forms 集合中，然后显示所有元素值：
+
+``` html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>使用 document.forms 查找 HTML 元素</h1>
+
+<form id="frm1" action="/demo/action_page.php">
+  First name: <input type="text" name="fname" value="Bill"><br>
+  Last name: <input type="text" name="lname" value="Gates"><br><br>
+  <input type="submit" value="提交">
+</form> 
+
+<p>单击“试一试”按钮，显示表单中每个元素的值。</p>
+
+<button onclick="myFunction()">试一试</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.forms["frm1"];
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+```
+
+## JavaScript HTML DOM - 改变 HTML
+
