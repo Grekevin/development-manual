@@ -765,6 +765,7 @@ function Person(first, last, age, eye) {
   this.lastName = last;
   this.age = age;
   this.eyeColor = eye;
+  //通过赋值方式添加属性
   this.nationality = "English";
 }
 
@@ -772,6 +773,9 @@ var myFriend = new Person("Bill", "Gates", 62, "blue");
 var myBrother = new Person("Steve", "Jobs", 56, "green");
 
 document.getElementById("demo").innerHTML = myBrother.nationality;	//English
+
+//通过赋值添加的属是可枚举属性
+Object.keys(myFriend); 		//firstName,lastName,age,eyeColor,nationality
 </script>
 ```
 
