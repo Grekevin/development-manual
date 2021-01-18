@@ -186,3 +186,7 @@ const x = (x, y) => { return x * y };
 
 > IE11 或更早的版本不支持箭头函数。
 
+## JavaScript 函数参数
+
+> JavaScript 函数不会对参数值进行任何检查。
+
