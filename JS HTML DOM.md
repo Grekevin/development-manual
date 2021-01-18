@@ -548,3 +548,70 @@ window.addEventListener("resize", function(){
     document.getElementById("demo").innerHTML = sometext;
 });
 ```
+
+### 传递参数
+
+当传递参数值时，请以参数形式使用调用指定函数的“匿名函数”：
+
+``` html
+<script>
+var p1 = 5;
+var p2 = 7;
+
+document.getElementById("myBtn").addEventListener("click", function() {
+  myFunction(p1, p2);
+});
+
+function myFunction(a, b) {
+  var result = a * b;
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+```
+
+### 事件冒泡还是事件捕获？
+
+在 HTML DOM 中有两种事件传播的方法：冒泡和捕获。
+
+事件传播是一种定义当发生事件时元素次序的方法。假如 `<div>` 元素内有一个 `<p>`，然后用户点击了这个 `<p>` 元素，应该首先处理哪个元素“click”事件？
+
+在冒泡中，最内侧元素的事件会首先被处理，然后是更外侧的：首先处理 `<p>` 元素的点击事件，然后是 `<div>` 元素的点击事件。
+
+在捕获中，最外侧元素的事件会首先被处理，然后是更内侧的：首先处理 `<div>` 元素的点击事件，然后是 `<p>` 元素的点击事件。
+
+在 addEventListener() 方法中，你能够通过使用“useCapture”参数来规定传播类型：
+
+``` javascript
+addEventListener(event, function, useCapture);
+```
+
+默认值是 false，将使用冒泡传播，如果该值设置为 true，则事件使用捕获传播。
+
+### removeEventListener() 方法
+
+removeEventListener() 方法会删除已通过 addEventListener() 方法附加的事件处理程序：
+
+``` javascript
+element.removeEventListener("mousemove", myFunction);
+```
+
+### 浏览器支持
+
+注释：IE 8、Opera 6.0 及其更早版本不支持 addEventListener() 和 removeEventListener() 方法。不过，对于这些特殊的浏览器版本，您可以使用 attachEvent() 方法向元素添加事件处理程序，并由 detachEvent() 方法删除：
+
+``` javascript
+element.attachEvent(event, function);
+element.detachEvent(event, function);
+```
+
+跨浏览器解决方案：
+
+``` javascript
+var x = document.getElementById("myBtn");
+if (x.addEventListener) {                    // 针对主流浏览器，除了 IE 8 及更正版本
+    x.addEventListener("click", myFunction);
+} else if (x.attachEvent) {                  // 针对 IE 8 及更早版本
+    x.attachEvent("onclick", myFunction);
+} 
+```
+
