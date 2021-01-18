@@ -304,3 +304,44 @@ document.getElementById("myImage").src = "landscape.jpg";
  - 我们使用 HTML DOM 来获取 id="myImage" 的元素
  - JavaScript 把此元素的 src 属性从 "smiley.gif" 更改为 "landscape.jpg"
 
+## JavaScript HTML DOM - 改变 CSS
+
+### 改变 HTML 样式
+
+如需更改 HTML 元素的样式，请使用此语法：
+
+``` javascript
+document.getElementById(id).style.property = new style
+```
+
+``` javascript
+<script>
+document.getElementById("p2").style.color = "blue";
+</script>
+```
+
+### 使用事件
+
+HTML DOM 允许您在事件发生时执行代码。
+
+当“某些事情”在 HTML 元素上发生时，浏览器会生成事件：
+
+ - 点击某个元素时
+ - 页面加载时
+ - 输入字段被更改时
+
+``` html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id1">我的标题 1</h1>
+
+<button type="button" onclick="document.getElementById('id1').style.color = 'red'">
+点击我！
+</button>
+
+</body>
+</html>
+```
+
