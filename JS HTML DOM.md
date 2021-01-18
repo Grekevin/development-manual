@@ -244,3 +244,22 @@ function myFunction() {
 
 ## JavaScript HTML DOM - 改变 HTML
 
+### 改变 HTML 输出流
+
+在 JavaScript 中，document.write() 可用于直接写入 HTML 输出流：
+
+``` html
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+document.write(Date());
+</script>
+
+</body>
+</html>
+```
+
+> 千万不要在文档加载后使用 document.write()。这么做会覆盖文档。
+
