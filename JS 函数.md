@@ -274,3 +274,103 @@ function sumAll() {
 
 ## JavaScript 函数调用
 
+> JavaScript 函数内部的代码会在“某物”调用它时执行。
+
+###  调用 JavaScript 函数
+
+在函数被定义时，函数内部的代码不会执行。
+
+在函数被调用时，函数内部的代码会被执行。
+
+调用函数通常也可以说“启动函数”或“执行函数”。
+
+### 以函数形式调用函数
+
+``` javascript
+function myFunction(a, b) {
+    return a * b;
+}
+myFunction(10, 2);           // 将返回 20
+```
+
+以上函数不属于任何对象。但是在 JavaScript 中，始终存在一种默认的全局对象。
+
+在 HTML 中，默认全局对象是 HTML 页面本身，所有上面的函数“属于”HTML 页面。
+
+在浏览器中，这个页面对象就是浏览器窗口。上面的函数自动成为一个窗口函数。
+
+myFunction() 和 window.myFunction() 是同一个函数：
+
+``` javascript
+function myFunction(a, b) {
+    return a * b;
+}
+window.myFunction(10, 2);    // 也会返回 20
+```
+这是调用函数的常见方法，但并不是一个好习惯。
+
+全局变量、方法或函数很容易在全局对象中产生命名冲突和漏洞。
+
+### this 关键词
+
+在 JavaScript 中，被称为 this 的事物，指的是“拥有”当前代码的对象。
+
+this 的值，在函数中使用时，是“拥有”该函数的对象。
+
+> 请注意 this 并不是变量。它属于关键词。您无法改变 this 的值。
+
+### 全局对象
+
+当不带拥有者对象调用对象时，this 的值成为全局对象。
+
+在 web 浏览器中，全局对象就是浏览器对象。
+
+本例以 this 的值返回这个 window 对象：
+
+``` javascript
+var x = myFunction();            // x 将成为 window 对象
+
+function myFunction() {
+   return this;	//[object Window]
+}
+```
+
+调用一个函数作为一个全局函数，会导致 this 的值成为全局对象。
+
+作为变量来使用 window 对象很容易使程序崩溃。
+
+### 作为方法来调用函数
+
+在 JavaScript 中，您可以把函数定义为对象方法。
+
+下面的例子创建了一个对象（myObject），带有两个属性（firstName 和 lastName），以及一个方法（fullName）：
+
+``` javascript
+var myObject = {
+    firstName:"Bill",
+    lastName: "Gates",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+}
+myObject.fullName();         // 将返回 "Bill Gates"
+```
+
+fullName 方法是一个函数。该方法属于对象。myObject 是方法的拥有者。
+
+被称为 this 的事物，是“拥有”这段 JavaScript 代码的对象。在此例中，this 的值是 myObject。
+
+修改这个 fullName 方法来返回 this 的值：
+
+``` javascript
+var myObject = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+        return this;
+    }
+}
+myObject.fullName();          // 将返回 [object Object]（拥有者对象）
+```
+
+以对象方法来调用函数，会导致 this 的值成为对象本身。
