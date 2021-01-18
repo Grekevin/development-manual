@@ -306,6 +306,8 @@ document.getElementById("myImage").src = "landscape.jpg";
 
 ## JavaScript HTML DOM - 改变 CSS
 
+[HTML DOM Style 对象参考手册](https://www.w3school.com.cn/jsref/dom_obj_style.asp)
+
 ### 改变 HTML 样式
 
 如需更改 HTML 元素的样式，请使用此语法：
