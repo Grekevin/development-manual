@@ -817,3 +817,6 @@ document.getElementById("demo").innerHTML = myFriend.nationality; //English
 document.getElementById("demo").innerHTML = myFriend.name();	//Bill Gates
 </script>
 ```
+
+> 请只修改您自己的原型。绝不要修改标准 JavaScript 对象的原型。
+
