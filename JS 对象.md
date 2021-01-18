@@ -824,3 +824,62 @@ document.getElementById("demo").innerHTML = myFriend.name();	//Bill Gates
 
 > 请只修改您自己的原型。绝不要修改标准 JavaScript 对象的原型。
 
+### avaScript ES5 对象方法
+
+#### ES5 新的对象方法
+
+``` javascript
+// 添加或更改对象属性
+Object.defineProperty(object, property, descriptor)
+
+// 添加或更改多个对象属性
+Object.defineProperties(object, descriptors)
+
+// 访问属性
+Object.getOwnPropertyDescriptor(object, property)
+
+// 以数组返回所有属性
+Object.getOwnPropertyNames(object)
+
+// 以数组返回所有可枚举的属性
+Object.keys(object)
+
+// 访问原型
+Object.getPrototypeOf(object)
+
+// 阻止向对象添加属性
+Object.preventExtensions(object)
+
+// 如果可将属性添加到对象，则返回 true
+Object.isExtensible(object)
+
+// 防止更改对象属性（而不是值）
+Object.seal(object)
+
+// 如果对象被密封，则返回 true
+Object.isSealed(object)
+
+// 防止对对象进行任何更改
+Object.freeze(object)
+
+// 如果对象被冻结，则返回 true
+Object.isFrozen(object)
+```
+
+#### 列出可枚举的属性
+
+``` javascript
+<script>
+// 创建对象：
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  language : "EN"
+}
+// 更改属性：
+Object.defineProperty(person, "language", {enumerable:false});
+// 显示属性：
+document.getElementById("demo").innerHTML = Object.keys(person);	//firstName,lastName
+</script>
+```
+
