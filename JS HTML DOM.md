@@ -444,3 +444,20 @@ function myFunction() {
 ### onmouseover 和 onmouseout 事件
 
 onmouseover 和 onmouseout 事件可用于当用户将鼠标移至 HTML 元素上或移出时触发某个函数：
+
+``` html
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+请把鼠标移上来</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "谢谢您"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "请把鼠标移上来"
+}
+</script>
+```
+
