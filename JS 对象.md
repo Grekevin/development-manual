@@ -734,3 +734,86 @@ JavaScript 提供原始数据类型字符串、数字和布尔的对象版本。
 
 ## JavaScript 对象原型
 
+> 所有 JavaScript 对象都从原型继承属性和方法。
+
+无法为已有的对象构造器添加新属性：
+
+``` javascript
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+Person.nationality = "English";
+
+var myFriend = new Person("Bill", "Gates", 62, "blue");
+var myBrother = new Person("Steve", "Jobs", 48, "green");
+
+document.getElementById("demo").innerHTML = myFriend.nationality; 	//undefined
+</script>
+```
+
+如需向构造器添加一个新属性，则必须把它添加到构造器函数：
+
+``` javascript
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.nationality = "English";
+}
+
+var myFriend = new Person("Bill", "Gates", 62, "blue");
+var myBrother = new Person("Steve", "Jobs", 56, "green");
+
+document.getElementById("demo").innerHTML = myBrother.nationality;	//English
+</script>
+```
+
+### 原型继承
+
+所有 JavaScript 对象都从原型继承属性和方法。
+
+日期对象继承自 Date.prototype。数组对象继承自 Array.prototype。Person 对象继承自 Person.prototype。
+
+Object.prototype 位于原型继承链的顶端：
+
+日期对象、数组对象和 Person 对象都继承自 Object.prototype。
+
+### 向对象添加属性和方法
+
+有时，您希望向所有给定类型的已有对象添加新属性（或方法）。
+
+有时，您希望向对象构造器添加新属性（或方法）。
+
+#### 使用 prototype 属性
+
+JavaScript prototype 属性允许您为对象构造器添加新属性或新方法：
+
+``` javascript
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+//新属性
+Person.prototype.nationality = "English";
+
+//新方法
+Person.prototype.name = function() {
+  return this.firstName + " " + this.lastName
+};
+
+var myFriend = new Person("Bill", "Gates", 62, "blue");
+document.getElementById("demo").innerHTML = myFriend.nationality; //English
+document.getElementById("demo").innerHTML = myFriend.name();	//Bill Gates
+</script>
+```
