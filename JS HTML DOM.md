@@ -169,3 +169,37 @@ innerHTML 属性可用于获取或改变任何 HTML 元素，包括 `<html>` 和
 | document.title | 返回 `<title>` 元素 | 1 |
 | document.URL | 返回文档的完整 URL | 1 |
 
+## JavaScript HTML DOM 元素
+
+### 查找 HTML 元素
+
+通常，通过 JavaScript，您需要操作 HTML 元素。
+
+为了达成此目的，您需要首先找到这些元素。有好几种完成此任务的方法：
+
+ - 通过 id 查找 HTML 元素
+ - 通过标签名查找 HTML 元素
+ - 通过类名查找 HTML 元素
+ - 通过 CSS 选择器查找 HTML 元素
+ - 通过 HTML 对象集合查找 HTML 元素
+
+### 通过 id 查找 HTML 元素
+
+DOM 中查找 HTML 元素最简单的方法是，使用元素的 id。
+
+如果元素被找到，此方法会以对象返回该元素。
+
+如果未找到元素，myElement 将包含 null。
+
+### 通过 CSS 选择器查找 HTML 元素
+
+如果您需要查找匹配指定 CSS 选择器（id、类名、类型、属性、属性值等等）的所有 HTML 元素，请使用 querySelectorAll() 方法。
+
+本例返回 class="intro" 的所有 `<p>` 元素列表：
+
+``` javascript
+var x = document.querySelectorAll("p.intro");
+```
+
+> querySelectorAll() 不适用于 Internet Explorer 8 及其更早版本。
+
