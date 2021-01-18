@@ -349,3 +349,96 @@ HTML DOM 允许您在事件发生时执行代码。
 
 ## JavaScript HTML DOM 事件
 
+### 对事件作出反应
+
+JavaScript 能够在事件发生时执行，比如当用户点击某个 HTML 元素时。
+
+为了在用户点击元素时执行代码，请向 HTML 事件属性添加 JavaScript 代码：
+
+``` javascript
+onclick=JavaScript
+```
+
+HTML 事件的例子：
+
+ - 当用户点击鼠标时
+ - 当网页加载后
+ - 当图像加载后
+ - 当鼠标移至元素上时
+ - 当输入字段被改变时
+ - 当 HTML 表单被提交时
+ - 当用户敲击按键时
+
+### HTML 事件属性
+
+如需向 HTML 元素分配事件，您能够使用事件属性。
+
+向 button 元素分配 onclick 事件：
+
+``` html
+<button onclick="displayDate()">试一试</button>
+```
+
+### 使用 HTML DOM 分配事件
+
+HTML DOM 允许您使用 JavaScript 向 HTML 元素分配事件：
+
+``` html
+<script>
+document.getElementById("myBtn").onclick = displayDate;
+
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+</script>
+```
+
+### onload 和 onunload 事件
+
+当用户进入后及离开页面时，会触发 onload 和 onunload 事件。
+
+onload 事件可用于检测访问者的浏览器类型和浏览器版本，然后基于该信息加载网页的恰当版本。
+
+onload 和 onunload 事件可用于处理 cookie。
+
+``` html
+<script>
+function checkCookies() {
+  var text = "";
+  if (navigator.cookieEnabled == true) {
+    text = "Cookie 已启用";
+  } else {
+    text = "Cookie 未启用";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+```
+
+### onchange 事件
+
+onchange 事件经常与输入字段验证结合使用。
+
+下面是一个如何使用 onchange 的例子。当用户改变输入字段内容时，会调用 upperCase() 函数。
+
+``` html
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+
+请输入您的名字：<input type="text" id="fname" onchange="myFunction()">
+
+<p>离开输入字段时，会触发一个函数，将输入文本转换为大写。</p>
+
+</body>
+</html>
+```
+
