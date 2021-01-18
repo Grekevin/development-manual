@@ -441,4 +441,6 @@ function myFunction() {
 </body>
 </html>
 ```
+### onmouseover 和 onmouseout 事件
 
+onmouseover 和 onmouseout 事件可用于当用户将鼠标移至 HTML 元素上或移出时触发某个函数：
