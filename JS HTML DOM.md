@@ -66,6 +66,20 @@ HTML DOM 能够通过 JavaScript 进行访问（也可以通过其他编程语�
 
 例如：getElementById 是方法，而 innerHTML 是属性。
 
+``` html 
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+</html>
+```
+
 ### getElementById 方法
 
 访问 HTML 元素最常用的方法是使用元素的 id。
@@ -77,3 +91,4 @@ HTML DOM 能够通过 JavaScript 进行访问（也可以通过其他编程语�
 innerHTML 属性可用于获取或替换 HTML 元素的内容。
 
 innerHTML 属性可用于获取或改变任何 HTML 元素，包括 <html> 和 <body>。
+
