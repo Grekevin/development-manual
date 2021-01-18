@@ -90,5 +90,82 @@ document.getElementById("demo").innerHTML = "Hello World!";
 
 innerHTML 属性可用于获取或替换 HTML 元素的内容。
 
-innerHTML 属性可用于获取或改变任何 HTML 元素，包括 <html> 和 <body>。
+innerHTML 属性可用于获取或改变任何 HTML 元素，包括 `<html>` 和 `<body>`。
+
+## JavaScript HTML DOM 文档
+
+> HTML DOM 文档对象是您的网页中所有其他对象的拥有者。
+
+### HTML DOM Document 对象
+
+文档对象代表您的网页。
+
+如果您希望访问 HTML 页面中的任何元素，那么您总是从访问 document 对象开始。
+
+### 查找 HTML 元素
+
+| 方法 | 描述 |
+| --- | --- |
+| document.getElementById(_id_) | 通过元素 id 来查找元素 |
+| document.getElementsByTagName(_name_) | 通过标签名来查找元素 |
+| document.getElementsByClassName(_name_) | 通过类名来查找元素 |
+
+### 改变 HTML 元素
+
+| 方法 | 描述 |
+| --- | --- |
+| element.innerHTML = _new html content_ | 改变元素的 inner HTML |
+| element.attribute = _new value_ | 改变 HTML 元素的属性值 |
+| element.setAttribute(_attribute_, _value_) | 改变 HTML 元素的属性值 |
+| element.style.property = _new style_ | 改变 HTML 元素的样式 |
+
+### 添加和删除元素
+
+| 方法 | 描述 |
+| --- | --- |
+| document.createElement(_element_) | 创建 HTML 元素 |
+| document.removeChild(_element_) | 删除 HTML 元素 |
+| document.appendChild(_element_) | 添加 HTML 元素 |
+| document.replaceChild(_element_) | 替换 HTML 元素 |
+| document.write(_text_) | 写入 HTML 输出流 |
+
+### 添加事件处理程序
+
+| 方法 | 描述 |
+| --- | --- |
+| document.getElementById(id).onclick = function(){_code_} | 向 onclick 事件添加事件处理程序 |
+
+### 查找 HTML 对象
+
+首个 HTML DOM Level 1 (1998)，定义了 11 个 HTML 对象、对象集合和属性。它们在 HTML5 中仍然有效。
+
+后来，在 HTML DOM Level 3，加入了更多对象、集合和属性。
+
+| 属性 | 描述 | DOM |
+| --- | --- | --- |
+| document.anchors | 返回拥有 name 属性的所有 `<a>` 元素。 | 1 |
+| document.applets | 返回所有 `<applet>` 元素（HTML5 不建议使用） | 1 |
+| document.baseURI | 返回文档的绝对基准 URI | 3 |
+| document.body | 返回 `<body>` 元素 | 1 |
+| document.cookie | 返回文档的 cookie | 1 |
+| document.doctype | 返回文档的 doctype | 3 |
+| document.documentElement | 返回 `<html>` 元素 | 3 |
+| document.documentMode | 返回浏览器使用的模式 | 3 |
+| document.documentURI | 返回文档的 URI | 3 |
+| document.domain | 返回文档服务器的域名 | 1 |
+| document.domConfig | 废弃。返回 DOM 配置 | 3 |
+| document.embeds | 返回所有 `<embed>` 元素 | 3 |
+| document.forms | 返回所有 `<form>` 元素 | 1 |
+| document.head | 返回 `<head>` 元素 | 3 |
+| document.images | 返回所有 `<img>` 元素 | 1 |
+| document.implementation | 返回 DOM 实现 | 3 |
+| document.inputEncoding | 返回文档的编码（字符集） | 3 |
+| document.lastModified | 返回文档更新的日期和时间 | 3 |
+| document.links | 返回拥有 href 属性的所有 `<area>` 和 `<a>` 元素 | 1 |
+| document.readyState | 返回文档的（加载）状态 | 3 |
+| document.referrer | 返回引用的 URI（链接文档） | 1 |
+| document.scripts | 返回所有 `<script>` 元素 | 3 |
+| document.strictErrorChecking | 返回是否强制执行错误检查 | 3 |
+| document.title | 返回 `<title>` 元素 | 1 |
+| document.URL | 返回文档的完整 URL | 1 |
 
