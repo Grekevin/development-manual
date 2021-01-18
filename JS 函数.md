@@ -374,3 +374,27 @@ myObject.fullName();          // 将返回 [object Object]（拥有者对象）
 ```
 
 以对象方法来调用函数，会导致 this 的值成为对象本身。
+
+### 通过函数构造器来调用函数
+
+如果函数调用的前面是 new 关键字，那么这是一个构造函数调用。
+
+它看起来像你创建一个新的函数，但由于 JavaScript 函数是对象，你实际上创建一个新对象：
+
+``` javascript
+// 这是函数构造器：
+function myFunction(arg1, arg2) {
+    this.firstName = arg1;
+    this.lastName  = arg2;
+}
+
+// 创建了一个新对象：
+var x = new myFunction("Bill", "Gates");
+x.firstName;                             // 会返回 "Bill"
+```
+构造器调用会创建新对象。新对象会从其构造器继承属性和方法。
+
+构造器内的 this 关键词没有值。
+
+this 的值会成为调用函数时创建的新对象。
+
