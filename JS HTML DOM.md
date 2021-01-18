@@ -696,8 +696,10 @@ nodeType 属性返回节点的类型。nodeType 是只读的。
 | ATTRIBUTE_NODE | 2 | class = "heading" （弃用） |
 | TEXT_NODE | 3 | W3School |
 | COMMENT_NODE | 8 | <!-- 这是注释 --> |
-| DOCUMENT_NODE | 9 | HTML 文档本身（<html> 的父） |
+| DOCUMENT_NODE | 9 | HTML 文档本身（`<html>` 的父） |
 | DOCUMENT_TYPE_NODE | 10 | <!Doctype html> |
 
 Type 2 在 HTML DOM 中已弃用。XML DOM 中未弃用。
+
+## JavaScript HTML DOM 元素（节点）
 
