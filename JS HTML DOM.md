@@ -263,3 +263,44 @@ document.write(Date());
 
 > 千万不要在文档加载后使用 document.write()。这么做会覆盖文档。
 
+### 改变 HTML 内容
+
+修改 HTML 文档内容最简单的方法是，使用 innerHTML 属性。
+
+如需修改 HTML 元素的内容，请使用此语法：
+
+``` javascript
+document.getElementById(id).innerHTML = new text
+```
+
+### 改变属性的值
+
+如需修改 HTML 属性的值，请使用如下语法：
+
+``` javascript
+document.getElementById(id).attribute = new value
+```
+
+本例修改了 <img> 元素的 src 属性的值：
+
+``` javascript
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" src="smiley.gif">
+
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script>
+
+</body>
+</html> 
+```
+
+例子解释：
+
+ - 上面的 HTML 文档含有一个 id="myImage" 的 `<img>` 元素
+ - 我们使用 HTML DOM 来获取 id="myImage" 的元素
+ - JavaScript 把此元素的 src 属性从 "smiley.gif" 更改为 "landscape.jpg"
+
