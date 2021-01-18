@@ -349,6 +349,8 @@ HTML DOM 允许您在事件发生时执行代码。
 
 ## JavaScript HTML DOM 事件
 
+[HTML DOM 事件对象参考手册](https://www.w3school.com.cn/jsref/dom_obj_event.asp)
+
 ### 对事件作出反应
 
 JavaScript 能够在事件发生时执行，比如当用户点击某个 HTML 元素时。
@@ -460,4 +462,10 @@ function mOut(obj) {
 }
 </script>
 ```
+
+### onmousedown, onmouseup 以及 onclick 事件
+
+onmousedown, onmouseup 以及 onclick 事件构成了完整的鼠标点击事件。
+
+首先当鼠标按钮被点击时，onmousedown 事件被触发；然后当鼠标按钮被释放时，onmouseup 事件被触发；最后，当鼠标点击完成后，onclick 事件被触发。
 
