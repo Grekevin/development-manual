@@ -282,3 +282,15 @@ onLine 属性返回 true，假如浏览器在线：
 document.getElementById("demo").innerHTML = navigator.onLine;
 </script>
 ```
+
+### Java 是否启用？
+
+javaEnabled() 方法返回 true，如果 Java 已启用：
+
+``` html
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.javaEnabled();
+</script>
+```
