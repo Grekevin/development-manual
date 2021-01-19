@@ -91,3 +91,11 @@ W3School 上的实例都会打开位于 W3School 域上的 XML 文件。
 
 如果您希望在自己的页面上使用以上实例，那么您所加载的 XML 文件必须位于您自己的服务器上。
 
+### XMLHttpRequest 对象方法
+
+![方法](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1611060944376]]]" )
+
+### XMLHttpRequest 对象属性
+
+![属性](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1611061001737]]]" )
+
