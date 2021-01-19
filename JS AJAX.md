@@ -99,3 +99,51 @@ W3School 上的实例都会打开位于 W3School 域上的 XML 文件。
 
 ![属性](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1611061001736.png)
 
+## AJAX - 向服务器发送请求
+
+> XMLHttpRequest 对象用于同服务器交换数据。
+
+### 向服务器发送请求
+
+如需向服务器发送请求，我们使用 XMLHttpRequest 对象的 open() 和 send() 方法：
+
+``` javascript
+xhttp.open("GET", "ajax_info.txt", true);
+xhttp.send();
+```
+
+![发送请求](./images/1611061395249.png)
+
+### GET 还是 POST？
+
+GET 比 POST 更简单更快，可用于大多数情况下。
+
+不过，请在以下情况始终使用 POST：
+
+ - 缓存文件（更新服务器上的文件或数据库）
+ - 向服务器发送大量数据（POST 无大小限制）
+ - 发送用户输入（可包含未知字符），POST 比 GET 更强大更安全
+
+### GET 请求
+
+一条简单的 GET 请求：
+
+``` javascript
+xhttp.open("GET", "demo_get.asp", true);
+xhttp.send();
+```
+
+在上面的例子中，您可能会获得一个缓存的结果。为了避免此情况，请向 URL 添加一个唯一的 ID：
+
+``` javascript
+xhttp.open("GET", "demo_get.asp?t=" + Math.random(), true);
+xhttp.send();
+```
+
+如果您需要用 GET 方法来发送信息，请向 URL 添加这些信息：
+
+``` javascript
+xhttp.open("GET", "demo_get2.asp?fname=Bill&lname=Gates", true);
+xhttp.send();
+```
+
