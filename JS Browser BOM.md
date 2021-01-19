@@ -71,3 +71,20 @@ var h = window.innerHeight
  - window.moveTo() -移动当前窗口
  - window.resizeTo() -重新调整当前窗口
 
+## JavaScript Window Screen
+
+> window.screen 对象包含用户屏幕的信息。
+
+### Window Screen
+
+window.screen 对象不带 window 前缀也可以写：
+
+属性：
+
+ - screen.width
+ - screen.height
+ - screen.availWidth
+ - screen.availHeight
+ - screen.colorDepth
+ - screen.pixelDepth
+
