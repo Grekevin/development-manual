@@ -81,10 +81,37 @@ window.screen 对象不带 window 前缀也可以写：
 
 属性：
 
- - screen.width
- - screen.height
- - screen.availWidth
- - screen.availHeight
- - screen.colorDepth
- - screen.pixelDepth
+ - screen.width (返回以像素计的访问者屏幕宽度)
+ - screen.height (返回以像素计的访问者屏幕的高度)
+ - screen.availWidth (返回访问者屏幕的宽度，以像素计，减去诸如窗口工具条之类的界面特征)
+ - screen.availHeight (返回访问者屏幕的高度，以像素计，减去诸如窗口工具条之类的界面特征)
+ - screen.colorDepth 
+ - screen.pixelDepth (返回屏幕的像素深度,对于现代计算机，颜色深度和像素深度是相等的。)
+
+### Window Screen 色深
+
+screen.colorDepth 属性返回用于显示一种颜色的比特数。
+
+所有现代计算机都使用 24 位或 32 位硬件的色彩分辨率：
+
+ - 24 bits =16,777,216 种不同的 "True Colors"
+ - 32 bits = 4,294,967,296 中不同的 "Deep Colors"
+
+更老的计算机使用 14 位：65,536 种不同的 "High Colors" 分辨率。
+
+异常古老的计算机，以及老式的手机使用 8 位：256 中不同的 "VGA colors"。
+
+显示以位计的屏幕色彩深度：
+
+``` javascript
+document.getElementById("demo").innerHTML = "Screen Color Depth: " + screen.colorDepth;
+```
+
+结果将是：
+
+``` javascript
+Screen Color Depth: 24
+```
+
+> HTML 中使用的 #rrggbb (rgb) 值代表 "True Colors" （16,777,216 中不同的颜色）。
 
