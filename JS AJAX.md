@@ -80,3 +80,14 @@ if (window.XMLHttpRequest) {
      xhttp = new ActiveXObject("Microsoft.XMLHTTP");
 }
 ```
+
+### 跨域访问
+
+出于安全原因，现代浏览器不允许跨域访问。
+
+这意味着尝试加载的网页和 XML 文件都必须位于相同服务器上。
+
+W3School 上的实例都会打开位于 W3School 域上的 XML 文件。
+
+如果您希望在自己的页面上使用以上实例，那么您所加载的 XML 文件必须位于您自己的服务器上。
+
