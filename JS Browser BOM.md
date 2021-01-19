@@ -172,3 +172,28 @@ function goBack() {
 </html>
 ```
 
+## JavaScript Window Navigator
+
+> window.navigator 对象包含有关访问者的信息。
+
+### Window Navigator
+
+window.navigator 对象可以不带 window 前缀来写。
+
+一些例子：
+
+ - navigator.appName
+ - navigator.appCodeName
+ - navigator.platform
+
+### 浏览器 Cookie
+
+cookieEnabled 属性返回 true，如果 cookie 已启用，否则返回 false：
+
+``` html
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "cookiesEnabled is " + navigator.cookieEnabled;
+</script>
+```
