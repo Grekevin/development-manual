@@ -211,4 +211,62 @@ product 属性返回浏览器引擎的产品名称：
 document.getElementById("demo").innerHTML = "navigator.product is " + navigator.product;
 </script>
 ```
+> 不要依赖它！大多数浏览器都将 “Gecko” 作为产品名称返回！
 
+### 浏览器版本
+
+appVersion 属性返回有关浏览器的版本信息：
+
+``` html
+<p id="demo"></p>
+
+<script>
+//5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
+document.getElementById("demo").innerHTML = navigator.appVersion;
+</script>
+```
+
+### 浏览器代理
+
+userAgent 属性返回由浏览器发送到服务器的用户代理报头（user-agent header）：
+
+``` html
+<p id="demo"></p>
+
+<script>
+//Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36
+document.getElementById("demo").innerHTML = navigator.userAgent;
+</script>
+```
+### 警告！！！
+
+来自 navigator 对象的信息通常是误导性的，不应该用于检测浏览器版本，因为：
+
+ - 不同浏览器能够使用相同名称
+ - 导航数据可被浏览器拥有者更改
+ - 某些浏览器会错误标识自身以绕过站点测试
+ - 浏览器无法报告发布晚于浏览器的新操作系统
+
+### 浏览器平台
+
+platform 属性返回浏览器平台（操作系统）：
+
+``` html
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.platform;	//Win32
+</script>
+```
+
+### 浏览器语言
+
+language 属性返回浏览器语言：
+
+``` html
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.language;
+</script>
+```
