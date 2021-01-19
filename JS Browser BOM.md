@@ -183,9 +183,9 @@ window.navigator 对象可以不带 window 前缀来写。
 一些例子：
 
  - navigator.appName (返回浏览器的应用程序名称)
-"Netscape" 是 IE11、Chrome、Firefox 以及 Safari 的应用程序名称的统称。
-
- - navigator.appCodeName
+   "Netscape" 是 IE11、Chrome、Firefox 以及 Safari 的应用程序名称的统称。
+ - navigator.appCodeName (返回浏览器的应用程序代码名称)
+   "Mozilla" 是 Chrome、Firefox、IE、Safari 以及 Opera 的应用程序代码名称。
  - navigator.platform
 
 ### 浏览器 Cookie
@@ -199,3 +199,16 @@ cookieEnabled 属性返回 true，如果 cookie 已启用，否则返回 false�
 document.getElementById("demo").innerHTML = "cookiesEnabled is " + navigator.cookieEnabled;
 </script>
 ```
+
+### 浏览器引擎
+
+product 属性返回浏览器引擎的产品名称：
+
+``` html
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "navigator.product is " + navigator.product;
+</script>
+```
+
