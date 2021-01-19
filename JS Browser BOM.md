@@ -115,5 +115,60 @@ Screen Color Depth: 24
 
 > HTML 中使用的 #rrggbb (rgb) 值代表 "True Colors" （16,777,216 中不同的颜色）。
 
+## JavaScript Window Location
 
+> window.location 对象可用于获取当前页面地址（URL）并把浏览器重定向到新页面。
+
+### Window Location
+
+window.location 对象可不带 window 前缀书写。
+
+一些例子：
+
+ - window.location.href 返回当前页面的 href (URL)
+ - window.location.hostname 返回（当前页面的）因特网主机的名称
+ - window.location.pathname 返回当前页面的路径或文件名
+ - window.location.protocol 返回使用的 web 协议（http: 或 https:）
+ - window.location.assign 加载新文档
+ - window.location.port 属性返回（当前页面的）互联网主机端口的编号。大多数浏览器不会显示默认端口号（http 为 80，https 为 443）。
+
+## JavaScript Window History
+
+> window.history 对象包含浏览器历史。
+
+### Window History
+
+window.history 对象可不带 window 书写。
+
+为了保护用户的隐私，JavaScript 访问此对象存在限制。
+
+一些方法：
+
+ - history.back() - 等同于在浏览器点击后退按钮
+ - history.forward() - 等同于在浏览器中点击前进按钮
+
+### Window History Back
+
+history.back() 方法加载历史列表中前一个 URL。
+
+这等同于在浏览器中点击后退按钮。
+
+在页面中创建后退按钮：
+
+``` html
+<html>
+<head>
+<script>
+function goBack() {
+    window.history.back()
+ }
+</script>
+</head>
+<body>
+
+<input type="button" value="Back" onclick="goBack()">
+
+</body>
+</html>
+```
 
