@@ -432,3 +432,89 @@ clearTimeout() 使用从 setTimeout() 返回的变量：
 myVar = setTimeout(function, milliseconds);
 clearTimeout(myVar);
 ```
+
+``` html
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>点击“试一试”。等 3 秒。该页面将提醒“Hello”。</p>
+
+<p>单击“停止”以阻止第一个函数执行。</p>
+
+<p>（在 3 秒钟之前，您必须单击“停止”。）</p>
+
+<button onclick="myVar = setTimeout(myFunction, 3000)">试一试</button>
+
+<button onclick="clearTimeout(myVar)">停止</button>
+
+<script>
+function myFunction() {
+  alert("Hello");
+}
+</script>
+</body>
+</html>
+```
+
+### setInterval() 方法
+
+setInterval() 方法在每个给定的时间间隔重复给定的函数。
+
+``` javascript
+window.setInterval(function, milliseconds);
+```
+
+window.setInterval() 方法可以不带 window 前缀来写。
+
+ - 第一个参数是要执行的函数。
+ - 第二个参数每个执行之间的时间间隔的长度。
+
+本例每秒执行一次函数 "myTimer"（就像数字手表）。
+
+显示当前时间：
+
+``` javascript
+var myVar = setInterval(myTimer, 1000);
+ 
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+```
+
+> 一秒有 1000 毫秒。
+
+### 如何停止执行？
+
+clearInterval() 方法停止 setInterval() 方法中指定的函数的执行。
+
+``` javascript
+window.clearInterval(timerVariable)
+```
+
+window.clearInterval() 方法可以不带 window 前缀来写。
+
+clearInterval() 方法使用从 setInterval() 返回的变量：
+
+``` javascript
+myVar = setInterval(function, milliseconds);
+clearInterval(myVar);
+```
+
+类似上例，但是我们添加了一个“停止时间”按钮：
+
+<p id="demo"></p>
+
+<button onclick="clearInterval(myVar)">停止时间</button>
+
+<script>
+var myVar = setInterval(myTimer, 1000);
+ function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+</script>
+
+## JavaScript Cookies
+
