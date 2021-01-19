@@ -43,3 +43,40 @@ Ajax 允许通过与场景后面的 Web 服务器交换数据来异步更新网�
  6. 由 JavaScript 读取响应
  7. 由 JavaScript 执行正确的动作（比如更新页面）
 
+## AJAX - XMLHttpRequest 对象
+
+> Ajax 的核心是 XMLHttpRequest 对象。
+
+### XMLHttpRequest 对象
+
+所有现代浏览器都支持 XMLHttpRequest 对象。
+
+XMLHttpRequest 对象用于同幕后服务器交换数据。这意味着可以更新网页的部分，而不需要重新加载整个页面。
+
+### 创建 XMLHttpRequest 对象
+
+所有现代浏览器（Chrom、IE7+、Firefox、Safari 以及 Opera）都有内建的 XMLHttpRequest 对象。
+
+创建 XMLHttpRequest 的语法是：
+
+``` javascript
+variable = new XMLHttpRequest();
+```
+
+老版本的 Internet Explorer（IE5 和 IE6）使用 ActiveX 对象：
+
+``` javascript
+variable = new ActiveXObject("Microsoft.XMLHTTP");
+```
+
+为了应对所有浏览器，包括 IE5 和 IE6，请检查浏览器是否支持 XMLHttpRequest 对象。如果支持，创建 XMLHttpRequest 对象，如果不支持，则创建 ActiveX 对象：
+
+``` javascript
+var xhttp;
+if (window.XMLHttpRequest) {
+    xhttp = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+     xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+```
