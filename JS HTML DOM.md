@@ -703,3 +703,202 @@ Type 2 在 HTML DOM 中已弃用。XML DOM 中未弃用。
 
 ## JavaScript HTML DOM 元素（节点）
 
+### 创建新 HTML 元素（节点）
+
+如需向 HTML DOM 添加新元素，您必须首先创建这个元素（元素节点），然后将其追加到已有元素。
+
+``` html
+<div id="div1">
+<p id="p1">这是一个段落。</p>
+<p id="p2">这是另一个段落。</p>
+</div>
+
+<script>
+//创建了一个新的 <p> 元素
+var para = document.createElement("p");
+//如需向 <p> 元素添加文本，则必须首先创建文本节点。这段代码创建了一个文本节点
+var node = document.createTextNode("这是新文本。");
+//向 <p> 元素追加这个文本节点
+para.appendChild(node);
+
+//最后您需要向已有元素追加这个新元素。
+//这段代码查找一个已有的元素
+var element = document.getElementById("div1");
+//向这个已有的元素追加新元素
+element.appendChild(para);
+</script>
+```
+
+### 删除已有 HTML 元素
+
+如需删除某个 HTML 元素，您需要知晓该元素的父：
+
+``` html
+<!--这个 HTML 文档包含了一个带有两个子节点（两个 <p> 元素）的 <div> 元素-->
+<div id="div1">
+<p id="p1">这是一个段落。</p>
+<p id="p2">这是另一个段落。</p>
+</div>
+
+<script>
+//查找 id="div1" 的元素
+var parent = document.getElementById("div1");
+//查找 id="p1" 的 <p> 元素
+var child = document.getElementById("p1");
+//从父删除子
+parent.removeChild(child);
+</script>
+```
+
+能够在不引用父的情况下删除某个元素是极好的。
+
+但是很遗憾。DOM 需要同时了解您需要删除的元素及其父。
+
+这是一种常见的解决方法：找到你想要删除的子，并利用其 parentNode 属性找到父：
+
+``` javascript
+var child = document.getElementById("p1");
+child.parentNode.removeChild(child);
+```
+
+### 替换 HTML 元素
+
+如需替换元素的，请使用 replaceChild() 方法：
+
+``` html
+<div id="div1">
+<p id="p1">这是一个段落。</p>
+<p id="p2">这是另一个段落。</p>
+</div>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("这是新文本。");
+para.appendChild(node);
+
+var parent = document.getElementById("div1");
+var child = document.getElementById("p1");
+parent.replaceChild(para, child);
+</script>
+```
+
+## JavaScript HTML DOM 集合
+
+### HTMLCollection 对象
+
+getElementsByTagName() 方法返回 HTMLCollection 对象。
+
+HTMLCollection 对象是类数组的 HTML 元素列表（集合）。
+
+下面的代码选取文档中的所有 `<p>` 元素：
+
+``` javascript
+var x = document.getElementsByTagName("p");
+```
+
+该集合中的元素可通过索引号进行访问。
+
+如需访问第二个 `<p>` 元素，您可以这样写：
+
+``` javascript
+y = x[1];
+```
+
+注释：索引从 0 开始。
+
+### HTML HTMLCollection 长度
+
+length 属性定义了 HTMLCollection 中元素的数量：
+
+``` javascript
+var myCollection = document.getElementsByTagName("p");
+document.getElementById("demo").innerHTML = myCollection.length;
+```
+
+实例解释：
+创建所有 `<p>` 元素的集合
+显示集合的长度
+length 属性在您需要遍历集合中元素时是有用的：
+
+改变所有 `<p>` 元素的背景色：
+
+``` javascript
+var myCollection = document.getElementsByTagName("p");
+var i;
+for (i = 0; i < myCollection.length; i++) {
+    myCollection[i].style.backgroundColor = "red";
+}
+```
+
+### HTMLCollection 并非数组！
+
+HTMLCollection 也许看起来像数组，但并非数组。
+
+您能够遍历列表并通过数字引用元素（就像数组那样）。
+
+不过，您无法对 HTMLCollection 使用数组方法，比如 valueOf()、pop()、push() 或 join()。
+
+## JavaScript HTML DOM 节点列表
+
+### HTML DOM NodeList 对象
+
+NodeList 对象是从文档中提取的节点列表（集合）。
+
+NodeList 对象与 HTMLCollection 对象几乎相同。
+
+如使用 getElementsByClassName() 方法，某些（老的）浏览器会返回 NodeList 对象而不是 HTMLCollection。
+
+所有浏览器都会为 childNodes 属性返回 NodeList 对象。
+
+大多数浏览器会为 querySelectorAll() 方法返回 NodeList 对象。
+
+下面的代码选取文档中的所有 `<p>` 节点：
+
+``` javascript
+var myNodeList = document.querySelectorAll("p");
+```
+
+NodeList 中的元素可通过索引号进行访问。
+
+如需访问第二个 `<p>` 节点，您可以这样写：
+
+``` javascript
+y = myNodeList[1];
+```
+
+注释：索引从 0 开始。
+
+### HTML DOM Node List 长度
+
+length 属性定义节点列表中的节点数：
+
+``` javascript
+var myNodelist = document.querySelectorAll("p");
+document.getElementById("demo").innerHTML = myNodelist.length;
+```
+
+### HTMLCollection 与 NodeList 的区别
+
+ - HTMLCollection是 HTML 元素的集合。
+ - NodeList 是文档节点的集合。
+ - NodeList 和 HTML 集合几乎完全相同。
+
+HTMLCollection 和 NodeList 对象都是类数组的对象列表（集合）。
+
+它们都有定义列表（集合）中项目数的 length 属性。
+
+它们都可以通过索引 (0, 1, 2, 3, 4, ...) 像数组那样访问每个项目。
+
+访问 HTMLCollection 项目，可以通过它们的名称、id 或索引号。
+
+访问 NodeList 项目，只能通过它们的索引号。
+
+只有 NodeList 对象能包含属性节点和文本节点。
+
+节点列表不是数组！
+
+节点数组看起来像数组，但并不是。
+
+您能够遍历节点列表并像数组那样引用其节点。
+
+不过，您无法对节点列表使用数组方法，比如 valueOf()、push()、pop() 或 join()。
