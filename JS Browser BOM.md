@@ -144,8 +144,8 @@ window.history 对象可不带 window 书写。
 
 一些方法：
 
- - history.back() - 等同于在浏览器点击后退按钮
- - history.forward() - 等同于在浏览器中点击前进按钮
+ - history.back() - 等同于在浏览器点击后退按钮(加载历史列表中前一个 URL)
+ - history.forward() - 等同于在浏览器中点击前进按钮(加载历史列表中下一个 URL)
 
 ### Window History Back
 
