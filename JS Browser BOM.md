@@ -415,3 +415,20 @@ function myFunction() {
  }
 </script>
 ```
+
+### 如何停止执行？
+
+clearTimeout() 方法停止执行 setTimeout() 中规定的函数。
+
+``` javascript
+window.clearTimeout(timeoutVariable)
+```
+
+window.clearTimeout() 方法可以不带 window 前缀来写。
+
+clearTimeout() 使用从 setTimeout() 返回的变量：
+
+``` javascript
+myVar = setTimeout(function, milliseconds);
+clearTimeout(myVar);
+```
