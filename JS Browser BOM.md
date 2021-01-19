@@ -182,7 +182,9 @@ window.navigator 对象可以不带 window 前缀来写。
 
 一些例子：
 
- - navigator.appName
+ - navigator.appName (返回浏览器的应用程序名称)
+"Netscape" 是 IE11、Chrome、Firefox 以及 Safari 的应用程序名称的统称。
+
  - navigator.appCodeName
  - navigator.platform
 
