@@ -93,9 +93,9 @@ W3School 上的实例都会打开位于 W3School 域上的 XML 文件。
 
 ### XMLHttpRequest 对象方法
 
-![方法](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1611060944376]]]" )
+![方法](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1611060944375.png)
 
 ### XMLHttpRequest 对象属性
 
-![属性](https://markdown.xiaoshujiang.com/img/spinner.gif "[[[1611061001737]]]" )
+![属性](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1611061001736.png)
 
