@@ -267,6 +267,18 @@ language 属性返回浏览器语言：
 <p id="demo"></p>
 
 <script>
-document.getElementById("demo").innerHTML = navigator.language;
+document.getElementById("demo").innerHTML = navigator.language;	//en
+</script>
+```
+
+### 浏览器是否在线？
+
+onLine 属性返回 true，假如浏览器在线：
+
+``` html
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = navigator.onLine;
 </script>
 ```
