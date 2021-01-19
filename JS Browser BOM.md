@@ -366,3 +366,9 @@ if (person != null) {
 ``` javascript
 alert("Hello\nHow are you?");
 ```
+
+## JavaScript Timing 事件
+
+> JavaScript 可以在时间间隔内执行。
+> 这就是所谓的定时事件（ Timing Events）。
+
