@@ -371,3 +371,7 @@ xhttp.send();
 
 ## [AJAX ASP 实例](https://www.w3school.com.cn/js/js_ajax_asp.asp)
 
+## [AJAX Database 实例](https://www.w3school.com.cn/js/js_ajax_database.asp)
+
+## [AJAX XML 应用程序](https://www.w3school.com.cn/js/js_ajax_applications.asp)
+
