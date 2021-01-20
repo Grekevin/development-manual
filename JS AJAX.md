@@ -225,3 +225,9 @@ xhttp.send();
 document.getElementById("demo").innerHTML = xhttp.responseText;
 ```
 
+我们不推荐同步的 XMLHttpRequest (async = false)，因为 JavaScript 将停止执行直到服务器响应就绪。如果服务器繁忙或缓慢，应用程序将挂起或停止。
+
+同步 XMLHttpRequest 正在从 Web 标准中移除，但是这个过程可能需要很多年。
+
+现代开发工具被鼓励对使用同步请求做出警告，并且当这种情况发生时，可能会抛出 InvalidAccessError 异常。
+
