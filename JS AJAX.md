@@ -337,6 +337,8 @@ ResponseXML 属性以 XML DOM 对象返回服务器响应。
 
 [responseXML示例](https://www.w3school.com.cn/js/js_ajax_http_response.asp)
 
+[AJAX XML 实例](https://www.w3school.com.cn/js/js_ajax_xmlfile.asp)
+
 ### getAllResponseHeaders() 方法
 
 getAllResponseHeaders() 方法返回所有来自服务器响应的头部信息。
@@ -364,3 +366,4 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "ajax_info.txt", true);
 xhttp.send(); 
 ```
+
