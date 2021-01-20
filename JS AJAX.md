@@ -190,3 +190,19 @@ xhttp.open("GET", "ajax_test.asp", true);
 
  - 在等待服务器响应时执行其他脚本
  - 当响应就绪时处理响应
+
+### onreadystatechange 属性
+
+通过 XMLHttpRequest 对象，您可以定义当请求接收到应答时所执行的函数。
+
+这个函数是在 XMLHttpResponse 对象的 onreadystatechange 属性中定义的：
+
+``` javascript
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("demo").innerHTML = this.responseText;
+  }
+};
+xhttp.open("GET", "ajax_info.txt", true);
+xhttp.send();
+```
