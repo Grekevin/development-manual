@@ -231,3 +231,136 @@ document.getElementById("demo").innerHTML = xhttp.responseText;
 
 现代开发工具被鼓励对使用同步请求做出警告，并且当这种情况发生时，可能会抛出 InvalidAccessError 异常。
 
+## AJAX - 服务器响应
+
+### onreadystatechange 属性
+
+`readyState` 属性保存 `XMLHttpRequest` 的状态。
+
+`onreadystatechange` 属性定义当 `readyState` 发生变化时执行的函数。
+
+`status` 属性和 `statusText` 属性存有 `XMLHttpRequest` 对象的状态。
+
+![enter description here](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1611125878237.png)
+
+每当 `readyState` 发生变化时就会调用 `onreadystatechange` 函数。
+
+当 `readyState` 为 4，`status` 为 200 时，响应就绪：
+
+``` javascript
+function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML =
+            this.responseText;
+       }
+    };
+    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.send(); 
+} 
+```
+
+> 注释：onreadystatechange 被触发五次（0-4），每次 readyState 都发生变化。
+
+### 使用回调函数
+
+回调函数是一种作为参数被传递到另一个函数的函数。
+
+如果您的网站中有多个 AJAX 任务，那么您应该创建一个执行 XMLHttpRequest 对象的函数，以及一个供每个 AJAX 任务的回调函数。
+
+该函数应当包含 URL 以及当响应就绪时调用的函数。
+
+``` html
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+
+<h1>XMLHttpRequest 对象</h1>
+
+<button type="button" onclick="loadDoc('/example/js/ajax_info.txt', myFunction)">更改内容
+</button>
+</div>
+
+<script>
+function loadDoc(url, cFunction) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      cFunction(this);
+    }
+  };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+function myFunction(xhttp) {
+  document.getElementById("demo").innerHTML =
+  xhttp.responseText;
+}
+</script>
+</body>
+</html>
+```
+
+### 服务器响应属性
+
+| 属性 | 描述 |
+| --- | --- |
+| responseText | 获取字符串形式的响应数据 |
+| responseXML | 获取 XML 数据形式的响应数据 |
+
+### 服务器响应方法
+
+| 方法 | 描述 |
+| --- | --- |
+| getResponseHeader() | 从服务器返回特定的头部信息 |
+| getAllResponseHeaders() | 从服务器返回所有头部信息 |
+
+### responseText 属性
+
+responseText 属性以 JavaScript 字符串的形式返回服务器响应，因此您可以这样使用它：
+
+``` javascript
+document.getElementById("demo").innerHTML = xhttp.responseText;
+```
+
+### responseXML 属性
+
+XML HttpRequest 对象有一个內建的 XML 解析器。
+
+ResponseXML 属性以 XML DOM 对象返回服务器响应。
+
+使用此属性，您可以把响应解析为 XML DOM 对象：
+
+[responseXML示例](https://www.w3school.com.cn/js/js_ajax_http_response.asp)
+
+### getAllResponseHeaders() 方法
+
+getAllResponseHeaders() 方法返回所有来自服务器响应的头部信息。
+
+``` javascript
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("demo").innerHTML = this.getAllResponseHeaders();
+  }
+};
+```
+
+### getResponseHeader() 方法
+
+getResponseHeader() 方法返回来自服务器响应的特定头部信息。
+
+``` javascript
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    document.getElementById("demo").innerHTML = this.getResponseHeader("Last-Modified");
+  }
+};
+xhttp.open("GET", "ajax_info.txt", true);
+xhttp.send(); 
+```
