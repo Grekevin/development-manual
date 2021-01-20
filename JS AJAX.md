@@ -369,3 +369,5 @@ xhttp.send();
 
 ## [AJAX PHP 实例](https://www.w3school.com.cn/js/js_ajax_php.asp)
 
+## [AJAX ASP 实例](https://www.w3school.com.cn/js/js_ajax_asp.asp)
+
