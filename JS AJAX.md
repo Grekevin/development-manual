@@ -147,3 +147,46 @@ xhttp.open("GET", "demo_get2.asp?fname=Bill&lname=Gates", true);
 xhttp.send();
 ```
 
+### POST 请求
+
+一条简单的 POST 请求：
+
+``` javascript
+xhttp.open("POST", "demo_post.asp", true);
+xhttp.send();
+```
+
+如需像 HTML 表单那样 POST 数据，请通过 setRequestHeader() 添加一个 HTTP 头部。请在 send() 方法中规定您需要发送的数据：
+
+``` javascript
+xhttp.open("POST", "ajax_test.asp", true);
+xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhttp.send("fname=Bill&lname=Gates");
+```
+![setRequestHeader](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1611125190822.png)
+
+### url - 服务器上的文件
+
+open() 方法的 url 参数，是服务器上文件的地址：
+
+``` javascript
+xhttp.open("GET", "ajax_test.asp", true);
+```
+
+该文件可以是任何类型的文件，如 .txt 和 .xml，或服务器脚本文件，如 .asp 和 .php（它们可以在发送回响应之前在服务器执行操作）。
+
+
+### 异步 - ture 还是 false？
+
+如需异步发送请求，open() 方法的 async 参数必须设置为 true：
+
+``` javascript
+xhttp.open("GET", "ajax_test.asp", true);
+```
+
+发送异步请求对 web 开发人员来说是一个巨大的进步。服务器上执行的许多任务都非常耗时。在 AJAX 之前，此操作可能会导致应用程序挂起或停止。
+
+通过异步发送，JavaScript 不必等待服务器响应，而是可以：
+
+ - 在等待服务器响应时执行其他脚本
+ - 当响应就绪时处理响应
