@@ -56,3 +56,29 @@ text = localStorage.getItem("testJSON");
 obj =  JSON.parse(text);
 document.getElementById("demo").innerHTML = obj.name;
 ```
+
+### 什么是 JSON？
+
+ - JSON 指的是 JavaScript 对象标记法（JavaScript Object Notation）
+ - JSON 是一种轻量级的数据交换格式
+ - JSON 具有自我描述性且易于理解
+ - JSON 独立于语言
+
+JSON 使用 JavaScript 语法，但是 JSON 格式是纯文本的。
+
+文本可被任何编程语言作为数据来读取和使用。
+
+JSON 格式最初由 Douglas Crockford 提出。
+
+### 为什么使用 JSON？
+
+因为 JSON 格式仅仅是文本，它能够轻松地在服务器浏览器之间传输，并用作任何编程语言的数据格式。
+
+JavaScript 提供內建函数把以 JSON 格式写的字符串转换为原生 JavaScript 对象：
+
+``` javascript
+JSON.parse()
+```
+
+因此，如果您以 JSON 格式从服务器接收数据，那么您可以像任何其他 JavaScript 对象那样使用它。
+
