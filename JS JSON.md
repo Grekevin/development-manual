@@ -82,3 +82,16 @@ JSON.parse()
 
 因此，如果您以 JSON 格式从服务器接收数据，那么您可以像任何其他 JavaScript 对象那样使用它。
 
+## JSON 语法
+
+> JSON 语法是 JavaScript 语法的子集。
+
+### JSON 语法规则
+
+JSON 语法衍生于 JavaScript 对象标记法语法：
+
+ - 数据在名称/值对中
+ - 数据由逗号分隔
+ - 花括号容纳对象
+ - 方括号容纳数组
+
