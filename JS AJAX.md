@@ -206,3 +206,18 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "ajax_info.txt", true);
 xhttp.send();
 ```
+
+### 同步请求
+
+如需执行同步的请求，请把 open() 方法中的第三个参数设置为 false：
+
+xhttp.open("GET", "ajax_info.txt", false);
+有时 async = false 用于快速测试。你也会在更老的 JavaScript 代码中看到同步请求。
+
+由于代码将等待服务器完成，所以不需要 onreadystatechange 函数：
+
+``` javascript
+xhttp.open("GET", "ajax_info.txt", false);
+xhttp.send();
+document.getElementById("demo").innerHTML = xhttp.responseText;
+```
