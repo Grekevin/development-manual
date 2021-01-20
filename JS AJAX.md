@@ -367,3 +367,5 @@ xhttp.open("GET", "ajax_info.txt", true);
 xhttp.send(); 
 ```
 
+## [AJAX PHP 实例](https://www.w3school.com.cn/js/js_ajax_php.asp)
+
