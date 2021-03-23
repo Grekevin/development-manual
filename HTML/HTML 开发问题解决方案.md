@@ -39,3 +39,13 @@
 ![示例代码](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1616470535359.png)
 
 
+中文字在div中均会自动换行不需要css样式实现，只有连续的字母或数字会出现不自动换行问题，所以需要css解决。
+
+解决方案：
+
+> word-wrap:break-word
+
+解释：使用break-word时，是将强制换行。
+
+兼容各版本IE浏览器，兼容谷歌浏览器。
+
