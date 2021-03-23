@@ -145,7 +145,7 @@ xhttp.open("GET", "ajax_info.txt", true);
 xhttp.send();
 ```
 
-![发送请求](./images/1611061395249.png)
+![发送请求](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1611061395249.png)
 
 ### GET 还是 POST？
 
