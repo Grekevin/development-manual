@@ -49,3 +49,29 @@
 
 兼容各版本IE浏览器，兼容谷歌浏览器。
 
+示例代码：
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flexibal Box Layout</title>
+
+	<style type="text/css">
+		div {
+			height: 200px;
+			width: 200px;
+			background-color: red; 
+			margin: 20px;
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+<body>
+	<div>1111111111111111111111111111111111111111111111111111111111111111111111111111111111111</div>
+	<div>kdfkdkvkvmdhvkckvnmchvkckxnckshjchdvjdgvhdhvhdcbbbchcdcbdbcdjcvjdvbjvbdj</div>
+</body>
+</html>
+```
+效果示例：
+![强制换行示例](https://raw.githubusercontent.com/Grekevin/development-manual-imgs/master/1616470814412.png)
